@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{32C3BDE6-E125-3128-82C1-25D0441455A3}</ProjectGuid>
+    <ProjectGuid>{C144F090-9086-BC7F-160A-5DA1F36D8BEE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -58,12 +58,12 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Animal pack deluxe\Scripts\MoveCamera.cs" />
+    <Compile Include="Assets\Resource\Animal pack deluxe\Scripts\MoveCamera.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\EXPLORER - Stone Age\Shaders\Stylized_Water.shader" />
-    <None Include="Assets\EXPLORER - Stone Age\Documentation\EXPLORER - Stone Age.txt" />
-    <None Include="Assets\EXPLORER - Stone Age\Shaders\Wind_Animated_Vertices.shader" />
+    <None Include="Assets\Resource\EXPLORER - Stone Age\Shaders\Stylized_Water.shader" />
+    <None Include="Assets\Resource\EXPLORER - Stone Age\Documentation\EXPLORER - Stone Age.txt" />
+    <None Include="Assets\Resource\EXPLORER - Stone Age\Shaders\Wind_Animated_Vertices.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
