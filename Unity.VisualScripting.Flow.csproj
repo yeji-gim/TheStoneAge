@@ -22,7 +22,11 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
+<<<<<<< Updated upstream
     <DefineConstants>UNITY_2022_3_8;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;PACKAGE_INPUT_SYSTEM_EXISTS;PACKAGE_INPUT_SYSTEM_1_2_0_OR_NEWER_EXISTS;MODULE_AI_EXISTS;MODULE_ANIMATION_EXISTS;MODULE_PHYSICS_EXISTS;MODULE_PHYSICS_2D_EXISTS;MODULE_PARTICLE_SYSTEM_EXISTS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+=======
+    <DefineConstants>UNITY_2022_3_8;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;MODULE_AI_EXISTS;MODULE_ANIMATION_EXISTS;MODULE_PHYSICS_EXISTS;MODULE_PHYSICS_2D_EXISTS;MODULE_PARTICLE_SYSTEM_EXISTS;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+>>>>>>> Stashed changes
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -65,11 +69,18 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Logic/NotEqual.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Input/InputSystem/OnInputSystemEvent.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Lifecycle/Update.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/IUnitValuePort.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/UnitCategoryConverter.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Input/OnMouseDown.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/CustomEvent.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Animation/BoltNamedAnimationEvent.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/IUnitValuePort.cs" />
+=======
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/ValueInputDefinition.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/ParameterArgs.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnEndDrag.cs" />
@@ -78,9 +89,15 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Animation/BoltAnimationEvent.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4MoveTowards.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/UnitPort.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnDropdownValueChanged.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Maximum.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Logic/NumericComparison.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Logic/NumericComparison.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnDropdownValueChanged.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Maximum.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Collections/Dictionaries/RemoveDictionaryItem.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/InvalidInput.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/EditorBinding/PortLabelAttribute.cs" />
@@ -107,6 +124,7 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/UnaryExpression.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Scalar/ScalarRound.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/IUnitPortDefinition.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector2/Vector2Subtract.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/Obsolete/IGraphVariableUnit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector2/Vector2Modulo.cs" />
@@ -117,6 +135,18 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/IdentifierExpression.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector2/Vector2Angle.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Codebase/GetMember.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/Obsolete/IGraphVariableUnit.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector2/Vector2Subtract.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector2/Vector2Modulo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Time/OnTimerElapsed.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Collections/Dictionaries/CreateDictionary.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Codebase/GetMember.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector3/Vector3Normalize.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Control/SelectUnit_T.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector2/Vector2Angle.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/IdentifierExpression.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Physics2D/OnCollisionStay2D.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/UnitCategory.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Application/OnApplicationFocus.cs" />
@@ -154,8 +184,13 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Application/OnApplicationLostFocus.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnGUI.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Unit.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/EditorBinding/UnitShortTitleAttribute.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Collections/FirstItem.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Collections/FirstItem.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/EditorBinding/UnitShortTitleAttribute.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector2/Vector2Normalize.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Absolute.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/IUnit.cs" />
@@ -206,10 +241,17 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Rendering/OnBecameVisible.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Control/IBranchUnit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Physics/OnCollisionEnter.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/NCalcLexer.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Logic/Comparison.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Logic/GreaterOrEqual.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/NesterUnit.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Logic/Comparison.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/NCalcLexer.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/NesterUnit.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Logic/GreaterOrEqual.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Collections/Dictionaries/GetDictionaryItem.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector3/Vector3Absolute.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Graph/ScriptGraphContainerType.cs" />
@@ -255,11 +297,19 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Subtract.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Nesting/GraphInput.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/Obsolete/SetObjectVariable.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Modulo.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GlobalEventUnit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnInputFieldEndEdit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/MoveTowards.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnDeselect.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GlobalEventUnit.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Modulo.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnDeselect.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnInputFieldEndEdit.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/MoveTowards.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Collections/Dictionaries/ClearDictionary.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Collections/Lists/RemoveListItem.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Lerp.cs" />
@@ -303,8 +353,13 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Distance.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Control/SelectOnString.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Connections/IUnitConnectionDebugData.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Flow.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Control/SelectUnit.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Control/SelectUnit.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Flow.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/ScriptMachine.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Codebase/Expose.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/ControlInputDefinition.cs" />
@@ -378,8 +433,13 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnMove.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector3/Vector3DotProduct.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/SetVariable.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnSelect.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Input/IMouseEventUnit.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Input/IMouseEventUnit.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnSelect.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Navigation/OnDestinationReached.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Input/OnMouseInput.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/PointerEventUnit.cs" />
@@ -429,11 +489,19 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector3/DeprecatedVector3Add.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Ports/ControlOutput.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Graph/GetGraph.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/Obsolete/SetSceneVariable.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Physics2D/OnCollisionEnter2D.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Control/SelectOnEnum.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Physics2D/OnTriggerStay2D.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Generic/DeprecatedGenericAdd.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Physics2D/OnCollisionEnter2D.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/Obsolete/SetSceneVariable.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Control/SelectOnEnum.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Generic/DeprecatedGenericAdd.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Physics2D/OnTriggerStay2D.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Physics/OnTriggerExit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/EvaluateFunctionHandler.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/GUI/OnPointerClick.cs" />
@@ -449,8 +517,13 @@
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Events/Input/OnMouseExit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector3/Vector3Project.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4Divide.cs" />
+<<<<<<< Updated upstream
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4DotProduct.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/FlowGraphData.cs" />
+=======
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/FlowGraphData.cs" />
+    <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Math/Vector4/Vector4DotProduct.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/Obsolete/IsVariableDefinedUnit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Time/WaitUnit.cs" />
     <Compile Include="Library/PackageCache/com.unity.visualscripting@1.9.0/Runtime/VisualScripting.Flow/Framework/Variables/Obsolete/IsApplicationVariableDefined.cs" />
@@ -1165,10 +1238,13 @@
       <Project>{3F3F9374-5352-134A-D27D-49F40E52B496}</Project>
       <Name>Unity.VisualScripting.Core</Name>
     </ProjectReference>
+<<<<<<< Updated upstream
     <ProjectReference Include="Unity.InputSystem.csproj">
       <Project>{D2AD59EA-E05E-A57D-2327-DFEF7706E131}</Project>
       <Name>Unity.InputSystem</Name>
     </ProjectReference>
+=======
+>>>>>>> Stashed changes
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{770D4418-D3B8-53C2-7639-560E26CE53B0}</Project>
       <Name>UnityEditor.UI</Name>

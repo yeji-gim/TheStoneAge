@@ -22,7 +22,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 51177
+=======
+60205
+>>>>>>> Stashed changes
 Successfully changed project path to: /Users/sein/Desktop/Modeling/Unity/TheStoneAge
 /Users/sein/Desktop/Modeling/Unity/TheStoneAge
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +60,21 @@ Successfully changed project path to: /Users/sein/Desktop/Modeling/Unity/TheSton
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [140704390960896] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 1442076160 [EditorId] 1442076160 [Version] 1048832 [Id] OSXEditor(0,bagsein-ui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [140704390960896] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 1442076160 [EditorId] 1442076160 [Version] 1048832 [Id] OSXEditor(0,bagsein-ui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
 Refreshing native plugins compatible for Editor in 42.35 ms, found 2 plugins.
+=======
+Player connection [140704390960896] Host "[IP] 172.30.1.16 [Port] 0 [Flags] 2 [Guid] 2903561917 [EditorId] 2903561917 [Version] 1048832 [Id] OSXEditor(0,bagsein-ui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [140704390960896] Host "[IP] 172.30.1.16 [Port] 0 [Flags] 2 [Guid] 2903561917 [EditorId] 2903561917 [Version] 1048832 [Id] OSXEditor(0,bagsein-ui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 27.31 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.8f1 (b5eafc012955)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,7 +89,11 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56615
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -87,21 +104,31 @@ Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/Play
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+<<<<<<< Updated upstream
 Registered in 0.079376 seconds.
 - Loaded All Assemblies, in  1.694 seconds
+=======
+Registered in 0.035863 seconds.
+- Loaded All Assemblies, in  4.038 seconds
+>>>>>>> Stashed changes
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for AppleTV target not found
+<<<<<<< Updated upstream
 objc[82520]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/AppleTVSupport/x64/UnityEditor.iOS.Native.dylib (0x1521bc118) and /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/VisionOSPlayer/x64/UnityEditor.VisionOS.Native.dylib (0x15220b118). One of the two will be used. Which one is undefined.
+=======
+objc[72615]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/AppleTVSupport/x64/UnityEditor.iOS.Native.dylib (0x15a56c118) and /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/VisionOSPlayer/x64/UnityEditor.VisionOS.Native.dylib (0x15a594118). One of the two will be used. Which one is undefined.
+>>>>>>> Stashed changes
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for VisionOS target not found
 Native extension for iOS target not found
 Native extension for Android target not found
+<<<<<<< Updated upstream
 Android Extension - Scanning For ADB Devices 247 ms
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
@@ -109,10 +136,20 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.777 seconds
 Domain Reload Profiling: 3470ms
 	BeginReloadAssembly (636ms)
+=======
+Android Extension - Scanning For ADB Devices 524 ms
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.470 seconds
+Domain Reload Profiling: 8506ms
+	BeginReloadAssembly (1226ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+<<<<<<< Updated upstream
 		CreateAndSetChildDomain (2ms)
 	RebuildCommonClasses (210ms)
 	RebuildNativeTypeToScriptingClass (45ms)
@@ -137,14 +174,45 @@ Domain Reload Profiling: 3470ms
 			ProcessInitializeOnLoadAttributes (287ms)
 			ProcessInitializeOnLoadMethodAttributes (138ms)
 			AfterProcessingInitializeOnLoad (0ms)
+=======
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (394ms)
+	RebuildNativeTypeToScriptingClass (131ms)
+	initialDomainReloadingComplete (687ms)
+	LoadAllAssembliesAndSetupDomain (1596ms)
+		LoadAssemblies (1299ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1473ms)
+			TypeCache.Refresh (1470ms)
+				TypeCache.ScanAssembly (1135ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (4471ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4076ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2443ms)
+			SetLoadedEditorAssemblies (56ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (11ms)
+			ProcessInitializeOnLoadAttributes (1091ms)
+			ProcessInitializeOnLoadMethodAttributes (470ms)
+			AfterProcessingInitializeOnLoad (3ms)
+>>>>>>> Stashed changes
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  3.913 seconds
 Refreshing native plugins compatible for Editor in 4.82 ms, found 2 plugins.
+=======
+- Loaded All Assemblies, in  6.174 seconds
+Refreshing native plugins compatible for Editor in 95.82 ms, found 2 plugins.
+>>>>>>> Stashed changes
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for AppleTV target not found
@@ -158,6 +226,7 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  3.389 seconds
 Domain Reload Profiling: 7302ms
 	BeginReloadAssembly (583ms)
@@ -200,15 +269,422 @@ Unloading 5533 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 89 unused Assets / (0.8 MB). Loaded Objects now: 6008.
 Memory consumption went from 233.5 MB to 232.7 MB.
 Total: 31.386808 ms (FindLiveObjects: 0.812103 ms CreateObjectMapping: 0.746904 ms MarkObjects: 27.133673 ms  DeleteObjects: 2.691326 ms)
+=======
+- Finished resetting the current domain, in 10.671 seconds
+Domain Reload Profiling: 16858ms
+	BeginReloadAssembly (1312ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (121ms)
+	RebuildCommonClasses (297ms)
+	RebuildNativeTypeToScriptingClass (59ms)
+	initialDomainReloadingComplete (148ms)
+	LoadAllAssembliesAndSetupDomain (4358ms)
+		LoadAssemblies (2519ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2619ms)
+			TypeCache.Refresh (2100ms)
+				TypeCache.ScanAssembly (1742ms)
+			ScanForSourceGeneratedMonoScriptInfo (440ms)
+			ResolveRequiredComponents (73ms)
+	FinalizeReload (10685ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (7996ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (546ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (637ms)
+			ProcessInitializeOnLoadAttributes (6621ms)
+			ProcessInitializeOnLoadMethodAttributes (172ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.65 seconds
+Refreshing native plugins compatible for Editor in 6.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (51.7 KB). Loaded Objects now: 3564.
+Memory consumption went from 144.5 MB to 144.4 MB.
+Total: 32.456705 ms (FindLiveObjects: 6.065482 ms CreateObjectMapping: 0.330067 ms MarkObjects: 24.627930 ms  DeleteObjects: 1.431393 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+<<<<<<< Updated upstream
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+=======
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+>>>>>>> Stashed changes
   custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
   custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< Updated upstream
+=======
+========================================================================
+Received Import Request.
+  Time since last request: 817930.869258 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Avatars/Dead_Body_1A.prefab
+  artifactKey: Guid(c4eb952fe0eef5f45bf2ad10e746f564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Avatars/Dead_Body_1A.prefab using Guid(c4eb952fe0eef5f45bf2ad10e746f564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6447314f28063e4f43d628374740b2ef') in 0.957440 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 402.726370 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_2C.prefab
+  artifactKey: Guid(24e29205bf6714b42a61134436965e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_2C.prefab using Guid(24e29205bf6714b42a61134436965e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fa6f10921f80647665da5bc1167a076') in 0.495321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000349 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_4B.prefab
+  artifactKey: Guid(7dfe339f739b9824aa34f5ed0307601a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_4B.prefab using Guid(7dfe339f739b9824aa34f5ed0307601a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f27c5466ba44a66a7c8d335193fd080') in 0.035479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.001013 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_4A.prefab
+  artifactKey: Guid(805f9c17dd3159946a6d911d4bb25898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_4A.prefab using Guid(805f9c17dd3159946a6d911d4bb25898) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb9f7672d3abeb60743326ebe2d2e5c') in 0.020899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_4C.prefab
+  artifactKey: Guid(5aea64edda927dd4cab6bdd123f61957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Rocks/Canyon_Wall_4C.prefab using Guid(5aea64edda927dd4cab6bdd123f61957) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f6d250dbeb565b5ec0ee482044ef1b3') in 0.041393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 2287.034558 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Dragonflies_1A.prefab
+  artifactKey: Guid(7943f3db7c28d434886ee67adef21d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Dragonflies_1A.prefab using Guid(7943f3db7c28d434886ee67adef21d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c68374a637268977f1259c982f8fbf') in 1.306269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Fog_1A.prefab
+  artifactKey: Guid(02627a97a6a9549079b03b0a282d6a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Fog_1A.prefab using Guid(02627a97a6a9549079b03b0a282d6a04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce61059f104f1d3f1db5a6a0c48191ea') in 0.119933 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Fire_1B.prefab
+  artifactKey: Guid(01511af67299e4cc380a845656c6fb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Fire_1B.prefab using Guid(01511af67299e4cc380a845656c6fb49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f1d1ca1e4c32a3e986022b5e4d02df9') in 0.084061 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000737 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Buildings/Furnace_1A.prefab
+  artifactKey: Guid(87fc87a9a907af64b964b2d0a5efa8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Buildings/Furnace_1A.prefab using Guid(87fc87a9a907af64b964b2d0a5efa8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '152999aa024a7d443ac562b4606f3d6e') in 0.282726 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000523 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Flies_1A.prefab
+  artifactKey: Guid(9427bd3f9088cf843b14a83eda0395c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Particles/Flies_1A.prefab using Guid(9427bd3f9088cf843b14a83eda0395c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2931a2504bb2d865061f1712f2ec364e') in 0.153889 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 1.687173 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Buildings/Workshop_1A.prefab
+  artifactKey: Guid(93dc0a7aee82b43c79fccf4fa62f1ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Buildings/Workshop_1A.prefab using Guid(93dc0a7aee82b43c79fccf4fa62f1ea8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '110b64b968c6a085a445ea9d8190f0a6') in 0.278752 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 6.050371 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Cup_1A.prefab
+  artifactKey: Guid(3932c7ae51ef54a80a3f49b3bb732a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Cup_1A.prefab using Guid(3932c7ae51ef54a80a3f49b3bb732a1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ddf92173189fecff663295904341b92') in 0.077528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_1A.prefab
+  artifactKey: Guid(26092aff04a384f79b009d96a5bbfbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_1A.prefab using Guid(26092aff04a384f79b009d96a5bbfbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98a87ab334cee58f33212df1c29147e6') in 0.045735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Cup_1C.prefab
+  artifactKey: Guid(d47d0000b119a4a2c87a3065adb88280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Cup_1C.prefab using Guid(d47d0000b119a4a2c87a3065adb88280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2f763c5b7827bb0966834f8cac16c45') in 0.041600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Vase_1A.prefab
+  artifactKey: Guid(125647136a6cf4e64a8433f1fab3ff36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Vase_1A.prefab using Guid(125647136a6cf4e64a8433f1fab3ff36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa4f39b41b86e9f6b29021681a38ce2') in 0.039914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Food_Bowl_2A.prefab
+  artifactKey: Guid(af06f95bb507b4541a4519ec86709a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Food_Bowl_2A.prefab using Guid(af06f95bb507b4541a4519ec86709a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97f6ab0aa44991c5f1d725884a851c8d') in 0.070356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_2B.prefab
+  artifactKey: Guid(81c356b1f540248e08a59f5996807288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_2B.prefab using Guid(81c356b1f540248e08a59f5996807288) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa9ea3def2890989345a7c0c5640d25') in 0.026431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_2E.prefab
+  artifactKey: Guid(2d419c4c3f86748a691d144d4592a8a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_2E.prefab using Guid(2d419c4c3f86748a691d144d4592a8a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5e623e21d797d3e13ba3d390e02fdce') in 0.038971 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Food_Bowl_2B.prefab
+  artifactKey: Guid(4564cae8fe8fc1f42bee1574faae56fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Food_Bowl_2B.prefab using Guid(4564cae8fe8fc1f42bee1574faae56fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b980878533c1fa2551a1108c0db217') in 0.045147 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Food_Bowl_1B.prefab
+  artifactKey: Guid(52f02545af829e54f8fd014216079fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Food_Bowl_1B.prefab using Guid(52f02545af829e54f8fd014216079fb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57bce783c8b86dd206c4414fb2b65300') in 0.031753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Vase_1C.prefab
+  artifactKey: Guid(86a2c9a202199440e91b1eca0ac18469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Vase_1C.prefab using Guid(86a2c9a202199440e91b1eca0ac18469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7f38ced6ae7fe864fc120af54409dcc') in 0.036103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.001260 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_2A.prefab
+  artifactKey: Guid(5a105260e6c6745028c3082ff2fac3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Pottery/Clay_Dish_2A.prefab using Guid(5a105260e6c6745028c3082ff2fac3fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a9f994bd2c7b99cb687f0e66962a3be') in 0.039363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 1.262213 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Cooking_Fire_1A.prefab
+  artifactKey: Guid(13af45e87eaf94a478ba9ebb91e6e095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Cooking_Fire_1A.prefab using Guid(13af45e87eaf94a478ba9ebb91e6e095) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faca574c87fa27f17a75112da9a452dd') in 0.025781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000410 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_1A.prefab
+  artifactKey: Guid(da1e229aac113764084e667a99e71543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_1A.prefab using Guid(da1e229aac113764084e667a99e71543) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2672d5a094f58a579922e402aafea2e2') in 0.020751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.002800 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_1C.prefab
+  artifactKey: Guid(f743395ef14b1e64bb607ec9934411fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_1C.prefab using Guid(f743395ef14b1e64bb607ec9934411fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0247e93554f86059ff366ef9bb5d6f8f') in 0.023379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.008013 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_2B.prefab
+  artifactKey: Guid(d8dec82b636ab2e4b99c40fca2d5f70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_2B.prefab using Guid(d8dec82b636ab2e4b99c40fca2d5f70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3710992ade4c2fc019b6cac3b5b4df14') in 0.047522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.001342 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_2C_Part_1.prefab
+  artifactKey: Guid(e948c48bc9d5e2e4e8894e353931c75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_2C_Part_1.prefab using Guid(e948c48bc9d5e2e4e8894e353931c75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504a866a3984d7cc8d5068b5d394b8fb') in 0.063087 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.018337 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_2C_Part_2.prefab
+  artifactKey: Guid(181e09df7cb128941a7114c26e68a298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_2C_Part_2.prefab using Guid(181e09df7cb128941a7114c26e68a298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cce22bc5c7dc86b7c85f224f8e4048c') in 0.033030 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3A.prefab
+  artifactKey: Guid(252fb7ed98a3faa4c994dbeb6c4fb1ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3A.prefab using Guid(252fb7ed98a3faa4c994dbeb6c4fb1ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95603ee5432469c54be258f4486caf75') in 0.027327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 1.840728 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3B_Part_1.prefab
+  artifactKey: Guid(3a4a531c3c867d84898453e1c8f4e538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3B_Part_1.prefab using Guid(3a4a531c3c867d84898453e1c8f4e538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ad849c5c66438765b5e0771fa3edae') in 0.014970 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.005304 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3C.prefab
+  artifactKey: Guid(9f1fafa9c0403964e822f8edfadc82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3C.prefab using Guid(9f1fafa9c0403964e822f8edfadc82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8927cf4b1b4c81e8bf19b5ed6e1a5c1') in 0.026622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3C_Part_2.prefab
+  artifactKey: Guid(37dee5ccfb2605f4cade789991a1a149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Fence_3C_Part_2.prefab using Guid(37dee5ccfb2605f4cade789991a1a149) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eff7413b677229d7dc92d88e5e07bd0') in 0.028066 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Flag_Pole_1A.prefab
+  artifactKey: Guid(201a5c93547436e41b786d4e058929a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Flag_Pole_1A.prefab using Guid(201a5c93547436e41b786d4e058929a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b579071065b13b96aff1de99fb4d2ee') in 0.027465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Flag_Pole_1D.prefab
+  artifactKey: Guid(2f03debc1b408584680e328918777b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Flag_Pole_1D.prefab using Guid(2f03debc1b408584680e328918777b51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceff11d069faab73dddcc4b4b1578af6') in 0.024662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000583 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Horn_1A.prefab
+  artifactKey: Guid(9b23a8eb81d1adc4a9950aacbce0b9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Horn_1A.prefab using Guid(9b23a8eb81d1adc4a9950aacbce0b9cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f641755f5f3d152fa93186a6b8d192c') in 0.031789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000696 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Human_Remains_1B.prefab
+  artifactKey: Guid(f895480b7e062f941958d3d32c1848c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Human_Remains_1B.prefab using Guid(f895480b7e062f941958d3d32c1848c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dfb829cbfc662bf82cd6f2c0ca41c7e') in 0.030403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Giant_Skull_3C.prefab
+  artifactKey: Guid(d8383e1bd51ddda49984ef8c5864161f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Giant_Skull_3C.prefab using Guid(d8383e1bd51ddda49984ef8c5864161f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013014227680da07863694e4f10b2294') in 0.027744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Human_Remains_1A.prefab
+  artifactKey: Guid(ae7d27bf133e83e4bbba16c9646bf71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Human_Remains_1A.prefab using Guid(ae7d27bf133e83e4bbba16c9646bf71d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c32d7e40cccf492366dbbef77648e03') in 0.063466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.098878 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wood_Pile_1A.prefab
+  artifactKey: Guid(fac1fefa8e7334778a69ad3dd6da5565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wood_Pile_1A.prefab using Guid(fac1fefa8e7334778a69ad3dd6da5565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7505b2ae226c64e8fdb010db5fcfa9f') in 0.045981 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wood_Pile_1C.prefab
+  artifactKey: Guid(fd97c7d810eb7487a95c71d65df73254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wood_Pile_1C.prefab using Guid(fd97c7d810eb7487a95c71d65df73254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e4ae3d2320fd043c08100af81aa90b') in 0.054151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Pole_1B.prefab
+  artifactKey: Guid(6901581efc28147c29161df3cbf61916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Pole_1B.prefab using Guid(6901581efc28147c29161df3cbf61916) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0c4344f5e66c561703a3f0f07aa9ce4') in 0.028452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.002068 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Plank_1E.prefab
+  artifactKey: Guid(e56b23b8936a54e29be27548b137e020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Plank_1E.prefab using Guid(e56b23b8936a54e29be27548b137e020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaec3231edbbe8622238e6686ece8f59') in 0.031914 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.001121 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Plank_1A.prefab
+  artifactKey: Guid(ec6c83ca9698b4caf889944cdc61e002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Plank_1A.prefab using Guid(ec6c83ca9698b4caf889944cdc61e002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e2b15cb10253707d021d020d581776') in 0.018486 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Plank_1C.prefab
+  artifactKey: Guid(a1825752b60df47469fab21e266116ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/EXPLORER - Stone Age/Prefabs/Props/Wooden_Plank_1C.prefab using Guid(a1825752b60df47469fab21e266116ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebf084e8175ba85b2050a6d8cbf64e5c') in 0.041175 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+>>>>>>> Stashed changes
