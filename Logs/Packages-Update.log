@@ -68,3 +68,12 @@ Update Mode: updateDependencies
 The following packages were updated:
   com.unity.inputsystem from version 1.5.1 to 1.6.3
   com.unity.render-pipelines.universal from version 14.0.7 to 14.0.8
+
+=== Sat Oct 28 18:46:48 2023
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.inputsystem from version 1.5.1 to 1.6.3
+  com.unity.render-pipelines.universal from version 14.0.7 to 14.0.8

@@ -137,7 +137,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-<<<<<<< Updated upstream
     "com.unity.shadergraph": {
       "version": "14.0.8",
       "depth": 1,
@@ -147,8 +146,6 @@
         "com.unity.searcher": "4.9.2"
       }
     },
-=======
->>>>>>> Stashed changes
     "com.unity.sysroot": {
       "version": "2.0.7",
       "depth": 1,
