@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
+  m_Name: DragonFly
+  m_EditorClassIdentifier: 
+  description: I'M Tree
+  thumbnail: {fileID: 1355055868, guid: 8055729a53630d74ab9b7d9896661983, type: 3}
+  gameModel: {fileID: 109966, guid: 71c97eab56ad22442ab7367befaf0340, type: 3}
+  quantity: 5
