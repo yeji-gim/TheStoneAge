@@ -58,15 +58,31 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\UI\Inventory\EquipmentData.cs" />
+    <Compile Include="Assets\Script\UI\Dialogue\DialoguePrompt.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
+    <Compile Include="Assets\Script\UI\Inventory\ItemData.cs" />
+    <Compile Include="Assets\Script\UI\Quest\QuestData.cs" />
     <Compile Include="Assets\Resource\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Resource\Animal pack deluxe\Scripts\MoveCamera.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\Script\UI\Inventory\ItemSlotData.cs" />
     <Compile Include="Assets\Resource\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
+    <Compile Include="Assets\Script\UI\Inventory\InteractableObject.cs" />
+    <Compile Include="Assets\Script\UI\Inventory\HandInventorySlot.cs" />
+    <Compile Include="Assets\Script\UI\Inventory\InventoryManager.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Resource\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Script\UI\Dialogue\CharacterData.cs" />
+    <Compile Include="Assets\Script\UI\Inventory\InventorySlot.cs" />
+    <Compile Include="Assets\Script\UI\npcController.cs" />
+    <Compile Include="Assets\Script\UI\UIManager.cs" />
+    <Compile Include="Assets\Script\UI\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Resource\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
+    <Compile Include="Assets\Script\UI\momDialogue.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Script\UI\Quest\QuestManager.cs" />
+    <Compile Include="Assets\Script\UI\Dialogue\DialogueLine.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
   </ItemGroup>
   <ItemGroup>
