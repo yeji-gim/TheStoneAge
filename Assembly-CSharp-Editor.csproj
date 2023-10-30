@@ -892,6 +892,10 @@
       <Project>{F975209E-63BC-80C9-74A1-285B0F021817}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.Editor.csproj">
+      <Project>{3CE783CD-3EC4-5032-4B4D-9CC4B18BF9F6}</Project>
+      <Name>Unity.Recorder.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Sysroot.Linux_x86_64.csproj">
       <Project>{7B3A5838-AE9E-B649-6B6F-AFC0EBF89AAF}</Project>
       <Name>Unity.Sysroot.Linux_x86_64</Name>
@@ -936,9 +940,9 @@
       <Project>{2A74C7D9-7AE1-A5F6-0333-383B79FC0776}</Project>
       <Name>Unity.ShaderGraph.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
-      <Project>{2B88311F-EF7A-D38C-2223-A27E8CFA2235}</Project>
-      <Name>Unity.VisualStudio.Editor</Name>
+    <ProjectReference Include="Unity.Recorder.Base.csproj">
+      <Project>{9F383394-A73A-F5D8-3790-D19B5C466A22}</Project>
+      <Name>Unity.Recorder.Base</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{770D4418-D3B8-53C2-7639-560E26CE53B0}</Project>
@@ -947,6 +951,10 @@
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
       <Project>{3F3F9374-5352-134A-D27D-49F40E52B496}</Project>
       <Name>Unity.VisualScripting.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualStudio.Editor.csproj">
+      <Project>{2B88311F-EF7A-D38C-2223-A27E8CFA2235}</Project>
+      <Name>Unity.VisualStudio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj">
       <Project>{4802F640-4CE4-C35C-40BB-E2B5EE194272}</Project>
@@ -1040,6 +1048,14 @@
       <Project>{A058BCB2-E818-5B52-8E9B-35047850D8C1}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj">
+      <Project>{4D95BE10-05CE-7998-0300-0EE01504A37D}</Project>
+      <Name>Unity.RenderPipelines.Universal.Shaders</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.Recorder.csproj">
+      <Project>{D7B3EF0C-A390-8FF8-9D52-3A423F21E59F}</Project>
+      <Name>Unity.Recorder</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{CC0D5177-C8CD-A55E-1EA6-C7CAB920BAF5}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -1047,10 +1063,6 @@
     <ProjectReference Include="Unity.Searcher.Editor.csproj">
       <Project>{ECAA68A7-6AC4-6B5D-8787-DBF51E92BBF2}</Project>
       <Name>Unity.Searcher.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj">
-      <Project>{4D95BE10-05CE-7998-0300-0EE01504A37D}</Project>
-      <Name>Unity.RenderPipelines.Universal.Shaders</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{C5ED3DE4-5E97-4332-1A09-527A8DE5232C}</Project>
