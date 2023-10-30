@@ -40,6 +40,9 @@ public class UIManager : MonoBehaviour
     public Button button;
     public TMP_Text button_name;
     public GameObject dialoguepanel;
+    [Header("Settings")]
+    public GameObject settingPanel;
+    public GameObject creditPanel;
     private void Start()
     {
         RenderInventory();
@@ -116,6 +119,14 @@ public class UIManager : MonoBehaviour
     public void ToggleDialoguePanel()
     {
         dialoguepanel.SetActive(!dialoguepanel.activeSelf);
+    }
+    public void TogglesettingPanell()
+    {
+        settingPanel.SetActive(!settingPanel.activeSelf);
+    }
+    public void TogglecreditPanel()
+    {
+        creditPanel.SetActive(!creditPanel.activeSelf);
     }
     public void fornextButton()
     {

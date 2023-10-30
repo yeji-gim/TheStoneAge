@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa8b9eb42b7b24840bc0d65a385aeacb, type: 3}
   m_Name: quest
   m_EditorClassIdentifier: 
-  questname: quest
-  description: quest
+  questname: "\uD018\uC2A4\uD2B8"
+  description: "\uB098\uBB47\uAC00\uC9C0\uC640 \uB3CC \uAC00\uC838\uC640"
   requiredItems:
   - item: {fileID: 11400000, guid: 4a48ba7a006c63340ba9750e63b0ebf4, type: 2}
     itemCount: 1
   - item: {fileID: 11400000, guid: 5e6830cf8ef97754c8f8d468f4392049, type: 2}
     itemCount: 6
-  isCompleted: 1
+  isCompleted: 0

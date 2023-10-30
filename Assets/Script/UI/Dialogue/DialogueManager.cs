@@ -112,7 +112,7 @@ public class DialogueManager : MonoBehaviour
             SceneManager.LoadScene(button_name.text);
 
         }
-        else if (button_name.text.Contains("quest"))
+        else if (button_name.text.Contains("Äù½ºÆ®"))
         {
             if (speaker == "mom")
             {
