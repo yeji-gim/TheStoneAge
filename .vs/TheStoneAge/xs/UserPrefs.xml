@@ -1,0 +1,16 @@
+﻿<Properties StartupConfiguration="{C144F090-9086-BC7F-160A-5DA1F36D8BEE}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Resource/EXPLORER - Stone Age/Shaders/Stylized_Water.shader">
+    <Files>
+      <File FileName="Assets/Resource/EXPLORER - Stone Age/Shaders/Stylized_Water.shader" Line="1" Column="1" />
+      <File FileName="Temp/Compiled-EXPLORER- Stone Age-Stylized Water.shader" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="de0ff763-342c-450b-be93-23442caf4213" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="cf39584c-bef9-44c5-8c67-3b0afbf9ef58" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

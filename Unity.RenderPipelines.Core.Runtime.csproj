@@ -66,8 +66,8 @@
     <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/AssemblyInfo.cs" />
     <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/Common/ObservableList.cs" />
     <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/XR/XROcclusionMesh.cs" />
-    <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/Lights/LightAnchor.cs" />
     <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/Debugging/DebugUI.cs" />
+    <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/Lights/LightAnchor.cs" />
     <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/RenderGraph/RenderGraphResources.cs" />
     <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/Debugging/Prefabs/Scripts/DebugUIHandlerObject.cs" />
     <Compile Include="Library/PackageCache/com.unity.render-pipelines.core@14.0.8/Runtime/Common/ListBuffer.cs" />
