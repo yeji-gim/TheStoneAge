@@ -14,21 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - speaker: 
-    message: 'Hi
-
-'
+    message: "\uC5B4\uC11C\uC640"
     button: 
   - speaker: 
-    message: i give you a quest
+    message: "\uB108\uC5D0\uAC8C \uC784\uBB34\uB97C \uD558\uB098 \uC904\uAC8C"
     button: 
   - speaker: mom
-    message: find tree
-    button: get quest
+    message: "\uAC00\uC11C \uB098\uBB47\uAC00\uC9C0\uB791 \uB3CC \uAC00\uC838\uC640"
+    button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
   noncompletedialogueLines:
   - speaker: mom
-    message: please finish quest
+    message: "\uC784\uBB34 \uC644\uC218\uD558\uACE0 \uB9D0 \uAC78\uC5B4\uC918"
     button: 
   completedialogueLines:
   - speaker: mom
-    message: go to you father
+    message: "\uB2E4\uC74C \uC784\uBB34\uB294 \uC5C4\uB9C8\uD55C\uD14C \uAC00"
     button: 
