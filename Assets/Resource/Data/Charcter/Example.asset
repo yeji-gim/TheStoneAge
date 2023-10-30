@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - speaker: 
-    message: 'hI ONE
+    message: 'Hi
 
 '
     button: 
   - speaker: 
-    message: hI TWO
+    message: i give you a quest
     button: 
   - speaker: mom
-    message: hI TWO
+    message: find tree
     button: get quest
   noncompletedialogueLines:
   - speaker: mom
