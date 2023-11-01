@@ -6,6 +6,10 @@ TagManager:
   tags:
   - CinemachineTarget
   - Tree
+  - momquest
+  - mom
+  - HandSlot
+  - Stone
   layers:
   - Default
   - TransparentFX
