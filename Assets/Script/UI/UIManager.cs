@@ -106,7 +106,10 @@ public class UIManager : MonoBehaviour
         }
 
     }
-
+    public bool IsInventoryPanelActive()
+    {
+        return InventoryPanel.activeSelf;
+    }
     public void exitforInfoPrompt()
     {
         Infoprompt.SetActive(!gameObject.activeSelf);
