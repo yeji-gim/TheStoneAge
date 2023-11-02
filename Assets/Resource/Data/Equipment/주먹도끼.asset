@@ -10,9 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 943f7912790dede4fa81cfab47a32493, type: 3}
-  m_Name: Axe
+  m_Name: "\uC8FC\uBA39\uB3C4\uB07C"
   m_EditorClassIdentifier: 
-  description: I'm Axe
+  description: "\uC8FC\uBA39\uB3C4\uB07C\uB294 \uAD6C\uC11D\uAE30\uC2DC\uB300\uC5D0
+    \uC0AC\uC6A9\uB41C \uB300\uD45C\uC801\uC778 \uB3C4\uAD6C\uC774\uB2E4. \uD55C
+    \uC190\uC5D0 \uC950\uACE0 \uC4F8 \uC218 \uC788\uC5B4\uC11C \uC9D0\uC2B9\uC744
+    \uC0AC\uB0E5\uD558\uACE0 \uAC00\uC8FD\uC744 \uBC97\uAE30\uBA70, \uB545\uC744
+    \uD30C\uC11C \uD480\uC774\uB098 \uB098\uBB34\uB97C \uCE90\uB294 \uB4F1 \uB2E4\uC591\uD55C
+    \uC6A9\uB3C4\uB85C \uC0AC\uC6A9\uB418\uC5C8\uB2E4."
   thumbnail: {fileID: -1154354492, guid: c62b82c7b48e41240bdd386f1d2d47d1, type: 3}
   gameModel: {fileID: 100000, guid: c296a49fdeeae7e4ba6a6158a07b7e09, type: 3}
   quantity: 1
