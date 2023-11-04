@@ -63,7 +63,6 @@
     <Compile Include="Assets/Script/UI/Inventory/ItemData.cs" />
     <Compile Include="Assets/Script/UI/Quest/QuestData.cs" />
     <Compile Include="Assets/Resource/Animal pack deluxe/Scripts/MoveCamera.cs" />
-    <Compile Include="Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs" />
     <Compile Include="Assets/Resource/StarterAssets/ThirdPersonController/Scripts/BasicRigidBodyPush.cs" />
     <Compile Include="Assets/Script/UI/Inventory/InteractableObject.cs" />
     <Compile Include="Assets/Script/UI/Inventory/InventoryManager.cs" />
@@ -84,6 +83,7 @@
     <Compile Include="Assets/Script/UI/Inventory/ItemSlotData.cs" />
     <Compile Include="Assets/Script/UI/Inventory/HandInventorySlot.cs" />
     <Compile Include="Assets/Script/UI/UIManager.cs" />
+    <Compile Include="Assets/Resource/LowPolyWater_Pack/Scripts/LowPolyWater.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/DialogueLine.cs" />
     <Compile Include="Assets/Resource/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
   </ItemGroup>
@@ -97,11 +97,11 @@
     <None Include="Assets/Resource/EXPLORER - Stone Age/Shaders/Stylized_Water.shader" />
     <None Include="Assets/Resource/caveman/shaders/2-sided Alpha Cutout.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets/LowPolyWater_Pack/Shaders/WaterShaded.shader" />
+    <None Include="Assets/Resource/LowPolyWater_Pack/Shaders/WaterShaded.shader" />
     <None Include="Assets/Resource/caveman/shaders/diffusespecularnormal.shader" />
     <None Include="Assets/Resource/EXPLORER - Stone Age/Documentation/EXPLORER - Stone Age.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
-    <None Include="Assets/LowPolyWater_Pack/LowPoly Island/Credits.txt" />
+    <None Include="Assets/Resource/LowPolyWater_Pack/LowPoly Island/Credits.txt" />
     <None Include="Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF.shader" />

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water
-  m_Shader: {fileID: 4800000, guid: 16516895e8a79bf49a6562c3c3b84cbf, type: 3}
+  m_Shader: {fileID: 4800000, guid: 145d930278c98174d91f6f553bce3b58, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -119,8 +119,8 @@ Material:
     - _BumpDirection: {r: 1, g: 1, b: -1, a: 1}
     - _BumpTiling: {r: 1, g: 1, b: -2, a: 3}
     - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _DepthGradientDeep: {r: 0.086, g: 0.407, b: 1, a: 0.5882353}
-    - _DepthGradientShallow: {r: 0.08018869, g: 0.54866195, b: 1, a: 0.31764707}
+    - _DepthGradientDeep: {r: 1, g: 0.995283, b: 0.995283, a: 1}
+    - _DepthGradientShallow: {r: 0.16687435, g: 0.226455, b: 0.2830189, a: 0.31764707}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Foam: {r: 0.1, g: 0.375, b: 0, a: 0}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 0}
