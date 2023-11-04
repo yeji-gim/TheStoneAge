@@ -152,6 +152,14 @@ MonoBehaviour:
   button: {fileID: 0}
   button_name: {fileID: 0}
   dialoguepanel: {fileID: 0}
+  settingPanel: {fileID: 0}
+  creditPanel: {fileID: 0}
+  makingPanel: {fileID: 0}
+  handAxePanel: {fileID: 0}
+  stoneAxePanel: {fileID: 0}
+  projectilePanel: {fileID: 0}
+  spearPanel: {fileID: 0}
+  uiCanvas: {fileID: 7804956170099576259, guid: d18c5f611aeb22f41aff23613088b2b9, type: 3}
 --- !u!114 &1228146326683075227
 MonoBehaviour:
   m_ObjectHideFlags: 0

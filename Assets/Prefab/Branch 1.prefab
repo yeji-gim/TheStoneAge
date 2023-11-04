@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6485626015695934254}
   serializedVersion: 2
   m_LocalRotation: {x: 0.59150636, y: 0.15849367, z: 0.15849365, w: 0.7745191}
-  m_LocalPosition: {x: 185, y: 14, z: 24}
+  m_LocalPosition: {x: 200, y: 17, z: -82}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -146,5 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614b4f9852d8ce04091d6594fbc896c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiCanvasPrefab: {fileID: 7804956170099576259, guid: d18c5f611aeb22f41aff23613088b2b9, type: 3}
+  uiCanvasPrefab: {fileID: 1973675446140312162, guid: db97564767681a34d910bed893dadbd7, type: 3}
   uiCanvas: {fileID: 0}

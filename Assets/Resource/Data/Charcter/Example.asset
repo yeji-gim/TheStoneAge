@@ -19,7 +19,7 @@ MonoBehaviour:
   - speaker: 
     message: "\uB108\uC5D0\uAC8C \uC784\uBB34\uB97C \uD558\uB098 \uC904\uAC8C"
     button: 
-  - speaker: mom
+  - speaker: sister
     message: "\uAC00\uC11C \uB098\uBB47\uAC00\uC9C0\uB791 \uB3CC \uAC00\uC838\uC640"
     button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
   noncompletedialogueLines:
