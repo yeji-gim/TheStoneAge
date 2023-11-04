@@ -123,6 +123,12 @@ public class UIManager : MonoBehaviour
     {
         return InventoryPanel.activeSelf;
     }
+
+    public bool IsDialoguePromptActive()
+    {
+        return dialoguepanel.activeSelf;
+    }
+
     public void exitforInfoPrompt()
     {
         Infoprompt.SetActive(!gameObject.activeSelf);
