@@ -1,0 +1,558 @@
+Unity Editor version:    2022.3.8f1 (b5eafc012955)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.6.1 (Build 22G313)
+Darwin version:          22.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/sein/Desktop/Modeling/Unity/TheStoneAge
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+52941
+Successfully changed project path to: /Users/sein/Desktop/Modeling/Unity/TheStoneAge
+/Users/sein/Desktop/Modeling/Unity/TheStoneAge
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [140704303580928] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 3976956353 [EditorId] 3976956353 [Version] 1048832 [Id] OSXEditor(0,bagsein-ui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [140704303580928] Host "[IP] 192.168.0.8 [Port] 0 [Flags] 2 [Guid] 3976956353 [EditorId] 3976956353 [Version] 1048832 [Id] OSXEditor(0,bagsein-ui-MacBookPro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 177.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.8f1 (b5eafc012955)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/sein/Desktop/Modeling/Unity/TheStoneAge/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics 650 (low power)
+Metal devices available: 1
+0: Intel(R) Iris(TM) Plus Graphics 650 (low power)
+Using device Intel(R) Iris(TM) Plus Graphics 650 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics 650
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56005
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/VisionOSPlayer/UnityEditor.VisionOS.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Registered in 0.425607 seconds.
+- Loaded All Assemblies, in  4.929 seconds
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for AppleTV target not found
+objc[84005]: Class XcodeScriptingDelegate is implemented in both /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/AppleTVSupport/x64/UnityEditor.iOS.Native.dylib (0x15c42c118) and /Applications/Unity/Hub/Editor/2022.3.8f1/PlaybackEngines/VisionOSPlayer/x64/UnityEditor.VisionOS.Native.dylib (0x15c454118). One of the two will be used. Which one is undefined.
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+Native extension for VisionOS target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 333 ms
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.092 seconds
+Domain Reload Profiling: 10015ms
+	BeginReloadAssembly (1114ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (257ms)
+	RebuildNativeTypeToScriptingClass (59ms)
+	initialDomainReloadingComplete (1064ms)
+	LoadAllAssembliesAndSetupDomain (2428ms)
+		LoadAssemblies (1253ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2282ms)
+			TypeCache.Refresh (2272ms)
+				TypeCache.ScanAssembly (2129ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (5094ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4423ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3564ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (470ms)
+			ProcessInitializeOnLoadMethodAttributes (297ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (51ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in 17.675 seconds
+Refreshing native plugins compatible for Editor in 15.61 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for VisionOS target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 30.327 seconds
+Domain Reload Profiling: 49113ms
+	BeginReloadAssembly (2430ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (20ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (111ms)
+	RebuildCommonClasses (435ms)
+	RebuildNativeTypeToScriptingClass (175ms)
+	initialDomainReloadingComplete (709ms)
+	LoadAllAssembliesAndSetupDomain (15033ms)
+		LoadAssemblies (10658ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (5406ms)
+			TypeCache.Refresh (3483ms)
+				TypeCache.ScanAssembly (2183ms)
+			ScanForSourceGeneratedMonoScriptInfo (816ms)
+			ResolveRequiredComponents (1061ms)
+	FinalizeReload (30330ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (18249ms)
+			LogAssemblyErrors (1ms)
+			InitializePlatformSupportModulesInManaged (1177ms)
+			SetLoadedEditorAssemblies (42ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2951ms)
+			ProcessInitializeOnLoadAttributes (13187ms)
+			ProcessInitializeOnLoadMethodAttributes (876ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (7ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.8f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.92 seconds
+Refreshing native plugins compatible for Editor in 40.88 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5730 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 113 unused Assets / (2.9 MB). Loaded Objects now: 6189.
+Memory consumption went from 252.4 MB to 249.5 MB.
+Total: 219.941303 ms (FindLiveObjects: 43.693258 ms CreateObjectMapping: 2.246278 ms MarkObjects: 163.103716 ms  DeleteObjects: 10.895743 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: c0a915f3563f6cecf0a7dfcf1e80bfbc -> d6df9cc54704cc3b1b1fc4b8927e69bc
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: e3a61cc4c2af8be8c27054c54e098179 -> 5ec8d30f74b3aa9067df162597a7f224
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  6.211 seconds
+Refreshing native plugins compatible for Editor in 28.87 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for VisionOS target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 23.430 seconds
+Domain Reload Profiling: 29641ms
+	BeginReloadAssembly (2429ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (28ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (393ms)
+	RebuildCommonClasses (248ms)
+	RebuildNativeTypeToScriptingClass (37ms)
+	initialDomainReloadingComplete (153ms)
+	LoadAllAssembliesAndSetupDomain (3342ms)
+		LoadAssemblies (5114ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (107ms)
+			TypeCache.Refresh (36ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (54ms)
+	FinalizeReload (23431ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (8922ms)
+			LogAssemblyErrors (6ms)
+			InitializePlatformSupportModulesInManaged (1701ms)
+			SetLoadedEditorAssemblies (34ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2629ms)
+			ProcessInitializeOnLoadAttributes (4331ms)
+			ProcessInitializeOnLoadMethodAttributes (209ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (3ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
+Refreshing native plugins compatible for Editor in 14.57 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5636 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 70 unused Assets / (2.9 MB). Loaded Objects now: 6204.
+Memory consumption went from 237.3 MB to 234.5 MB.
+Total: 91.757117 ms (FindLiveObjects: 2.320959 ms CreateObjectMapping: 1.276019 ms MarkObjects: 59.834098 ms  DeleteObjects: 28.322783 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/GeneratePlane.cs: 54b0667be7f5169250048917380e57c8 -> 02734e476bfabc22a776af7c0e2dd2b3
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/LowPolyWater.cs: 1f89e58618ecefb63d14d008006b5b61 -> ffc71ec08f6917cf4aa5eaa4b3ada4e7
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 236365.899370 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Mountain 1.prefab
+  artifactKey: Guid(3dd7d59de8a84b94d842f97035616245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Mountain 1.prefab using Guid(3dd7d59de8a84b94d842f97035616245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '855c84f01761827da142b77b865ceaf2') in 0.711745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Mountain 2.prefab
+  artifactKey: Guid(8528a0df0a1c66c4cbba840cdf73c3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Mountain 2.prefab using Guid(8528a0df0a1c66c4cbba840cdf73c3c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eb7267a9918aa537839df403ed67b76') in 0.092474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.002866 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Field.prefab
+  artifactKey: Guid(2910a5ffd7e6fa64bbb7b4a2e255603e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Field.prefab using Guid(2910a5ffd7e6fa64bbb7b4a2e255603e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb1bd80d214f21d61b9ac31c68247c7') in 0.370770 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 65
+========================================================================
+Received Import Request.
+  Time since last request: 0.005415 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains
+  artifactKey: Guid(2357f786fc75e6044a5fe655a089898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains using Guid(2357f786fc75e6044a5fe655a089898d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bef5a9b6d3b38dc84cc8171592933a5') in 0.003227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Mountain 3.prefab
+  artifactKey: Guid(b8e9d2cf1888d9143a2ea575bae4cc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Terrains/Mountain 3.prefab using Guid(b8e9d2cf1888d9143a2ea575bae4cc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a373194f45670ece5727276a424cd44') in 0.066732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP
+  artifactKey: Guid(42f2984dff8024046b250ac5f74a45de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP using Guid(42f2984dff8024046b250ac5f74a45de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a10e0908ee4349d0db81d69ea5486e30') in 0.000799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.229809 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 2.prefab
+  artifactKey: Guid(f1171190d8969d445b0d36f4130e0ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 2.prefab using Guid(f1171190d8969d445b0d36f4130e0ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16570a75cb8af3423552050ef3b0868d') in 0.095781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 3.prefab
+  artifactKey: Guid(4e9dc74c4334b9a458f53f995ccb9772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 3.prefab using Guid(4e9dc74c4334b9a458f53f995ccb9772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f167e6de3b889c773180d36c9fe7c381') in 0.037816 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 9.prefab
+  artifactKey: Guid(f53964fc15f727846999dc6a91abb2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 9.prefab using Guid(f53964fc15f727846999dc6a91abb2be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ec192ae6765c04cb078a18832cdb351') in 0.024774 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000526 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock Pile 2.prefab
+  artifactKey: Guid(f7315e96585d195459d4d5634481e773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock Pile 2.prefab using Guid(f7315e96585d195459d4d5634481e773) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6f7277335715819ad2577f2205a672') in 0.064625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.002091 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 10.prefab
+  artifactKey: Guid(2e0ae76798a79ef4990fbd097827b42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock 10.prefab using Guid(2e0ae76798a79ef4990fbd097827b42e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1300471428b97403ec7348935d9a1152') in 0.117474 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.003428 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock Arc.prefab
+  artifactKey: Guid(4e9b719611de2f44cb2b84b292279421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock Arc.prefab using Guid(4e9b719611de2f44cb2b84b292279421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a8f34883279b6a1c99dca63d1deb872') in 0.019923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.002074 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock Pile 3.prefab
+  artifactKey: Guid(d890e6bbaa2beb548b26a869f51f693f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Rocks/Rock Pile 3.prefab using Guid(d890e6bbaa2beb548b26a869f51f693f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879d3568f08eec39b16138ff5364f51d') in 0.049354 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 8.341139 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Bush 2.prefab
+  artifactKey: Guid(de3083097e7467e428a2dc805624b4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Bush 2.prefab using Guid(de3083097e7467e428a2dc805624b4b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef3a186f21bb898e96b3e43310ece645') in 0.119805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.008549 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Grass 1.prefab
+  artifactKey: Guid(c87c42a049fe9264587bca3da74325ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Grass 1.prefab using Guid(c87c42a049fe9264587bca3da74325ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94c0bea225d93d4144823c2398883fea') in 0.061760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.006216 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Bush 3.prefab
+  artifactKey: Guid(b1819af2bf9a9d14a935d8e7fd7b7cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Bush 3.prefab using Guid(b1819af2bf9a9d14a935d8e7fd7b7cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72feddf3ade13216b5e2d56406000e7') in 0.068159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Grass 2.prefab
+  artifactKey: Guid(6a90fc4f23741bf47b02318b3a4a7aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Other/Grass 2.prefab using Guid(6a90fc4f23741bf47b02318b3a4a7aa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc334a1487ed884d3724f15d7d0ddea') in 0.094107 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 8.156409 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 2.prefab
+  artifactKey: Guid(920dbba2cc1612c45922dde68c3ef673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 2.prefab using Guid(920dbba2cc1612c45922dde68c3ef673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b03ee4ac309c518b23ceb96f43b03e') in 0.041586 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000530 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Tree 2.prefab
+  artifactKey: Guid(855ad926227c2c646847b5a3be7482cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Tree 2.prefab using Guid(855ad926227c2c646847b5a3be7482cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724de42de21a9eea91313ce7489edd9b') in 0.020276 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000798 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Tree 3.prefab
+  artifactKey: Guid(9fe8f4ee2f072ef48b225626a9556d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Tree 3.prefab using Guid(9fe8f4ee2f072ef48b225626a9556d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f887fb6569a01745f6d9f38a5c06a6') in 0.044436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 3.prefab
+  artifactKey: Guid(a934d038c1a20354a856529f1f7ec805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 3.prefab using Guid(a934d038c1a20354a856529f1f7ec805) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '075f00aee42548c6391b185c2b310f57') in 0.028313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Tree 5.prefab
+  artifactKey: Guid(d6bd4e2c96dcf5648926c8d3b4840170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Tree 5.prefab using Guid(d6bd4e2c96dcf5648926c8d3b4840170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4f667f50100c2c39814f64053c852d') in 0.041623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000819 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 5.prefab
+  artifactKey: Guid(0219044f309a5d94281b70ce19167893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 5.prefab using Guid(0219044f309a5d94281b70ce19167893) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac382c4c241ca9be9ecc5cc75452eaa') in 0.028948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 6.prefab
+  artifactKey: Guid(c86c24016cb6fbc499527b258d406f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/URP/Trees/Pine 6.prefab using Guid(c86c24016cb6fbc499527b258d406f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8974f77f971c0b5e78902bc3cdedd8e8') in 0.033211 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 9.081625 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 2.prefab
+  artifactKey: Guid(8679deda0f8f2fe49a00281046f668bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 2.prefab using Guid(8679deda0f8f2fe49a00281046f668bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e05f7434892ba5bb8927acadc793ec28') in 0.094203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.001638 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 10.prefab
+  artifactKey: Guid(e37afa6393d70ae4babec5feb4bd8f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 10.prefab using Guid(e37afa6393d70ae4babec5feb4bd8f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e40d5c0a8f2ab66dbea4a805a67b28') in 0.042682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.010634 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 5.prefab
+  artifactKey: Guid(69b4467e5f101614bb3bdeba2d78e579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 5.prefab using Guid(69b4467e5f101614bb3bdeba2d78e579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edba612a17cb927dadb2f2f20d8715b') in 0.026777 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.007953 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 7.prefab
+  artifactKey: Guid(f971cd7b222bb714d8d9b4ebc0474293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 7.prefab using Guid(f971cd7b222bb714d8d9b4ebc0474293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cd33b55e2db01a1c3034a9210f0e95') in 0.024010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.001911 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 9.prefab
+  artifactKey: Guid(2d19a106360d15c4981f0b6ca9b83db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 9.prefab using Guid(2d19a106360d15c4981f0b6ca9b83db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '764e85fcbfcf8cb4514602949925f175') in 0.024942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 3.prefab
+  artifactKey: Guid(2ce58a54f67f26643a75225c439d9bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 3.prefab using Guid(2ce58a54f67f26643a75225c439d9bb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd98c5caaf60adb7b202b9ca10f83ba3') in 0.104254 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 8.prefab
+  artifactKey: Guid(fb578c961e8c1494fa68664f73879319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 8.prefab using Guid(fb578c961e8c1494fa68664f73879319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b79eeaefd1c1b07bf4222f022b3052') in 0.019358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000654 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 4.prefab
+  artifactKey: Guid(b1cb3e57280574a4e99330571349cf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 4.prefab using Guid(b1cb3e57280574a4e99330571349cf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81e6755e0ca8acc742fdb8f1a220e75') in 0.031507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 19
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 12.prefab
+  artifactKey: Guid(54254cdce3a8e4143b2de7c5c2beca5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource/Low Poly Environment Starter Kit/Prefabs/HDRP/Rocks/Rock 12.prefab using Guid(54254cdce3a8e4143b2de7c5c2beca5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ef76a544336c7e62ce38f3f1c4414d8') in 0.032291 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+TcpMessagingSession - receive error
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

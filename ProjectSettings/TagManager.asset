@@ -10,6 +10,7 @@ TagManager:
   - mom
   - HandSlot
   - Stone
+  - Item
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Post Processing
   - 
   - 
   - 
