@@ -71,6 +71,7 @@
     <Compile Include="Assets\Script\UI\Inventory\InventoryManager.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Script\UI\craftManager.cs" />
+    <Compile Include="Assets\Script\UI\Dialogue\momDialogue.cs" />
     <Compile Include="Assets\Resource\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\CharacterData.cs" />
     <Compile Include="Assets\Script\Farming\ButtonClick.cs" />
@@ -78,10 +79,10 @@
     <Compile Include="Assets\Script\UI\npcController.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\Resource\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
-    <Compile Include="Assets\Script\UI\momDialogue.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets\Script\UI\Quest\QuestManager.cs" />
     <Compile Include="Assets\Script\UI\Setting\VolumeSetting.cs" />
+    <Compile Include="Assets\Script\UI\Dialogue\sisterDialogue.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
     <Compile Include="Assets\Resource\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\Script\Farming\TreeClick.cs" />

@@ -123,9 +123,16 @@ public class DialogueManager : MonoBehaviour
             }
             if (speaker == "dad")
             {
-                GameObject dadObject = GameObject.FindGameObjectWithTag("dad");
+                GameObject dadObject = GameObject.FindGameObjectWithTag("dadquest");
                 QuestManager dadquest = dadObject.GetComponent<QuestManager>();
                 dadquest.getQuest();
+            }
+            if(speaker == "sister")
+            {
+                GameObject momObject = GameObject.FindGameObjectWithTag("sisterquest");
+                QuestManager momquest = momObject.GetComponent<QuestManager>();
+                momquest.getQuest();
+                UIManager.Instance.ToggleDialoguePanel();
             }
         }
 

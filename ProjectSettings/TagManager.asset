@@ -11,6 +11,8 @@ TagManager:
   - HandSlot
   - Stone
   - Item
+  - sister
+  - sisterquest
   layers:
   - Default
   - TransparentFX
