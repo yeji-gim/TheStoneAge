@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
+  - Tree
+  - momquest
+  - mom
+  - HandSlot
+  - Stone
+  - Item
   layers:
   - Default
   - TransparentFX

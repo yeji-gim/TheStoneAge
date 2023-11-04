@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -43,9 +44,19 @@ public class UIManager : MonoBehaviour
     [Header("Settings")]
     public GameObject settingPanel;
     public GameObject creditPanel;
+    [Header("Making")]
+    public GameObject makingPanel;
+    public GameObject handAxePanel;
+    public GameObject stoneAxePanel;
+    public GameObject projectilePanel;
+    public GameObject spearPanel;
+
+    public Canvas uiCanvas; // 활성화할 UI 알림창 캔버스
+
     private void Start()
     {
         RenderInventory();
+        uiCanvas.enabled = false;
     }
 
     public void TriggerDialogePrompt(string name1, System.Action first)
@@ -53,6 +64,8 @@ public class UIManager : MonoBehaviour
         DialoguePrompt.gameObject.SetActive(true);
         DialoguePrompt.Createbutton(name1,  first);
     }
+    
+
     public void RenderInventory()
     {
         ItemSlotData[] inventoryToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
@@ -106,7 +119,10 @@ public class UIManager : MonoBehaviour
         }
 
     }
-
+    public bool IsInventoryPanelActive()
+    {
+        return InventoryPanel.activeSelf;
+    }
     public void exitforInfoPrompt()
     {
         Infoprompt.SetActive(!gameObject.activeSelf);
@@ -128,6 +144,10 @@ public class UIManager : MonoBehaviour
     {
         creditPanel.SetActive(!creditPanel.activeSelf);
     }
+    public void TogglemakingPanel()
+    {
+        makingPanel.SetActive(!makingPanel.activeSelf);
+    }
     public void fornextButton()
     {
         Debug.Log("Click");
@@ -136,4 +156,25 @@ public class UIManager : MonoBehaviour
             DialogueManager.Instance.UpdateDialogue();
         }
     }
+
+    public void TogglemakeHandAxeButton()
+    {
+        handAxePanel.SetActive(!handAxePanel.activeSelf);
+    }
+
+    public void TogglemakestoneAxePanelButton()
+    {
+        stoneAxePanel.SetActive(!stoneAxePanel.activeSelf);
+    }
+
+    public void TogglemakeprojectilePanelButton()
+    {
+        projectilePanel.SetActive(!projectilePanel.activeSelf);
+    }
+
+    public void TogglemakespearPanelButton()
+    {
+        spearPanel.SetActive(!spearPanel.activeSelf);
+    }
+
 }

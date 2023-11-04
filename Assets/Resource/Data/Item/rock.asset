@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
-  m_Name: DragonFly
+  m_Name: rock
   m_EditorClassIdentifier: 
-  description: I'M Tree
-  thumbnail: {fileID: 1355055868, guid: 8055729a53630d74ab9b7d9896661983, type: 3}
-  gameModel: {fileID: 109966, guid: 71c97eab56ad22442ab7367befaf0340, type: 3}
-  quantity: 5
+  description: I'm rock
+  thumbnail: {fileID: 21300002, guid: fd0b7189c26761e4c833b6c9734d6cd4, type: 3}
+  gameModel: {fileID: 1271078174915440, guid: 6d329c5b73b3f4683b351170690764bb, type: 3}
+  quantity: 1

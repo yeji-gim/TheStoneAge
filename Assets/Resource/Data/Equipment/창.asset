@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
-  m_Name: Item
+  m_Script: {fileID: 11500000, guid: 943f7912790dede4fa81cfab47a32493, type: 3}
+  m_Name: "\uCC3D"
   m_EditorClassIdentifier: 
-  description: I'm Item
-  thumbnail: {fileID: 21300042, guid: fd0b7189c26761e4c833b6c9734d6cd4, type: 3}
-  gameModel: {fileID: 100000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
+  description: 
+  thumbnail: {fileID: 417490562, guid: c62b82c7b48e41240bdd386f1d2d47d1, type: 3}
+  gameModel: {fileID: 100000, guid: 7d7726ba87534474d8701791694a3c19, type: 3}
   quantity: 1
+  tooltype: 2
