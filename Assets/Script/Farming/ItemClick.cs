@@ -5,6 +5,7 @@ public class ItemClick : MonoBehaviour
 {
     public Canvas uiCanvasPrefab; // UI 캔버스 프리팹
     public Canvas uiCanvas;
+    public string itemName; // 충돌한 오브젝트의 이름
 
     void Start()
     {
@@ -29,6 +30,8 @@ public class ItemClick : MonoBehaviour
             {
                 // 아이템을 클릭하면 알림창 UI 캔버스 활성화
                 uiCanvas.enabled = true;
+                // 충돌한 오브젝트의 이름
+                itemName = hit.collider.gameObject.name;
             }
         }
     }

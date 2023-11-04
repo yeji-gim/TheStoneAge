@@ -18,7 +18,7 @@ public class RockClick : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.CompareTag("Stone"))
+                if (hit.collider.CompareTag("Rock"))
                 {
                     // 클릭 시 중력 상태 토글 및 돌 조각 생성
                     CreateRock(hit.collider.gameObject);
@@ -36,7 +36,7 @@ public class RockClick : MonoBehaviour
         }
 
         // 돌 조각 프리팹을 생성
-        currentRock = Instantiate(rockPrefab, tree.transform.position - new Vector3(2, -3, 0), Quaternion.identity);
+        currentRock = Instantiate(rockPrefab, tree.transform.position - new Vector3(2, -4, 0), Quaternion.identity);
         currentRock.SetActive(true);
 
         // 회전값을 설정하여 돌 조각이 특정 각도로 회전되도록 함
