@@ -32,4 +32,9 @@ public class ItemClick : MonoBehaviour
             }
         }
     }
+
+    public void DestroyItem(GameObject item)
+    {
+        Destroy(item.gameObject);
+    }
 }

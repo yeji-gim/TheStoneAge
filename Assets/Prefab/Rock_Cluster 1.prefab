@@ -146,5 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614b4f9852d8ce04091d6594fbc896c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiCanvasPrefab: {fileID: 7804956170099576259, guid: d18c5f611aeb22f41aff23613088b2b9, type: 3}
+  uiCanvasPrefab: {fileID: 1973675446140312162, guid: db97564767681a34d910bed893dadbd7, type: 3}
   uiCanvas: {fileID: 0}
