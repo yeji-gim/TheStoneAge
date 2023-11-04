@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -50,9 +51,12 @@ public class UIManager : MonoBehaviour
     public GameObject projectilePanel;
     public GameObject spearPanel;
 
+    public Canvas uiCanvas; // 활성화할 UI 알림창 캔버스
+
     private void Start()
     {
         RenderInventory();
+        uiCanvas.enabled = false;
     }
 
     public void TriggerDialogePrompt(string name1, System.Action first)

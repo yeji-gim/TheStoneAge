@@ -10,6 +10,7 @@ TagManager:
   - mom
   - HandSlot
   - Stone
+  - Item
   layers:
   - Default
   - TransparentFX
