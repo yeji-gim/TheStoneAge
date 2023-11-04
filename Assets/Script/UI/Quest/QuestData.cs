@@ -42,7 +42,7 @@ public class QuestData : ScriptableObject
                     }
                 }
             }
-            Debug.Log(isCompleted.ToString());
+            //Debug.Log(isCompleted.ToString());
         }
     }
 }

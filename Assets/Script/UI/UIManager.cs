@@ -43,6 +43,13 @@ public class UIManager : MonoBehaviour
     [Header("Settings")]
     public GameObject settingPanel;
     public GameObject creditPanel;
+    [Header("Making")]
+    public GameObject makingPanel;
+    public GameObject handAxePanel;
+    public GameObject stoneAxePanel;
+    public GameObject projectilePanel;
+    public GameObject spearPanel;
+
     private void Start()
     {
         RenderInventory();
@@ -53,6 +60,8 @@ public class UIManager : MonoBehaviour
         DialoguePrompt.gameObject.SetActive(true);
         DialoguePrompt.Createbutton(name1,  first);
     }
+    
+
     public void RenderInventory()
     {
         ItemSlotData[] inventoryToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
@@ -131,6 +140,10 @@ public class UIManager : MonoBehaviour
     {
         creditPanel.SetActive(!creditPanel.activeSelf);
     }
+    public void TogglemakingPanel()
+    {
+        makingPanel.SetActive(!makingPanel.activeSelf);
+    }
     public void fornextButton()
     {
         Debug.Log("Click");
@@ -139,4 +152,25 @@ public class UIManager : MonoBehaviour
             DialogueManager.Instance.UpdateDialogue();
         }
     }
+
+    public void TogglemakeHandAxeButton()
+    {
+        handAxePanel.SetActive(!handAxePanel.activeSelf);
+    }
+
+    public void TogglemakestoneAxePanelButton()
+    {
+        stoneAxePanel.SetActive(!stoneAxePanel.activeSelf);
+    }
+
+    public void TogglemakeprojectilePanelButton()
+    {
+        projectilePanel.SetActive(!projectilePanel.activeSelf);
+    }
+
+    public void TogglemakespearPanelButton()
+    {
+        spearPanel.SetActive(!spearPanel.activeSelf);
+    }
+
 }
