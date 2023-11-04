@@ -2750,6 +2750,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 979718011}
+    - target: {fileID: 7623595213657239129, guid: 0607b69a0a2d30e4c9b28659964940d0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -791.66406
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623595213657239129, guid: 0607b69a0a2d30e4c9b28659964940d0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.53125
+      objectReference: {fileID: 0}
     - target: {fileID: 7855472973068730225, guid: 0607b69a0a2d30e4c9b28659964940d0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2770,6 +2778,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 979718011}
+    - target: {fileID: 8517946195295714330, guid: 0607b69a0a2d30e4c9b28659964940d0, type: 3}
+      propertyPath: m_ScaleFactor
+      value: 1.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3331189699355767173, guid: 0607b69a0a2d30e4c9b28659964940d0, type: 3}
