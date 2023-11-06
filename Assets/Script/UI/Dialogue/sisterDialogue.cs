@@ -43,10 +43,6 @@ public class sisterDialogue : MonoBehaviour
             {
                 DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
             }
-            else if (questManager.getisQuesting() == true && questManager.getCurrentIndex() == 2)
-            {
-                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.LastQuestdialogueLines);
-            }
             else if (questManager.getisQuesting() == true && questManager.getisCompleting() == true)
             {
                 DialogueManager.Instance.StartDialogue(npccontroller.charcterData.completedialogueLines);

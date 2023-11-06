@@ -107,12 +107,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void OnFirstButtonClicked()
     {
-        if (button_name.text.Contains("making"))
-        {
-            SceneManager.LoadScene(button_name.text);
-
-        }
-        else if (button_name.text.Contains("Äù½ºÆ®"))
+        if (button_name.text.Contains("Äù½ºÆ®"))
         {
             if (speaker == "mom")
             {
@@ -129,10 +124,10 @@ public class DialogueManager : MonoBehaviour
             }
             if(speaker == "sister")
             {
-                GameObject momObject = GameObject.FindGameObjectWithTag("sisterquest");
-                QuestManager momquest = momObject.GetComponent<QuestManager>();
-                momquest.getQuest();
-                UIManager.Instance.ToggleDialoguePanel();
+                GameObject sister = GameObject.FindGameObjectWithTag("sisterquest");
+                QuestManager sisterquest = sister.GetComponent<QuestManager>();
+                sisterquest.getQuest();
+                UIManager.Instance.dialoguepanel.SetActive(false);
             }
         }
 

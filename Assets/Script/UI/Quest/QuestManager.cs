@@ -8,8 +8,6 @@ public class QuestManager : MonoBehaviour
     private bool iscomplete;
     private bool isquesting;
     private bool getquest;
-    private bool isFirst = false;
-    private bool isSecond = false;
     public QuestData[] quest;
     ItemSlotData[] inventoryItemSlots;
     ItemSlotData[] inventoryEquipmentSlots;
@@ -31,24 +29,15 @@ public class QuestManager : MonoBehaviour
         if (getquest)
         {
             quest[currentQuestIndex].CheckCompletion(inventoryItemSlots);
-            if (quest[2].isCompleted && isFirst == true && isSecond && true)
+            if (quest[1].isCompleted)
             {
                 iscomplete = true;
                 isquesting = true;
 
             }
-            else if (quest[1].isCompleted && isFirst == true && isSecond == false)
-            {
-                Debug.Log($"isCompleted 2¿‘¥œ¥Ÿ");
-                isquesting = true;
-                isSecond = true;
-                currentQuestIndex = 2;
-
-            }
-            else if (quest[0].isCompleted && isFirst == false)
+            else if (quest[0].isCompleted)
             {
                 isquesting = true;
-                isFirst = true;
                 currentQuestIndex = 1;
                
             }         
