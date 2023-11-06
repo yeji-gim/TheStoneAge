@@ -7,6 +7,8 @@ TagManager:
   - sisterquest
   - sister
   - HandSlot
+  - mom
+  - momquest
   layers:
   - Default
   - TransparentFX

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class sisterDialogue : MonoBehaviour
 {
+    public GameObject camera;
     public GameObject dialoguePanel;
     npcController npccontroller;
     Ray ray;
@@ -21,7 +22,18 @@ public class sisterDialogue : MonoBehaviour
             {
                 dialoguePanel.gameObject.SetActive(true);
             }
-            Debug.Log("hi");
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        // 충돌한 객체의 태그가 "player"인지 확인
+        if (other.CompareTag("Player"))
+        {
+            bool isPanelActive = UIManager.Instance.IsDialoguePromptActive();
+            if (!isPanelActive)
+            {
+                dialoguePanel.gameObject.SetActive(false);
+            }
         }
     }
     void StartDialogue()
@@ -57,12 +69,7 @@ public class sisterDialogue : MonoBehaviour
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);
+        camera.gameObject.SetActive(true);
         StartDialogue();
     }
-
-    public void RejectButton()
-    {
-        dialoguePanel.gameObject.SetActive(false);
-    }
-
 }

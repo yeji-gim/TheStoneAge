@@ -10,18 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f9b7974e09a5ca49bc1d81da552b140, type: 3}
-  m_Name: New Character Data
+  m_Name: Sister
   m_EditorClassIdentifier: 
   firstquestdialogueLines:
-  - speaker: 
-    message: "\uC548\uB155 \uD018\uC2A4\uD2B8\uB97C \uC904\uAC8C"
+  - speaker: sister
+    message: "\uC548\uB155 \uC784\uBB34\uB97C \uC904\uAC8C"
     button: 
   - speaker: sister
-    message: "\uB3CC\uC744 \uAC00\uC838\uC640"
+    message: "\uB3CC\uC744\uAC00\uC11C \uAC00\uC838\uC640\n(\uB3CC\uC740 \uB3D9\uAD74
+      \uBC16\uC5D0\uC11C \uBCFC \uC218 \uC788\uC5B4)"
     button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
   secondQuestdialogueLines:
   - speaker: 
-    message: "\uB450\uBC88\uCA30 \uD018\uC2A4\uD2B8\uC774\uC57C"
+    message: "\uCCAB\uBC88\uC9F8 \uC784\uBB34\uB97C \uBA4B\uC9C0\uAC8C \uC644\uC218\uD588\uB124!"
+    button: 
+  - speaker: sister
+    message: "\uB450\uBC88\uC9F8 \uC784\uBB34\uB97C \uC904\uAC8C"
     button: 
   - speaker: sister
     message: "\uC8FC\uBA39\uB3C4\uB07C\uB97C \uB9CC\uB4E4\uC5B4\uC11C \uC5F4\uB9E4\uB97C
@@ -29,9 +33,10 @@ MonoBehaviour:
     button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
   noncompletedialogueLines:
   - speaker: 
-    message: "\uC784\uBB34\uB97C \uC644\uC218\uD558\uACE0 \uB2E4\uC2DC \uC640"
+    message: "\uC784\uBB34\uB97C \uC644\uC218\uD558\uACE0 \uB2E4\uC2DC \uC640\uC904\uB798?"
     button: 
   completedialogueLines:
   - speaker: 
-    message: "\uACE0\uC0DD\uD588\uC5B4 \uC5C4\uB9C8\uD55C\uD14C \uAC00"
+    message: "\uBA4B\uC9C0\uAC8C \uB098\uC758 \uC784\uBB34\uB4E4\uC744 \uB2E4 \uC218\uD589\uD588\uB124!\n\uB2E4\uC74C\uC73C\uB85C\uB294
+      \uC5C4\uB9C8\uD55C\uD14C \uAC00\uBD10"
     button: 
