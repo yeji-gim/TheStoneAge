@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa8b9eb42b7b24840bc0d65a385aeacb, type: 3}
-  m_Name: Sister2
+  m_Name: mom2
   m_EditorClassIdentifier: 
-  questname: "\uC5F4\uB9E4 \uCC44\uC9D1"
-  description: "\uC81C\uC791\uB300\uC5D0\uC11C \uC8FC\uBA39\uB3C4\uB07C\uB97C \uC81C\uC791\uD55C
-    \uB2E4\uC74C\n\uC8FC\uBA39\uB3C4\uB07C\uB97C \uAC00\uC9C0\uACE0 \uC5F4\uB9E4\uB97C
-    \uCC44\uC9D1\uD574\uC624\uC790"
+  questname: "\uD1A0\uB07C \uC7A1\uAE30"
+  description: "\uC81C\uC791\uB300\uC5D0\uC11C \uB3CC\uB3C4\uB07C\uB97C \uC81C\uC791\uD55C
+    \uB2E4\uC74C\n\uB3CC\uB3C4\uB07C\uB97C \uAC00\uC9C0\uACE0 \uD1A0\uB07C\uB97C
+    \uC7A1\uC544\uC624\uC790"
   requiredItems:
-  - item: {fileID: 11400000, guid: 7247d19ed3c9f534f87f2a544f393ee9, type: 2}
-    itemCount: 5
+  - item: {fileID: 11400000, guid: 13119758729cf63489c0d83a33f8001d, type: 2}
+    itemCount: 1
   isCompleted: 0

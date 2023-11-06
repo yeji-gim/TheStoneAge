@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9b7974e09a5ca49bc1d81da552b140, type: 3}
+  m_Name: Dad
+  m_EditorClassIdentifier: 
+  firstquestdialogueLines:
+  - speaker: data
+    message: "\uC774\uC81C \uACE7 \uB9C8\uBB34\uB9AC \uB420\uD14C\uB2C8 \uC870\uAE08\uB9CC
+      \uB354 \uD798\uB0B4\uBCF4\uC790"
+    button: 
+  - speaker: data
+    message: "\uD1A0\uB07C\uB97C \uC7A1\uC544\uC624\uB834"
+    button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
+  secondQuestdialogueLines:
+  - speaker: data
+    message: "\uD1A0\uB07C\uB3C4 \uC798 \uC7A1\uC544\uC624\uACE0 \uAE30\uD2B9\uD558\uAD6C\uB098"
+    button: 
+  - speaker: data
+    message: "\uC774\uC81C \uCC3D\uC744 \uC0AC\uC6A9\uD574\uBCF4\uC790\uAFB8\uB098\n\uCC3D\uC744
+      \uB9CC\uB4E0 \uB2E4\uC74C \uAC15\uAC00\uC5D0 \uAC00\uC11C \uBB3C\uACE0\uAE30\uB97C
+      \uC7A1\uC544\uC624\uAC70\uB77C"
+    button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
+  noncompletedialogueLines:
+  - speaker: 
+    message: "\uD5C8\uD5C8\uD5C8\uD5C8 \uC544\uB4E4 \uC784\uBB34 \uB05D\uB098\uACE0
+      \uC640\uC57C\uC9C0 "
+    button: 
+  completedialogueLines:
+  - speaker: 
+    message: "\uC6B0\uB9AC \uC544\uB4E4\uC774 \uC774\uB9CC\uD07C\uC774\uB098 \uD06C\uB2E4\uB2C8!\n\uC774\uC81C
+      \uD560\uC544\uBC84\uC9C0\uAED8 \uAC00\uB834"
+    button: 

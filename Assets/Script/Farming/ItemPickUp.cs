@@ -59,6 +59,7 @@ public class ItemPickup : MonoBehaviour
         pickupButton.gameObject.SetActive(false);
     }
 
+    // PickUp 버튼과 onclick 연결
     void PickupItem()
     {
         // 아이템을 주웠을 때의 동작
@@ -68,7 +69,27 @@ public class ItemPickup : MonoBehaviour
             string itemTag = nearbyItem.tag;
             Debug.Log(itemTag + " +1"); // 실제로는 이 부분을 원하는 형태로 화면에 표시하는 방법으로 변경
 
-            // 아이템을 인벤토리에 추가하는 로직을 추가해야 함
+            if (nearbyItem.CompareTag("Branch"))
+            {
+                inventoryText.text = "나뭇가지 +1";
+                inventoryText.gameObject.SetActive(true);
+                // 인벤토리에 나뭇가지 추가
+            }
+
+            else if (nearbyItem.CompareTag("RockCluster"))
+            {
+                inventoryText.text = "돌 조각 +1";
+                inventoryText.gameObject.SetActive(true);
+                // 인벤토리에 돌 조각 추가
+            }
+
+            else if (nearbyItem.CompareTag("Fruit"))
+            {
+                inventoryText.text = "과일 +1";
+                inventoryText.gameObject.SetActive(true);
+                // 인벤토리에 과일 추가
+            }
+
             int inventoryCount = int.Parse(inventoryText.text.Substring("Inventory: ".Length));
             inventoryCount++;
             inventoryText.text = "Inventory: " + inventoryCount;
