@@ -75,6 +75,12 @@ public class DialogueManager : MonoBehaviour
     {
         dialougePanel.SetActive(false);
         onDialogueEnd = null;
+        GameObject[] npcCameras = GameObject.FindGameObjectsWithTag("npcCamera");
+
+        foreach (GameObject npcCamera in npcCameras)
+        {
+            npcCamera.SetActive(false);
+        }
     }
 
     public void Talk(string message)
