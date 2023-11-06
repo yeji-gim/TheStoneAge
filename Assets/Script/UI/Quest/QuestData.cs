@@ -19,13 +19,13 @@ public class QuestData : ScriptableObject
     }
     public void CheckCompletion(ItemSlotData[] inventorySlots)
     {
+        isCompleted = true;
 
         foreach (RequiredItem requiredItem in requiredItems)
         {
-            isCompleted = false;
-
             ItemData requiredItemData = requiredItem.item;
             int requiredItemCount = requiredItem.itemCount;
+            bool itemFulfilled = false; 
             foreach (ItemSlotData inventorySlot in inventorySlots)
             {
                 if (inventorySlot == null)
@@ -37,10 +37,16 @@ public class QuestData : ScriptableObject
                     int inventoryItemCount = inventorySlot.quantity;
                     if (inventoryItemCount >= requiredItemCount)
                     {
-                        isCompleted = true;
+                        itemFulfilled = true;
                         break;
                     }
                 }
+            }
+
+            if (!itemFulfilled)
+            {
+                isCompleted = false; 
+                break; 
             }
         }
     }
