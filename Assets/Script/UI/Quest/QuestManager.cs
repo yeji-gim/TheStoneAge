@@ -4,40 +4,45 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour
 {
+    private int currentQuestIndex = 0;
     private bool iscomplete;
     private bool isquesting;
     private bool getquest;
-    public QuestData quest;
+    public QuestData[] quest;
     ItemSlotData[] inventoryItemSlots;
     private void Start()
     {
         iscomplete = false;
         isquesting = false;
         getquest = false;
-        inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
+        
     }
     private void Update()
     {
+        inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
         isComplete();
-
     }
     public void isComplete()
     {
-        quest.CheckCompletion(inventoryItemSlots);
-        if (quest.isCompleted)
+        if (getquest)
         {
-            if (getquest)
+            quest[currentQuestIndex].CheckCompletion(inventoryItemSlots);
+            if (quest[currentQuestIndex].isCompleted)
             {
+
                 isquesting = true;
                 iscomplete = true;
+                if (currentQuestIndex < quest.Length - 1)
+                {
+                    currentQuestIndex++;
+                    UIManager.Instance.DisplayQuest(quest[currentQuestIndex]);
+                }
             }
-        }
-        else
-        {
-            if (getquest)
+            else
             {
                 isquesting = true;
                 iscomplete = false;
+                
             }
         }
     }
@@ -47,7 +52,7 @@ public class QuestManager : MonoBehaviour
         
         getquest = true;
         UIManager.Instance.button.gameObject.SetActive(false);
-        UIManager.Instance.DisplayQuest(quest);
+        UIManager.Instance.DisplayQuest(quest[currentQuestIndex]);
         Debug.Log($"isquesting {getquest}");
     }
 
