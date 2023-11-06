@@ -90,6 +90,7 @@
     <Compile Include="Assets/Resource/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
     <Compile Include="Assets/Script/UI/Inventory/ItemSlotData.cs" />
     <Compile Include="Assets/Script/UI/Inventory/HandInventorySlot.cs" />
+    <Compile Include="Assets/Script/UI/GetObjectInfo.cs" />
     <Compile Include="Assets/Script/Animal/Animal.cs" />
     <Compile Include="Assets/Script/UI/UIManager.cs" />
     <Compile Include="Assets/Script/UI/SceneLoad.cs" />
