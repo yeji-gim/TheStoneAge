@@ -64,6 +64,7 @@
     <Compile Include="Assets\Script\UI\Inventory\ItemData.cs" />
     <Compile Include="Assets\Script\UI\Quest\QuestData.cs" />
     <Compile Include="Assets\Script\Farming\ItemClick.cs" />
+    <Compile Include="Assets\Script\Farming\PlantClick.cs" />
     <Compile Include="Assets\Resource\Animal pack deluxe\Scripts\MoveCamera.cs" />
     <Compile Include="Assets\Resource\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Script\UI\Inventory\InteractableObject.cs" />

@@ -5,15 +5,18 @@ TagManager:
   serializedVersion: 2
   tags:
   - CinemachineTarget
-  - Tree
   - momquest
   - mom
   - HandSlot
   - Stone
-  - Item
   - sister
   - sisterquest
   - Rock
+  - Plant
+  - Tree
+  - RockCluster
+  - Branch
+  - Fruit
   layers:
   - Default
   - TransparentFX
