@@ -17,6 +17,11 @@ TagManager:
   - Branch
   - RockCluster
   - Fruit
+  - npcCamera
+  - dad
+  - dadquest
+  - grandfather
+  - grandfatherquest
   layers:
   - Default
   - TransparentFX

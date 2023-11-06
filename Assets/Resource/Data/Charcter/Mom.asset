@@ -18,7 +18,7 @@ MonoBehaviour:
     button: 
   - speaker: mom
     message: "\uB3CC\uACFC \uB098\uBB47\uAC00\uC9C0\uB97C \uC8FC\uC6CC\uC624\uB834"
-    button: 
+    button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
   secondQuestdialogueLines:
   - speaker: mom
     message: "\uB3CC\uACFC \uB098\uBB47\uAC00\uC9C0\uB97C \uC798 \uC8FC\uC6CC\uC654\uAD6C\uB098"
@@ -26,7 +26,7 @@ MonoBehaviour:
   - speaker: mom
     message: "\uC774\uC81C \uB3CC\uB3C4\uB07C\uB97C \uD55C \uBC88 \uB9CC\uB4E4\uC5B4\uBCFC\uAE4C?\n\uB3CC\uB3C4\uB07C\uB97C
       \uB9CC\uB4E0 \uD6C4\uC5D0 \uD1A0\uB07C\uB97C \uAC00\uC838\uC624\uB834"
-    button: 
+    button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
   noncompletedialogueLines:
   - speaker: 
     message: "\uC784\uBB34\uB97C \uC644\uC218\uD558\uACE0 \uB2E4\uC2DC \uB9D0\uC744

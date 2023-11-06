@@ -42,6 +42,6 @@ MonoBehaviour:
     message: "\uC774\uC81C \uB05D\uC774\uB2C8 \uC784\uBB34\uB97C \uC798 \uB9C8\uBB34\uB9AC\uC9C0\uC5B4\uBCF4\uC790"
     button: 
   completedialogueLines:
-  - speaker: 
+  - speaker: grandfather
     message: "\uC131\uC778\uC2DD\uC744 \uC5F4\uC5B4 \uD30C\uD2F0\uB97C \uC2DC\uC791\uD558\uC790"
     button: "\uC131\uC778\uC2DD \uC2DC\uC791"

@@ -75,12 +75,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialougePanel.SetActive(false);
         onDialogueEnd = null;
-        GameObject[] npcCameras = GameObject.FindGameObjectsWithTag("npcCamera");
-
-        foreach (GameObject npcCamera in npcCameras)
-        {
-            npcCamera.SetActive(false);
-        }
+        UIManager.Instance.npcCameraOff();
     }
 
     public void Talk(string message)
@@ -121,19 +116,32 @@ public class DialogueManager : MonoBehaviour
                 QuestManager momquest = momObject.GetComponent<QuestManager>();
                 momquest.getQuest();
                 UIManager.Instance.ToggleDialoguePanel();
+                UIManager.Instance.npcCameraOff();
             }
             if (speaker == "dad")
             {
                 GameObject dadObject = GameObject.FindGameObjectWithTag("dadquest");
                 QuestManager dadquest = dadObject.GetComponent<QuestManager>();
                 dadquest.getQuest();
+                UIManager.Instance.ToggleDialoguePanel();
+                UIManager.Instance.npcCameraOff();
             }
             if(speaker == "sister")
             {
                 GameObject sister = GameObject.FindGameObjectWithTag("sisterquest");
                 QuestManager sisterquest = sister.GetComponent<QuestManager>();
                 sisterquest.getQuest();
-                UIManager.Instance.dialoguepanel.SetActive(false);
+                UIManager.Instance.ToggleDialoguePanel();
+                UIManager.Instance.npcCameraOff();
+            }
+
+            if (speaker == "grandfather")
+            {
+                GameObject sister = GameObject.FindGameObjectWithTag("grandfatherquest");
+                QuestManager sisterquest = sister.GetComponent<QuestManager>();
+                sisterquest.getQuest();
+                UIManager.Instance.ToggleDialoguePanel();
+                UIManager.Instance.npcCameraOff();
             }
         }
 

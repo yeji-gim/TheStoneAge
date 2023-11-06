@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
   m_Name: fruit
   m_EditorClassIdentifier: 
-  description: 
-  thumbnail: {fileID: 0}
+  description: "\uB0B4\uAC00 \uC9C1\uC811 \uCC44\uC9D1\uD55C \uACFC\uC77C\uC774\uB2E4.\n\uC784\uBB34\uC5D0
+    \uC0AC\uC6A9\uB41C\uB2E4."
+  thumbnail: {fileID: -1892500409, guid: 1c43e0672f9e3f047b50b26b048dd5be, type: 3}
   gameModel: {fileID: 0}
-  quantity: 0
+  quantity: 1

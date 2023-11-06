@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
   m_Name: wood
   m_EditorClassIdentifier: 
-  description: I'M Tree
+  description: "\uB0B4\uAC00 \uC9C1\uC811 \uCC44\uC9D1\uD55C \uB098\uBB47\uAC00\uC9C0\uC774\uB2E4.\n\uC784\uBB34\uC5D0
+    \uC0AC\uC6A9\uB41C\uB2E4."
   thumbnail: {fileID: 1355055868, guid: 8055729a53630d74ab9b7d9896661983, type: 3}
   gameModel: {fileID: 109966, guid: 71c97eab56ad22442ab7367befaf0340, type: 3}
   quantity: 5

@@ -5,7 +5,7 @@ using UnityEngine;
 public class baseDialogue : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    public npcController npccontroller;
+    
     Ray ray;
 
     private void Start()
@@ -37,28 +37,29 @@ public class baseDialogue : MonoBehaviour
         }
     }
 
-    protected void StartDialogue(GameObject questObject, GameObject npc, CharacterData characterData)
+    protected void StartDialogue(GameObject questObject, GameObject quest)
     {
+
         QuestManager questManager = questObject.GetComponent<QuestManager>();
-        npccontroller = npc.GetComponent<npcController>();
+        npcController npccontroller = quest.GetComponent<npcController>();
 
         if (DialogueManager.Instance != null)
         { 
             if (questManager.getisQuesting() == false && questManager.getCurrentIndex() == 0)
             {
-                DialogueManager.Instance.StartDialogue(characterData.firstquestdialogueLines);
+                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
             }
             else if (questManager.getisQuesting() == true && questManager.getCurrentIndex() == 1)
             {
-                DialogueManager.Instance.StartDialogue(characterData.secondQuestdialogueLines);
+                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
             }
             else if (questManager.getisQuesting() == true && questManager.getisCompleting() == true)
             {
-                DialogueManager.Instance.StartDialogue(characterData.completedialogueLines);
+                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.completedialogueLines);
             }
             else if (questManager.getisQuesting() == true && questManager.getisCompleting() == false)
             {
-                DialogueManager.Instance.StartDialogue(characterData.noncompletedialogueLines);
+                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.noncompletedialogueLines);
             }
         }
     }

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
   m_Name: rabbit
   m_EditorClassIdentifier: 
-  description: 
-  thumbnail: {fileID: 0}
+  description: "\uB0B4\uAC00 \uC9C1\uC811 \uC5BB\uC740 \uD1A0\uB07C\uC774\uB2E4.\n\uC11D\uAE30
+    \uC81C\uC791\uC5D0 \uC0AC\uC6A9\uB41C\uB2E4."
+  thumbnail: {fileID: 996328817, guid: dbf548123fefd774db0af21d9d26e9a8, type: 3}
   gameModel: {fileID: 0}
-  quantity: 0
+  quantity: 1
