@@ -13,6 +13,7 @@ TagManager:
   - Item
   - sister
   - sisterquest
+  - Rock
   layers:
   - Default
   - TransparentFX
