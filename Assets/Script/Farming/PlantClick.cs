@@ -2,7 +2,7 @@
 using Palmmedia.ReportGenerator.Core.Parser.Analysis;
 using UnityEngine;
 
-public class TreeClick : MonoBehaviour
+public class PlantClick : MonoBehaviour
 {
     public GameObject branchPrefab;
 
@@ -18,7 +18,7 @@ public class TreeClick : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                if (hit.collider.CompareTag("Tree"))
+                if (hit.collider.CompareTag("Plant"))
                 {
                     // 클릭 시 중력 상태 토글 및 나뭇가지 생성
                     CreateBranch(hit.collider.gameObject);
@@ -36,7 +36,7 @@ public class TreeClick : MonoBehaviour
         }
 
         // 나뭇가지 프리팹을 생성
-        currentBranch = Instantiate(branchPrefab, tree.transform.position - new Vector3(0, -4, 1), Quaternion.identity);
+        currentBranch = Instantiate(branchPrefab, tree.transform.position - new Vector3(0, -2, 1), Quaternion.identity);
         currentBranch.SetActive(true);
 
         // 회전값을 설정하여 나뭇가지가 특정 각도로 회전되도록 함

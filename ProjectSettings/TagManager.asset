@@ -9,6 +9,14 @@ TagManager:
   - HandSlot
   - mom
   - momquest
+  - Stone
+  - Plant
+  - Tree
+  - CinemachineTarget
+  - Rock
+  - Branch
+  - RockCluster
+  - Fruit
   layers:
   - Default
   - TransparentFX
