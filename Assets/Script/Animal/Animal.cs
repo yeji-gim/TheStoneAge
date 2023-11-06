@@ -48,9 +48,12 @@ public class Animal : MonoBehaviour
 
     void Update()
     {
-        Move();
-        ElapseTime();
-        View();
+        if (hp > 0)
+        {
+            Move();
+            ElapseTime();
+            View();
+        }
     }
 
     private void Move()
@@ -161,5 +164,19 @@ public class Animal : MonoBehaviour
             }
         }
         return false;
+    }
+    public void Dead()
+    {
+        nav.ResetPath();
+        anim.SetTrigger("isDie");
+    }
+
+    public void hit()
+    {
+        hp -= 1;
+        if (hp == 0)
+        {
+            Dead();
+        }
     }
 }

@@ -127,6 +127,9 @@ namespace StarterAssets
 #endif
             }
         }
+        public LayerMask AnimalLayer;
+        public Transform Attackpos;
+        public float AttackSize;
 
 
         private void Awake()
@@ -166,6 +169,12 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+        }
+
+        private void OnDrawGizmos()
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawSphere(Attackpos.position, AttackSize);
         }
 
         private void LateUpdate()
@@ -368,6 +377,7 @@ namespace StarterAssets
                     {
                         _animator.SetTrigger(_animIDAttack);
                         _AttackTimeoutDelta = AttackTimeout;
+                        Invoke("AttackBoxon", 1f);
                         Debug.Log("Attack");
                     }
                 }
@@ -421,6 +431,15 @@ namespace StarterAssets
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
                 AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+            }
+        }
+        public void AttackBoxon()
+        {
+            Collider[] _target = Physics.OverlapSphere(Attackpos.position, AttackSize, AnimalLayer);
+
+            for (int i = 0; i < _target.Length; i++)
+            {
+                _target[i].GetComponent<Animal>().hit();
             }
         }
     }
