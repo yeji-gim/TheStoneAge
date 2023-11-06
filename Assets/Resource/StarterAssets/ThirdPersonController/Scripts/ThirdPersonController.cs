@@ -378,7 +378,6 @@ namespace StarterAssets
                         _animator.SetTrigger(_animIDAttack);
                         _AttackTimeoutDelta = AttackTimeout;
                         Invoke("AttackBoxon", 1f);
-                        Debug.Log("Attack");
                     }
                 }
             }
