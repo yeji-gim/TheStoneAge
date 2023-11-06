@@ -4,15 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - CinemachineTarget
-  - Tree
-  - momquest
-  - mom
-  - HandSlot
-  - Stone
-  - Item
-  - sister
   - sisterquest
+  - sister
+  - HandSlot
   layers:
   - Default
   - TransparentFX
@@ -20,31 +14,31 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Animal
   - Player
-  - Post Processing
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - 
   m_SortingLayers:
   - name: Default

@@ -31,14 +31,17 @@ public class sisterDialogue : MonoBehaviour
         QuestManager questManager = sisterquest.GetComponent<QuestManager>();
         npccontroller = sister.GetComponent<npcController>();
 
-        // 이하 대화 시작 로직 (이미 작성한 부분을 그대로 사용)
         Debug.Log($"isquesting in momDialogue {questManager.getisQuesting()}");
         if (DialogueManager.Instance != null)
         {
             Debug.Log($"isquesting {questManager.getisQuesting()} && isComplete{questManager.getisCompleting()}");
-            if (questManager.getisCompleting() == false && questManager.getisQuesting() == false)
+            if ( questManager.getisQuesting() == false && questManager.getCurrentIndex() == 0)
             {
-                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.dialogueLines);
+                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
+            }
+            else if (questManager.getisQuesting() == true && questManager.getCurrentIndex() == 1)
+            {
+                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
             }
             else if (questManager.getisQuesting() == true && questManager.getisCompleting() == true)
             {

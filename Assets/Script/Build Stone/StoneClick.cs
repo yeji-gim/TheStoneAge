@@ -6,29 +6,30 @@ public class StoneClick : MonoBehaviour
     public GameObject incompleteStone; // 미완성 돌 이미지
     public GameObject completeStone;   // 완성된 돌 이미지
 
-    private int clickCount = 0;
+    public int clickCount = 0;
+    public int maxCount;
+
+    public GameObject Buttonobject;
+
+    private void Awake()
+    {
+        InvokeRepeating("InstantiateButton", 1f,3f);
+    }
 
     void Update()
     {
-        // 마우스 왼쪽 버튼 클릭 감지
-        if (Input.GetMouseButtonDown(0))
+        // 클릭 횟수가 10번에 도달하면 완성된 돌 이미지 활성화
+        if (clickCount >= 10)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            // 레이캐스트를 이용하여 돌을 클릭했는지 확인
-            if (Physics.Raycast(ray, out hit) && hit.collider.CompareTag("Stone"))
-            {
-                // 돌을 클릭하면 clickCount 증가
-                clickCount++;
-
-                // 클릭 횟수가 10번에 도달하면 완성된 돌 이미지 활성화
-                if (clickCount >= 10)
-                {
-                    ActivateCompleteStone();
-                }
-            }
+            ActivateCompleteStone();
         }
+    }
+
+    void InstantiateButton()
+    {
+        Buttonobject.SetActive(false);
+        Buttonobject.GetComponent<RectTransform>().anchoredPosition = new Vector2(Random.Range(-600,600), Random.Range(-200, 200));
+        Buttonobject.SetActive(true);
     }
 
     void ActivateCompleteStone()
@@ -38,5 +39,15 @@ public class StoneClick : MonoBehaviour
 
         // 완성된 돌 이미지 활성화
         completeStone.SetActive(true);
+    }
+    public void Success()
+    {
+        Buttonobject.SetActive(false);
+        clickCount += 1;
+    }
+
+    public void Fail()
+    {
+        Buttonobject.SetActive(false);
     }
 }

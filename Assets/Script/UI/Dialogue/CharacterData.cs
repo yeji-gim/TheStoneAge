@@ -5,7 +5,8 @@ using UnityEngine;
 public class CharacterData : ScriptableObject
 {
     [Header("Dialouge")]
-    public List<DialogueLine> dialogueLines;
+    public List<DialogueLine> firstquestdialogueLines;
+    public List<DialogueLine> secondQuestdialogueLines;
     public List<DialogueLine> noncompletedialogueLines;
     public List<DialogueLine> completedialogueLines;
 }

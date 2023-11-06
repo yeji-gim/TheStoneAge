@@ -12,18 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f9b7974e09a5ca49bc1d81da552b140, type: 3}
   m_Name: New Character Data
   m_EditorClassIdentifier: 
-  dialogueLines:
+  firstquestdialogueLines:
   - speaker: 
-    message: Hi
+    message: "\uC548\uB155 \uD018\uC2A4\uD2B8\uB97C \uC904\uAC8C"
     button: 
+  - speaker: sister
+    message: "\uB3CC\uC744 \uAC00\uC838\uC640"
+    button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
+  secondQuestdialogueLines:
   - speaker: 
-    message: Description
+    message: "\uB450\uBC88\uCA30 \uD018\uC2A4\uD2B8\uC774\uC57C"
     button: 
-  dialogueLines1:
+  - speaker: sister
+    message: "\uC8FC\uBA39\uB3C4\uB07C\uB97C \uB9CC\uB4E4\uC5B4\uC11C \uC5F4\uB9E4\uB97C
+      \uCC44\uC9D1\uD574\uC640"
+    button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
+  noncompletedialogueLines:
   - speaker: 
-    message: Hi tow
+    message: "\uC784\uBB34\uB97C \uC644\uC218\uD558\uACE0 \uB2E4\uC2DC \uC640"
     button: 
-  dialogueLines2:
+  completedialogueLines:
   - speaker: 
-    message: Hi third
+    message: "\uACE0\uC0DD\uD588\uC5B4 \uC5C4\uB9C8\uD55C\uD14C \uAC00"
     button: 

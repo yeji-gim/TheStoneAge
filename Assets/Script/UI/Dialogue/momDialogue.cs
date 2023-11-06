@@ -38,7 +38,7 @@ public class momDialogue : MonoBehaviour
             Debug.Log($"isquesting {questManager.getisQuesting()} && isComplete{questManager.getisCompleting()}");
             if (questManager.getisCompleting() == false && questManager.getisQuesting() == false)
             {
-                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.dialogueLines);
+                //DialogueManager.Instance.StartDialogue(npccontroller.charcterData);
             }
             else if (questManager.getisQuesting() == true && questManager.getisCompleting() == true)
             {

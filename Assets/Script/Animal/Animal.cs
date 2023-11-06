@@ -36,6 +36,8 @@ public class Animal : MonoBehaviour
     public float viewDistance;
     public float viewAngle;
 
+    private float hpcul = 0;
+
     void Start()
     {
         currentTime = waitTime;   // 대기 시작
@@ -48,9 +50,16 @@ public class Animal : MonoBehaviour
 
     void Update()
     {
-        Move();
-        ElapseTime();
-        View();
+        if (hp > 0)
+        {
+            Move();
+            ElapseTime();
+            View();
+        }
+        if (hpcul > 0)
+        {
+            hpcul -= Time.deltaTime;
+        }
     }
 
     private void Move()
@@ -148,7 +157,6 @@ public class Animal : MonoBehaviour
                     {
                         if (_hit.transform.name == "Player" && !isRunning)
                         {
-                            Debug.Log("플레이어가 시야 내에 있습니다.");
                             Debug.DrawRay(transform.position + transform.up, _direction, Color.blue);
 
                             Run(_targetTf.transform.position);
@@ -161,5 +169,24 @@ public class Animal : MonoBehaviour
             }
         }
         return false;
+    }
+    public void Dead()
+    {
+        nav.ResetPath();
+        anim.SetTrigger("isDie");
+    }
+
+    public void hit()
+    {
+        if (hpcul <= 0)
+        {
+            hpcul = 1;
+            hp -= 1;
+            Run(GameObject.FindGameObjectWithTag("Player").transform.position);
+            if (hp == 0)
+            {
+                Dead();
+            }
+        }
     }
 }
