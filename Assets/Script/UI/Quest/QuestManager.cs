@@ -10,6 +10,7 @@ public class QuestManager : MonoBehaviour
     private bool getquest;
     public QuestData[] quest;
     ItemSlotData[] inventoryItemSlots;
+    ItemSlotData[] inventoryEquipmentSlots;
     private void Start()
     {
         iscomplete = false;
@@ -20,6 +21,7 @@ public class QuestManager : MonoBehaviour
     private void Update()
     {
         inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
+        inventoryEquipmentSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
         isComplete();
     }
     public void isComplete()
@@ -27,22 +29,23 @@ public class QuestManager : MonoBehaviour
         if (getquest)
         {
             quest[currentQuestIndex].CheckCompletion(inventoryItemSlots);
+            quest[currentQuestIndex].CheckCompletion(inventoryEquipmentSlots);
             if (quest[currentQuestIndex].isCompleted)
             {
-
+                Debug.Log($"isCompleted true¿‘¥œ¥Ÿ");
                 isquesting = true;
+                currentQuestIndex++;
+            }
+            else if(quest[quest.Length-1].isCompleted)
+            {
                 iscomplete = true;
-                if (currentQuestIndex < quest.Length - 1)
-                {
-                    currentQuestIndex++;
-                    UIManager.Instance.DisplayQuest(quest[currentQuestIndex]);
-                }
+                isquesting = true;
+                
             }
             else
             {
-                isquesting = true;
                 iscomplete = false;
-                
+                isquesting = true;
             }
         }
     }
@@ -64,5 +67,10 @@ public class QuestManager : MonoBehaviour
     public bool getisCompleting()
     {
         return iscomplete;
+    }
+
+    public int getCurrentIndex()
+    {
+        return currentQuestIndex;
     }
 }

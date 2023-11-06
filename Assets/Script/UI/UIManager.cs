@@ -108,6 +108,12 @@ public class UIManager : MonoBehaviour
         getQuest.gameObject.SetActive(true);
         questName.text= data.questname;
         questDescription.text = data.description;
+
+        foreach (Transform child in gridLayoutGroup.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
         foreach (QuestData.RequiredItem requiredItem in data.requiredItems)
         {
             GameObject gridItem = Instantiate(gridItemPrefab, gridLayoutGroup.transform);

@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa8b9eb42b7b24840bc0d65a385aeacb, type: 3}
-  m_Name: quest
+  m_Name: Sister3
   m_EditorClassIdentifier: 
-  questname: "\uD018\uC2A4\uD2B8"
-  description: "\uB098\uBB47\uAC00\uC9C0\uC640 \uB3CC \uAC00\uC838\uC640"
+  questname: "\uB204\uB098\uD018\uC2A4\uD2B83"
+  description: "\uC8FC\uBA39\uB3C4\uB07C\uB97C \uC774\uC6A9\uD574\uC11C \uC5F4\uB9E4
+    \uAC00\uC838\uC624\uAE30"
   requiredItems:
-  - item: {fileID: 11400000, guid: 4a48ba7a006c63340ba9750e63b0ebf4, type: 2}
-    itemCount: 1
-  - item: {fileID: 11400000, guid: 5e6830cf8ef97754c8f8d468f4392049, type: 2}
-    itemCount: 6
+  - item: {fileID: 11400000, guid: 2a8b415ae81ce3e468dbb07cdea0b243, type: 2}
+    itemCount: 5
   isCompleted: 0
