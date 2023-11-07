@@ -9,6 +9,7 @@ public class StoneClick : MonoBehaviour
 
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
     public Text successText;           // 성공 텍스트
+    public Text failText;              // 실패 텍스트
     public Text completeText;          // 완성 텍스트
 
     public int clickCount = 0;
@@ -57,9 +58,6 @@ public class StoneClick : MonoBehaviour
         Buttonobject.SetActive(false);
         clickCount += 1;
 
-        // 성공 텍스트 활성화
-        successText.gameObject.SetActive(true);
-
         // 슬라이더 업데이트
         UpdateSlider();
 
@@ -78,6 +76,16 @@ public class StoneClick : MonoBehaviour
     public void Fail()
     {
         Buttonobject.SetActive(false);
+
+        // 실패 텍스트의 위치를 버튼의 위치로 조정
+        Vector2 buttonPosition = Buttonobject.GetComponent<RectTransform>().anchoredPosition;
+        failText.gameObject.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
+
+        // 실패 텍스트 활성화
+        failText.gameObject.SetActive(true);
+
+        // 실패 텍스트 비활성화
+        StartCoroutine(DelayedFailTextDeactivation());
     }
 
     // 슬라이더 업데이트
@@ -92,5 +100,11 @@ public class StoneClick : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f); // 원하는 시간을 초 단위로 설정
         successText.gameObject.SetActive(false);
+    }
+    // 시간 지연 후 실패 텍스트 비활성화
+    IEnumerator DelayedFailTextDeactivation()
+    {
+        yield return new WaitForSeconds(1.0f); // 원하는 시간을 초 단위로 설정
+        failText.gameObject.SetActive(false);
     }
 }
