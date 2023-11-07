@@ -147,6 +147,8 @@ namespace StarterAssets
         public GameObject[] weapongObjects;
         public float[] weaponrange;
 
+        public Transform ArrowPos;
+        public GameObject ArrowPrefab;
 
         private void Awake()
         {
@@ -404,6 +406,11 @@ namespace StarterAssets
                         _animator.SetTrigger(_animIDAttack);
                         _AttackTimeoutDelta = AttackTimeout;
                         Invoke("AttackBoxon", 1f);
+
+                        if (weaponnum == 4)
+                        {
+                            Invoke("BowAttack", 1f);
+                        }
                     }
                 }
             }
@@ -515,6 +522,11 @@ namespace StarterAssets
                 weapongObjects[i].SetActive(false);
             }
             weapongObjects[num].SetActive(true);
+        }
+
+        public void BowAttack()
+        {
+            GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, transform.rotation);
         }
     }
 }

@@ -100,6 +100,7 @@
     <Compile Include="Assets\Script\UI\UIManager.cs" />
     <Compile Include="Assets\Script\UI\SceneLoad.cs" />
     <Compile Include="Assets\Resource\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
+    <Compile Include="Assets\Script\Arrow.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\DialogueLine.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\dadDialogue.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
