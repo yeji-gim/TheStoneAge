@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4340338088744161987}
   - component: {fileID: 1742815623574755526}
   - component: {fileID: 1959866334061823075}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: Branch
   m_TagString: Branch
   m_Icon: {fileID: 0}
@@ -146,6 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614b4f9852d8ce04091d6594fbc896c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiCanvasPrefab: {fileID: 1973675446140312162, guid: db97564767681a34d910bed893dadbd7, type: 3}
-  uiCanvas: {fileID: 0}
-  itemName: 
+  itemName: "\uB098\uBB47\uAC00\uC9C0"

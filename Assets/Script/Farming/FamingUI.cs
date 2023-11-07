@@ -20,7 +20,7 @@ public class FamingUI : MonoBehaviour
     IEnumerator Typing(string text)
     {
         gameObject.GetComponent<Animator>().SetTrigger("isFaming");
-        UItext.GetComponent<TextMeshProUGUI>().text = "<color=yellow>" + text +"</color>" + "<color=white> À» È¹µæÇÏ¿´½À´Ï´Ù.</color>";
+        UItext.GetComponent<TextMeshProUGUI>().text = "<color=yellow>" + text +"</color>" + "<color=white> À»(¸¦) È¹µæÇÏ¿´½À´Ï´Ù.</color>";
         yield return new WaitForSeconds(3f);
         canShow = true;
     }

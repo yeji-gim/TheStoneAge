@@ -245,7 +245,7 @@ public class Bear : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.red;
+        Gizmos.color = new Color(1,0,0,0.3f);
         Gizmos.DrawSphere(Attackpos.position, AttackSize);
     }
 }

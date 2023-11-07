@@ -143,6 +143,10 @@ namespace StarterAssets
         public GameObject FarmingButton;
         public FamingUI Farmingui;
 
+        public int weaponnum = 0;
+        public GameObject[] weapongObjects;
+        public float[] weaponrange;
+
 
         private void Awake()
         {
@@ -189,10 +193,10 @@ namespace StarterAssets
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = new Color(1, 0, 0, 0.1f);
-            Gizmos.DrawSphere(Attackpos.position, AttackSize);
+            Gizmos.color = new Color(1, 0, 0, 0.3f);
+            Gizmos.DrawSphere(Attackpos.position, weaponrange[weaponnum]);
 
-            Gizmos.color = new Color(0, 1, 0, 0.1f);
+            Gizmos.color = new Color(0, 1, 0, 0.3f);
             Gizmos.DrawSphere(transform.position, ViewSize);
         }
 
@@ -246,6 +250,7 @@ namespace StarterAssets
             // Cinemachine will follow this target
             CinemachineCameraTarget.transform.rotation = Quaternion.Euler(_cinemachineTargetPitch + CameraAngleOverride,
                 _cinemachineTargetYaw, 0.0f);
+
         }
 
         private void Move()
@@ -389,11 +394,13 @@ namespace StarterAssets
         public void Attack()
         {
             if(Grounded){
-                if (_input.attack && _AttackTimeoutDelta <= 0.0f)
+                if (_input.attack && _AttackTimeoutDelta <= 0.0f && weaponnum>0)
                 {
                     // update animator if using character
                     if (_hasAnimator)
                     {
+                        _animator.SetFloat("AttackTree",weaponnum);
+                        weapongObjects[weaponnum].SetActive(true);
                         _animator.SetTrigger(_animIDAttack);
                         _AttackTimeoutDelta = AttackTimeout;
                         Invoke("AttackBoxon", 1f);
@@ -453,7 +460,7 @@ namespace StarterAssets
         }
         public void AttackBoxon()
         {
-            Collider[] _target = Physics.OverlapSphere(Attackpos.position, AttackSize, AnimalLayer);
+            Collider[] _target = Physics.OverlapSphere(Attackpos.position, weaponrange[weaponnum], AnimalLayer);
 
             for (int i = 0; i < _target.Length; i++)
             {
@@ -486,12 +493,6 @@ namespace StarterAssets
                 FarmingButton.SetActive(true);
             else
                 FarmingButton.SetActive(false);
-
-            for (int i = 0; i < _target.Length; i++)
-            {
-                if (_target[i].GetComponent<Item>())
-                    print(_target[i].GetComponent<Item>().itemName);
-            }
         }
         public void Farming()
         {
@@ -504,6 +505,16 @@ namespace StarterAssets
                     Destroy(_target[i].gameObject);
                 }
             }
+        }
+        public void ChangeWeapon(int num)
+        {
+            weaponnum = num;
+
+            for(int i=0; i< weapongObjects.Length; i++)
+            {
+                weapongObjects[i].SetActive(false);
+            }
+            weapongObjects[num].SetActive(true);
         }
     }
 }
