@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -115,6 +116,7 @@ namespace StarterAssets
         private const float _threshold = 0.01f;
 
         private bool _hasAnimator;
+        
 
         private bool IsCurrentDeviceMouse
         {
@@ -134,6 +136,12 @@ namespace StarterAssets
         public bool canMove = true;
 
         public Animator HitUI;
+
+        public LayerMask ItemLayer;
+        public float ViewSize;
+
+        public GameObject FarmingButton;
+        public FamingUI Farmingui;
 
 
         private void Awake()
@@ -175,13 +183,17 @@ namespace StarterAssets
                 JumpAndGravity();
                 GroundedCheck();
                 Move();
+                View();
             }
         }
 
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.red;
+            Gizmos.color = new Color(1, 0, 0, 0.1f);
             Gizmos.DrawSphere(Attackpos.position, AttackSize);
+
+            Gizmos.color = new Color(0, 1, 0, 0.1f);
+            Gizmos.DrawSphere(transform.position, ViewSize);
         }
 
         private void LateUpdate()
@@ -449,6 +461,8 @@ namespace StarterAssets
                     _target[i].GetComponent<Animal>().hit();
                 if (_target[i].GetComponent<Bear>())
                     _target[i].GetComponent<Bear>().hit();
+                if (_target[i].GetComponent<Plant>())
+                    _target[i].GetComponent<Plant>().hit();
             }
         }
         public void hit()
@@ -462,6 +476,34 @@ namespace StarterAssets
         public void moveCan()
         {
             canMove = true;
+        }
+
+        public void View()
+        {
+            Collider[] _target = Physics.OverlapSphere(transform.position, ViewSize, ItemLayer);
+
+            if (_target.Length>0)
+                FarmingButton.SetActive(true);
+            else
+                FarmingButton.SetActive(false);
+
+            for (int i = 0; i < _target.Length; i++)
+            {
+                if (_target[i].GetComponent<Item>())
+                    print(_target[i].GetComponent<Item>().itemName);
+            }
+        }
+        public void Farming()
+        {
+            Collider[] _target = Physics.OverlapSphere(transform.position, ViewSize, ItemLayer);
+            for (int i = 0; i < _target.Length; i++)
+            {
+                if (_target[i].GetComponent<Item>())
+                {
+                    Farmingui.Itemqueue.Enqueue(_target[i].GetComponent<Item>().itemName);
+                    Destroy(_target[i].gameObject);
+                }
+            }
         }
     }
 }

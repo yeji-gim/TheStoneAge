@@ -13,20 +13,36 @@ PrefabInstance:
       value: Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
+      propertyPath: m_Layer
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
       propertyPath: m_TagString
       value: Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 202
+      value: 49.243
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 5.051
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -85
+      value: -211.096
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a3d9b63005ef47e48893d7fe6414d72c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -135,6 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614b4f9852d8ce04091d6594fbc896c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiCanvasPrefab: {fileID: 0}
-  uiCanvas: {fileID: 0}
-  itemName: 
+  itemName: "\uACFC\uC77C"
