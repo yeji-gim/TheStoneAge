@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
         {
             Instance = this;
         }
+        DontDestroyOnLoad(gameObject);
     }
     [Header("Inventory Systems")]
     public InventorySlot[] toolSlots;
