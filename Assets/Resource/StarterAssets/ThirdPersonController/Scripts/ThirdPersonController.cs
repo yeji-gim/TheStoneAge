@@ -131,6 +131,10 @@ namespace StarterAssets
         public Transform Attackpos;
         public float AttackSize;
 
+        public bool canMove = true;
+
+        public Animator HitUI;
+
 
         private void Awake()
         {
@@ -165,10 +169,13 @@ namespace StarterAssets
         {
             _hasAnimator = TryGetComponent(out _animator);
 
-            Attack();
-            JumpAndGravity();
-            GroundedCheck();
-            Move();
+            if (canMove)
+            {
+                Attack();
+                JumpAndGravity();
+                GroundedCheck();
+                Move();
+            }
         }
 
         private void OnDrawGizmos()
@@ -438,8 +445,23 @@ namespace StarterAssets
 
             for (int i = 0; i < _target.Length; i++)
             {
-                _target[i].GetComponent<Animal>().hit();
+                if(_target[i].GetComponent<Animal>())
+                    _target[i].GetComponent<Animal>().hit();
+                if (_target[i].GetComponent<Bear>())
+                    _target[i].GetComponent<Bear>().hit();
             }
+        }
+        public void hit()
+        {
+            CancelInvoke();
+            _animator.SetTrigger("isHit");
+            canMove = false;
+            Invoke("moveCan",0.66f);
+            HitUI.SetTrigger("ishit");
+        }
+        public void moveCan()
+        {
+            canMove = true;
         }
     }
 }
