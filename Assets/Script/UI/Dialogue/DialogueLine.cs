@@ -15,6 +15,7 @@ public class DialogueLine
         this.message = message;
     }
 
+
     public DialogueLine(string speaker,string message, string button)
     {
         this.speaker = speaker;
