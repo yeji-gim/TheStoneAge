@@ -7,8 +7,10 @@ public class baseDialogue : MonoBehaviour
     public GameObject dialoguePanel;
     ItemSlotData[] inventoryItemSlots;
     bool isTwo = false;
+    bool isOne = false;
     Ray ray;
     public int index = 0;
+
     private void Start()
     {
         dialoguePanel.gameObject.SetActive(false);
@@ -44,43 +46,31 @@ public class baseDialogue : MonoBehaviour
 
     protected void StartDialogue(GameObject questObject, GameObject quest)
     {
-        
-        bool getguest = false;
         QuestManager questManager = questObject.GetComponent<QuestManager>();
         npcController npccontroller = quest.GetComponent<npcController>();
-
+        if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
+        {
+            isOne = true; index = 1;
+        }
+        if (questManager.quest[1].CheckCompletion(inventoryItemSlots)) isTwo = true;
         if (DialogueManager.Instance != null)
         {
-            if (getguest == false)
+            if (isTwo)
             {
-                if (questManager.quest[0].CheckCompletion(inventoryItemSlots) && isTwo == false)
-                {
-                    index = 1;
-                    getguest = true;
-                    DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
-                    isTwo = true;
-                    return;
-                }
-                Debug.Log("완료전");
-                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
-
+                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.completedialogueLines);
+                isTwo = true;
+                Debug.Log("quest2");
+                return;
             }
-            else if (getguest == true && index == 1 && isTwo == true)
+            else if (isOne)
             {
-                if (questManager.quest[1].CheckCompletion(inventoryItemSlots))
-                {
-                    Debug.Log("두번째 퀘스트 완료");
-                    DialogueManager.Instance.StartDialogue(npccontroller.charcterData.completedialogueLines);
-                    isTwo = false;
-                    index = 0;
-                    return;
-                }
-                Debug.Log("이부분");
+                Debug.Log("두번째 퀘스트 완료");
                 DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
-
+                Debug.Log("quest1");
+                return;
             }
+            Debug.Log("완료전");
+           DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
         }
     }
-
-  
 }

@@ -31,11 +31,10 @@ public class craftManager : MonoBehaviour
         button.interactable = false;
         AllSetActive = true;
     }
-    void Update()
+    public void Update()
     {
         ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
         ItemSlotData[] Equipmentitems = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
-
 
         for (int i = 0; i < item.Length; i++)
         {
@@ -68,12 +67,13 @@ public class craftManager : MonoBehaviour
             }
         }
 
-        for(int i = 0; i<itemImages.Length;i++)
+        for (int i = 0; i < itemImages.Length; i++)
         {
             if (!itemImages[i].activeSelf)
             {
+                Debug.Log("비활성화된게 있음");
                 AllSetActive = false;
-                break; // 하나의 비활성화된 요소가 있으면 루프를 빠져나갑니다.
+                break;
             }
         }
         if (AllSetActive)
@@ -81,9 +81,9 @@ public class craftManager : MonoBehaviour
             button.interactable = true;
         }
     }
-
     public void BuildHandAxeClick()
     {
+        Debug.Log("BuildHandAxeClick");
         SceneManager.LoadScene("BuildHandAxe");
         UIManager.Instance.makingPanel.SetActive(false);
     }

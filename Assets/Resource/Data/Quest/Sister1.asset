@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questname: "\uB3CC \uCC44\uC9D1"
   description: "\uC8FC\uBA39\uB3C4\uB07C\uC5D0 \uD544\uC694\uD55C \uC7AC\uB8CC\uC778
-    \uB3CC 3\uAC1C\uB97C \uAC00\uC838\uAC00\uC790"
+    \uB3CC 2\uAC1C\uB97C \uAC00\uC838\uAC00\uC790"
   requiredItems:
   - item: {fileID: 11400000, guid: e28fddeb38f59fb47b513db52c16dc4e, type: 2}
-    itemCount: 3
+    itemCount: 2
   isCompleted: 1

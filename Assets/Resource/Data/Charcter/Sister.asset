@@ -28,8 +28,7 @@ MonoBehaviour:
     message: "\uB450\uBC88\uC9F8 \uC784\uBB34\uB97C \uC904\uAC8C"
     button: 
   - speaker: sister
-    message: "\uC8FC\uBA39\uB3C4\uB07C\uB97C \uB9CC\uB4E4\uC5B4\uC11C \uC5F4\uB9E4\uB97C
-      \uCC44\uC9D1\uD574\uC640"
+    message: "\uB3D9\uAD74 \uBC16\uC5D0\uC11C \uC5F4\uB9E4\uB97C \uCC44\uC9D1\uD574\uC640"
     button: "\uD018\uC2A4\uD2B8 \uBC1B\uAE30"
   noncompletedialogueLines:
   - speaker: 

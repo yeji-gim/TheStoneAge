@@ -103,7 +103,7 @@ public class UIManager : MonoBehaviour
     {
         Infoprompt.SetActive(true);
         ItemImage.sprite = data.thumbnail;
-        itemNameText.text = data.name;
+        itemNameText.text = data.itemName;
         itemDescriptionText.text = data.description;
     }
     public void ToggleQuestDescription()
@@ -182,6 +182,7 @@ public class UIManager : MonoBehaviour
     public void TogglemakeHandAxeButton()
     {
         handAxePanel.SetActive(!handAxePanel.activeSelf);
+
     }
 
     public void TogglemakestoneAxePanelButton()
