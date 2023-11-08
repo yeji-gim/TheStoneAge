@@ -6,7 +6,7 @@ public class InteractableObject : MonoBehaviour
 {
     public ItemData item;
 
-    private void OnMouseDown()
+    public void GetItem()
     {
         bool isPanelActive = UIManager.Instance.IsInventoryPanelActive();
         if (!isPanelActive)

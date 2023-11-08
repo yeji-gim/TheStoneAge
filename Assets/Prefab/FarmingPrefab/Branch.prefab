@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1094068047355533569}
   - component: {fileID: 4340338088744161987}
   - component: {fileID: 1742815623574755526}
-  - component: {fileID: 1959866334061823075}
+  - component: {fileID: -2280307831167921107}
   m_Layer: 28
   m_Name: Branch
   m_TagString: Branch
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1959866334061823075
+--- !u!114 &-2280307831167921107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3209548617440878984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 614b4f9852d8ce04091d6594fbc896c2, type: 3}
+  m_Script: {fileID: 11500000, guid: e647b7f2f6998cf46b23cd0fc5b96a16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: "\uB098\uBB47\uAC00\uC9C0"
+  item: {fileID: 11400000, guid: 5e6830cf8ef97754c8f8d468f4392049, type: 2}

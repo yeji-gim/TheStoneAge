@@ -506,10 +506,10 @@ namespace StarterAssets
             Collider[] _target = Physics.OverlapSphere(transform.position, ViewSize, ItemLayer);
             for (int i = 0; i < _target.Length; i++)
             {
-                if (_target[i].GetComponent<Item>())
+                if (_target[i].GetComponent<InteractableObject>())
                 {
-                    Farmingui.Itemqueue.Enqueue(_target[i].GetComponent<Item>().itemName);
-                    Destroy(_target[i].gameObject);
+                    Farmingui.Itemqueue.Enqueue(_target[i].GetComponent<InteractableObject>().item.itemName);
+                    _target[i].GetComponent<InteractableObject>().GetItem();
                 }
             }
         }
