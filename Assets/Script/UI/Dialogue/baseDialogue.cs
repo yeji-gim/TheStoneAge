@@ -6,6 +6,7 @@ public class baseDialogue : MonoBehaviour
 {
     public GameObject dialoguePanel;
     ItemSlotData[] inventoryItemSlots;
+    bool isTwo = false;
     Ray ray;
     public int index = 0;
     private void Start()
@@ -49,25 +50,29 @@ public class baseDialogue : MonoBehaviour
         npcController npccontroller = quest.GetComponent<npcController>();
 
         if (DialogueManager.Instance != null)
-        { 
+        {
             if (getguest == false)
             {
-                if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
+                if (questManager.quest[0].CheckCompletion(inventoryItemSlots) && isTwo == false)
                 {
                     index = 1;
                     getguest = true;
                     DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
+                    isTwo = true;
                     return;
                 }
+                Debug.Log("완료전");
                 DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
-                
+
             }
-            else if (getguest == true &&  index == 1)
+            else if (getguest == true && index == 1 && isTwo == true)
             {
                 if (questManager.quest[1].CheckCompletion(inventoryItemSlots))
                 {
                     Debug.Log("두번째 퀘스트 완료");
                     DialogueManager.Instance.StartDialogue(npccontroller.charcterData.completedialogueLines);
+                    isTwo = false;
+                    index = 0;
                     return;
                 }
                 Debug.Log("이부분");

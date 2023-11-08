@@ -1303,12 +1303,105 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1352591559}
+  index: 0
   camera: {fileID: 939618621}
 --- !u!95 &111666880 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95440879301982878, guid: cd6d59dfb07d4294785b70d9c601dde3, type: 3}
   m_PrefabInstance: {fileID: 888073150}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &140706967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 140706970}
+  - component: {fileID: 140706969}
+  - component: {fileID: 140706968}
+  m_Layer: 0
+  m_Name: PlayerCamera
+  m_TagString: npcCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!81 &140706968
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140706967}
+  m_Enabled: 1
+--- !u!20 &140706969
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140706967}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &140706970
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140706967}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.1091285, y: 0.6986351, z: -0.1091285, w: 0.6986351}
+  m_LocalPosition: {x: 70.36, y: 4.05, z: 37.1}
+  m_LocalScale: {x: 1.5096585, y: 1.5000318, z: 1.5003101}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 17.756, y: 90, z: 0}
 --- !u!4 &189397166 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4575796946152734, guid: 07c409b3a9af9f247ae081dbec89efad, type: 3}
@@ -1908,6 +2001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 872506202}
+  index: 0
   camera: {fileID: 1868705795}
 --- !u!65 &387226152
 BoxCollider:
@@ -2112,6 +2206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 358678508}
+  index: 0
   camera: {fileID: 46589473}
 --- !u!65 &418427591
 BoxCollider:
@@ -4286,6 +4381,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4176781668029266, guid: ad0a1831069ffb149847b5f39de7a6f3, type: 3}
   m_PrefabInstance: {fileID: 2042592165}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1401844082 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8225009517657592314, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
+  m_PrefabInstance: {fileID: 1604613972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1415205818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4558397995094870, guid: 2b44409cf841e394399e7c15cb10fd4e, type: 3}
@@ -5115,11 +5215,13 @@ MonoBehaviour:
   momcamera: {fileID: 1178877898}
   dadcamera: {fileID: 1868705795}
   sistercamera: {fileID: 46589473}
+  boycamera: {fileID: 140706967}
   rotationSpeed: 60
   momanimator: {fileID: 2020098041}
   dadanimator: {fileID: 387226154}
   grandfhateranimator: {fileID: 111666880}
   sisteranimator: {fileID: 418427593}
+  boyanimator: {fileID: 1401844082}
 --- !u!4 &1752797537
 Transform:
   m_ObjectHideFlags: 0
@@ -6131,6 +6233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialoguePanel: {fileID: 1282291095}
+  index: 0
   camera: {fileID: 1178877898}
 --- !u!65 &2020098039
 BoxCollider:
@@ -6735,6 +6838,7 @@ SceneRoots:
   - {fileID: 1868705798}
   - {fileID: 888073150}
   - {fileID: 939618624}
+  - {fileID: 140706970}
   - {fileID: 1604613972}
   - {fileID: 1188378799}
   - {fileID: 1794476575}

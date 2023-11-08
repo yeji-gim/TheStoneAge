@@ -16,10 +16,10 @@ public class craftManager : MonoBehaviour
     public Scenename scenename;
     public enum Scenename
     {
-        HandAxe,
-        StoneAxe,
-        Projectile,
-        Spear
+        BuildHandAxe,
+        BuildStoneAxe,
+        BuildArrow,
+        BuildSpear
     }
     SceneLoad sceneLoader;
 
@@ -82,8 +82,24 @@ public class craftManager : MonoBehaviour
         }
     }
 
-    public void LoadSceneOnClick()
+    public void BuildHandAxeClick()
     {
-        sceneLoader.LoadSceneByEnum(scenename);
+        SceneManager.LoadScene("BuildHandAxe");
+        UIManager.Instance.makingPanel.SetActive(false);
+    }
+    public void BuildStoneAxeClick()
+    {
+        SceneManager.LoadScene("BuildStoneAxe");
+        UIManager.Instance.makingPanel.SetActive(false);
+    }
+    public void BuildArrowClick()
+    {
+        SceneManager.LoadScene("BuildArrow");
+        UIManager.Instance.makingPanel.SetActive(false);
+    }
+    public void BuildSpearClick()
+    {
+        SceneManager.LoadScene("BuildSpear");
+        UIManager.Instance.makingPanel.SetActive(false);
     }
 }

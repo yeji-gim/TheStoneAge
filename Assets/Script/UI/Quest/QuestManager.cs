@@ -20,7 +20,6 @@ public class QuestManager : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(currentQuestIndex);
         inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
     }
     public void getQuest()
