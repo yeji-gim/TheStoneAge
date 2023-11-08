@@ -95,9 +95,11 @@
     <Compile Include="Assets\Script\UI\Inventory\HandInventorySlot.cs" />
     <Compile Include="Assets\Script\UI\GetObjectInfo.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\baseDialogue.cs" />
+    <Compile Include="Assets\Script\Animal\OpeningAnimal.cs" />
     <Compile Include="Assets\Script\Animal\Animal.cs" />
     <Compile Include="Assets\Script\UI\Quest\npcController.cs" />
     <Compile Include="Assets\Script\UI\UIManager.cs" />
+    <Compile Include="Assets\Script\DontDestroy.cs" />
     <Compile Include="Assets\Script\UI\SceneLoad.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\DialogueEnding.cs" />
     <Compile Include="Assets\Resource\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
