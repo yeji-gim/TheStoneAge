@@ -17,7 +17,7 @@ public class QuestData : ScriptableObject
         public ItemData item;
         public int itemCount;
     }
-    public void CheckCompletion(ItemSlotData[] inventorySlots)
+    public bool CheckCompletion(ItemSlotData[] inventorySlots)
     {
         isCompleted = true;
 
@@ -49,5 +49,6 @@ public class QuestData : ScriptableObject
                 break; 
             }
         }
+        return isCompleted;
     }
 }

@@ -18,4 +18,4 @@ MonoBehaviour:
   requiredItems:
   - item: {fileID: 11400000, guid: e28fddeb38f59fb47b513db52c16dc4e, type: 2}
     itemCount: 3
-  isCompleted: 0
+  isCompleted: 1

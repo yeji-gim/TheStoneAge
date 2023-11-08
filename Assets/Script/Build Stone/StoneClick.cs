@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class StoneClick : MonoBehaviour
 {
@@ -9,9 +10,9 @@ public class StoneClick : MonoBehaviour
     public GameObject completeStone;   // 완성된 돌 이미지
 
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
-    public Text successText;           // 성공 텍스트
-    public Text failText;              // 실패 텍스트
-    public Text completeText;          // 완성 텍스트
+    public TMP_Text successText;           // 성공 텍스트
+    public TMP_Text failText;              // 실패 텍스트
+    public TMP_Text completeText;          // 완성 텍스트
 
     public int clickCount = 0;
     public int maxCount;

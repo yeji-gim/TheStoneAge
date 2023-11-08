@@ -114,8 +114,8 @@ public class DialogueManager : MonoBehaviour
             {
                 GameObject momObject = GameObject.FindGameObjectWithTag("momquest");
                 QuestManager momquest = momObject.GetComponent<QuestManager>();
-                momquest.getQuest();
-                UIManager.Instance.ToggleDialoguePanel();
+                GameObject mom = GameObject.FindGameObjectWithTag("mom");
+                
                 UIManager.Instance.npcCameraOff();
             }
             if (speaker == "dad")
@@ -128,9 +128,12 @@ public class DialogueManager : MonoBehaviour
             }
             if(speaker == "sister")
             {
-                GameObject sister = GameObject.FindGameObjectWithTag("sisterquest");
-                QuestManager sisterquest = sister.GetComponent<QuestManager>();
-                sisterquest.getQuest();
+                GameObject sisterOjbect = GameObject.FindGameObjectWithTag("sisterquest");
+                QuestManager sisterquest = sisterOjbect.GetComponent<QuestManager>();
+                GameObject sister = GameObject.FindGameObjectWithTag("sister");
+                sisterDialogue sisterDialogue = sister.GetComponent<sisterDialogue>();
+                UIManager.Instance.button.gameObject.SetActive(false);
+                UIManager.Instance.DisplayQuest(sisterquest.quest[sisterDialogue.index]);
                 UIManager.Instance.ToggleDialoguePanel();
                 UIManager.Instance.npcCameraOff();
             }

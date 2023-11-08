@@ -22,38 +22,12 @@ public class QuestManager : MonoBehaviour
     {
         Debug.Log(currentQuestIndex);
         inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
-        isComplete();
     }
-    public void isComplete()
-    {
-        if (getquest)
-        {
-            quest[currentQuestIndex].CheckCompletion(inventoryItemSlots);
-            if (quest[1].isCompleted)
-            {
-                iscomplete = true;
-                isquesting = true;
-
-            }
-            else if (quest[0].isCompleted)
-            {
-                isquesting = true;
-                currentQuestIndex = 1;
-               
-            }         
-            else
-            {
-                iscomplete = false;
-                isquesting = true;
-            }
-        }
-    }
-
     public void getQuest()
-    {
+    { 
         getquest = true;
-        UIManager.Instance.button.gameObject.SetActive(false);
-        UIManager.Instance.DisplayQuest(quest[currentQuestIndex]);
+        
+
     }
 
     public bool getisQuesting()

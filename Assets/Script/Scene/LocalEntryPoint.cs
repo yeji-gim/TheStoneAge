@@ -12,11 +12,7 @@ public class LocalEntryPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("충돌");            /*if (SceneTransitionManager.Instance != null)
-            {           
-                
-                SceneTransitionManager.Instance.SwitchLocation(locationToSwitch);
-            }*/
+            Debug.Log("충돌");          
             SceneManager.LoadScene(locationToSwitch.ToString());
 
         }
