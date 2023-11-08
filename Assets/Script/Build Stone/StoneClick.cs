@@ -10,8 +10,6 @@ public class StoneClick : MonoBehaviour
     public GameObject completeStone;   // 완성된 돌 이미지
 
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
-    public TMP_Text successText;           // 성공 텍스트
-    public TMP_Text failText;              // 실패 텍스트
     public TMP_Text completeText;          // 완성 텍스트
 
     public int clickCount = 0;
@@ -21,7 +19,7 @@ public class StoneClick : MonoBehaviour
 
     private void Awake()
     {
-        InvokeRepeating("InstantiateButton", 1f, 3f);
+        InvokeRepeating("InstantiateButton", 1f, 4f);
     }
 
     void Update()
@@ -60,37 +58,18 @@ public class StoneClick : MonoBehaviour
     // Success 버튼과 onClick으로 연결
     public void Success()
     {
-        Buttonobject.SetActive(false);
+        Buttonobject.GetComponent<Animator>().SetTrigger("isSuccess");
         clickCount += 1;
 
         // 슬라이더 업데이트
         UpdateSlider();
 
-        // 성공 텍스트의 위치를 버튼의 위치로 조정
-        Vector2 buttonPosition = Buttonobject.GetComponent<RectTransform>().anchoredPosition;
-        successText.gameObject.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
-
-        // 성공 텍스트 활성화
-        successText.gameObject.SetActive(true);
-
-        // 성공 텍스트 비활성화
-        StartCoroutine(DelayedSuccessTextDeactivation());
     }
 
     // Fail 버튼과 onClick으로 연결
     public void Fail()
     {
-        Buttonobject.SetActive(false);
-
-        // 실패 텍스트의 위치를 버튼의 위치로 조정
-        Vector2 buttonPosition = Buttonobject.GetComponent<RectTransform>().anchoredPosition;
-        failText.gameObject.GetComponent<RectTransform>().anchoredPosition = buttonPosition;
-
-        // 실패 텍스트 활성화
-        failText.gameObject.SetActive(true);
-
-        // 실패 텍스트 비활성화
-        StartCoroutine(DelayedFailTextDeactivation());
+        Buttonobject.GetComponent<Animator>().SetTrigger("isFail");
     }
 
     // 슬라이더 업데이트
@@ -98,18 +77,5 @@ public class StoneClick : MonoBehaviour
     {
         float normalizedValue = (float)clickCount / maxCount;
         clickCountSlider.value = normalizedValue;
-    }
-
-    // 시간 지연 후 성공 텍스트 비활성화
-    IEnumerator DelayedSuccessTextDeactivation()
-    {
-        yield return new WaitForSeconds(1.0f); // 원하는 시간을 초 단위로 설정
-        successText.gameObject.SetActive(false);
-    }
-    // 시간 지연 후 실패 텍스트 비활성화
-    IEnumerator DelayedFailTextDeactivation()
-    {
-        yield return new WaitForSeconds(1.0f); // 원하는 시간을 초 단위로 설정
-        failText.gameObject.SetActive(false);
     }
 }
