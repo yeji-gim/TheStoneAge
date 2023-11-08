@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 
 public class StoneClick : MonoBehaviour
 {
-    public GameObject incompleteStone; // 미완성 돌 이미지
+    public GameObject[] incompleteStone; // 미완성 돌 이미지
     public GameObject completeStone;   // 완성된 돌 이미지
 
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
@@ -43,7 +44,10 @@ public class StoneClick : MonoBehaviour
     void ActivateCompleteStone()
     {
         // 미완성 돌 이미지 비활성화
-        incompleteStone.SetActive(false);
+        foreach (GameObject item in incompleteStone)
+        {
+            item.SetActive(false);
+        }
 
         // 완성된 돌 이미지 활성화
         completeStone.SetActive(true);
