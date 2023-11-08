@@ -105,7 +105,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShoreTex:
-        m_Texture: {fileID: 2800000, guid: a842d66eb806c53429dccb5d10649539, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5fbcffe9c2077f04186883cb39275fcc, type: 3}
         m_Scale: {x: 0, y: 0}
         m_Offset: {x: 1, y: 1}
     - _SpecialWavesTex:
@@ -196,22 +196,22 @@ Material:
     - WaveSpeed: {r: 1.086165, g: 4.440575, b: 12.105146, a: -3.0206447}
     - _AnimationDirection: {r: 0, g: 0, b: 0, a: 0}
     - _AnimationTiling: {r: 0.04582553, g: 0.0182, b: 0.045714468, a: 0.027129691}
-    - _BaseColor: {r: 0.31719476, g: 0.6978478, b: 0.8301887, a: 1}
+    - _BaseColor: {r: 0.1779548, g: 0.68905747, b: 0.8773585, a: 1}
     - _BumpDirection: {r: 30, g: 30, b: 30, a: -50}
     - _BumpMap_ST: {r: 1, g: 1, b: 0, a: 0}
     - _BumpTiling: {r: 0.01, g: 0.01, b: 0.01, a: 0.01}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _DepthColor: {r: 0.027511697, g: 0.14179105, b: 0.13226777, a: 0.4627451}
     - _DepthColorFade: {r: 0.8880597, g: 0.27834705, b: 0.44463244, a: 0.22352941}
-    - _DepthGradientDeep: {r: 0.086, g: 0.407, b: 1, a: 0.44313726}
-    - _DepthGradientShallow: {r: 1, g: 1, b: 1, a: 0.725}
+    - _DepthGradientDeep: {r: 0.27224994, g: 0.30260074, b: 0.3584906, a: 0.44313726}
+    - _DepthGradientShallow: {r: 0.26579747, g: 0.2858783, b: 0.31132078, a: 0.725}
     - _Displacement: {r: 6.6371665, g: 20.353983, b: -1, a: -0.681416}
     - _DisplacementXz: {r: 0.6499999, g: -2.9203715, b: 1.6599998, a: -3.9363046}
     - _DistortParams: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Extinction: {r: 4.5, g: 75, b: 300, a: 1}
     - _Foam: {r: 1.03, g: 2.68, b: 0, a: 0}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 0.14117648}
+    - _FoamColor: {r: 0.1709238, g: 0.19183983, b: 0.21698111, a: 0.14117648}
     - _FoamWaveParams: {r: 0, g: 0.24918434, b: 3.3395782, a: 1}
     - _Fresnel_ST: {r: 1, g: 1, b: 0, a: 0}
     - _GAmplitude: {r: 0, g: 0, b: 0, a: 0}
@@ -234,7 +234,7 @@ Material:
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShorePerturbation: {r: 0, g: 0, b: 0, a: 0}
     - _ShoreTiling: {r: 1, g: 1, b: 0.1, a: 0.1}
-    - _SpecColor: {r: 0.20496619, g: 0.47248116, b: 0.8867924, a: 1}
+    - _SpecColor: {r: 0.11725705, g: 0.13410868, b: 0.16037738, a: 1}
     - _SpecularColor: {r: 0.91791046, g: 0.91791046, b: 0.91791046, a: 1}
     - _SurfaceNoiseScroll: {r: 0.02, g: 0.02, b: 0, a: 0}
     - _UnderwaterColor: {r: 0.6950323, g: 0.89552236, b: 0.7502397, a: 1}
