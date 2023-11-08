@@ -13,13 +13,14 @@ public class UIManager : MonoBehaviour
     {
         if (Instance != null && Instance != this)
         {
-            Destroy(this);
+            Destroy(gameObject);
+            return;
         }
         else
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
     }
     [Header("Inventory Systems")]
     public InventorySlot[] toolSlots;
@@ -57,7 +58,8 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         RenderInventory();
-       // uiCanvas.enabled = false;
+        AssignSlotIndexes();
+        // uiCanvas.enabled = false;
     }
 
     public void TriggerDialogePrompt(string name1, System.Action first)
@@ -65,8 +67,15 @@ public class UIManager : MonoBehaviour
         DialoguePrompt.gameObject.SetActive(true);
         DialoguePrompt.Createbutton(name1,  first);
     }
-    
 
+    public void AssignSlotIndexes()
+    {
+        for (int i = 0; i < toolSlots.Length; i++)
+        {
+            toolSlots[i].AssignIndex(i);
+            ItemSlots[i].AssignIndex(i);
+        }
+    }
     public void RenderInventory()
     {
         ItemSlotData[] inventoryToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);

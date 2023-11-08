@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LocalEntryPoint : MonoBehaviour
 {
     [SerializeField]
     SceneTransitionManager.Location locationToSwitch;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-
-        if (collision.collider.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            if (SceneTransitionManager.Instance != null)
+            Debug.Log("충돌");            /*if (SceneTransitionManager.Instance != null)
             {           
-                Debug.Log("충돌");
+                
                 SceneTransitionManager.Instance.SwitchLocation(locationToSwitch);
-            }
+            }*/
+            SceneManager.LoadScene(locationToSwitch.ToString());
 
         }
 

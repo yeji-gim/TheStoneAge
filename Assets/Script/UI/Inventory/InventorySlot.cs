@@ -12,7 +12,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
     public Image itemDisplayImage;
     public Image dragImage;
     public TMP_Text quantityText;
-
+    public int slotIndex;
     Transform originalPosition;
 
     public enum InventoryType
@@ -21,7 +21,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
     }
 
     public InventoryType inventoryType;
-    int slotIndex;
+    
     private RectTransform rectTransform;
 
     void Awake()
@@ -94,9 +94,9 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
             {
                 itemDisplayImage.gameObject.SetActive(true);
 
-
                 if (CheckForCollision(eventData))
                 {
+                    Debug.Log("æ∆¿Ã≈€");
                     InventoryManager.Instance.InventoryToHand(slotIndex,inventoryType);
                 }
                 else
@@ -137,5 +137,9 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
 
         return false;
     }
-   
+    public void AssignIndex(int slotIndex)
+    {
+        this.slotIndex = slotIndex;
+    }
+
 }

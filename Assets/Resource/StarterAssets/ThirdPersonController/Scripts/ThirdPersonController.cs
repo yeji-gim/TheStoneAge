@@ -517,7 +517,7 @@ namespace StarterAssets
         {
             weaponnum = num;
 
-            for(int i=0; i< weapongObjects.Length; i++)
+            for(int i=1; i< weapongObjects.Length; i++)
             {
                 weapongObjects[i].SetActive(false);
             }
