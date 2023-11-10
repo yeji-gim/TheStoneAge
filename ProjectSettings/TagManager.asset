@@ -22,6 +22,7 @@ TagManager:
   - dadquest
   - grandfather
   - grandfatherquest
+  - BuildItem
   layers:
   - Default
   - TransparentFX

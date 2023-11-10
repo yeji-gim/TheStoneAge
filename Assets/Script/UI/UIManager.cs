@@ -53,6 +53,14 @@ public class UIManager : MonoBehaviour
     public GameObject projectilePanel;
     public GameObject spearPanel;
 
+    public int itemNo; // 아이템 번호
+    
+    public IncompleteItem[] incompleteStone; // 미완성 돌 이미지
+    public GameObject[] completeStone;   // 완성된 돌 이미지
+
+    public int clickCount = 0;
+    public int maxCount;
+
     //public Canvas uiCanvas; // 활성화할 UI 알림창 캔버스
 
     private void Start()
@@ -103,7 +111,7 @@ public class UIManager : MonoBehaviour
     {
         Infoprompt.SetActive(true);
         ItemImage.sprite = data.thumbnail;
-        itemNameText.text = data.name;
+        itemNameText.text = data.itemName;
         itemDescriptionText.text = data.description;
     }
     public void ToggleQuestDescription()
@@ -182,6 +190,7 @@ public class UIManager : MonoBehaviour
     public void TogglemakeHandAxeButton()
     {
         handAxePanel.SetActive(!handAxePanel.activeSelf);
+
     }
 
     public void TogglemakestoneAxePanelButton()
@@ -208,4 +217,6 @@ public class UIManager : MonoBehaviour
             npcCamera.SetActive(false);
         }
     }
+
+
 }

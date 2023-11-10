@@ -11,11 +11,13 @@ public class DialogueEnding : MonoBehaviour
     public GameObject momcamera;
     public GameObject dadcamera;
     public GameObject sistercamera;
+    public GameObject boycamera;
     public float rotationSpeed = 60.0f;
     public Animator momanimator;
     public Animator dadanimator;
     public Animator grandfhateranimator;
     public Animator sisteranimator;
+    public Animator boyanimator;
 
     private void Start()
     {
@@ -31,28 +33,34 @@ public class DialogueEnding : MonoBehaviour
         UIManager.Instance.ToggleDialoguePanel();
         grandfathercamera.SetActive(true);
         grandfhateranimator.SetBool("isPray", true);
-        yield return new WaitForSeconds(2.0f); 
+        yield return new WaitForSeconds(3.0f); 
 
         sistercamera.SetActive(true);
         sisteranimator.SetBool("isPray", true);
         grandfathercamera.SetActive(false);
-        yield return new WaitForSeconds(2.0f); 
+        yield return new WaitForSeconds(3.0f); 
 
         dadcamera.SetActive(true);
         dadanimator.SetBool("isPray", true);
         sistercamera.SetActive(false);
-        yield return new WaitForSeconds(2.0f); 
+        yield return new WaitForSeconds(3.0f); 
 
         momcamera.SetActive(true);
         momanimator.SetBool("isPray", true);
         dadcamera.SetActive(false);
-        yield return new WaitForSeconds(2.0f); 
+        yield return new WaitForSeconds(3.0f);
 
         // 대화 종료
+        boycamera.SetActive(true);
+        boyanimator.SetBool("isDance", true);
         momcamera.SetActive(false);
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(4.0f);
+        
+        boycamera.SetActive(false);
+        yield return new WaitForSeconds(3.0f);
         grandfathercamera.SetActive(true);
         grandfhateranimator.SetBool("isPray", false);
+        yield return new WaitForSeconds(1.0f);
         DialogueManager.Instance.StartDialogue(seconddialogueLines);
 
     }

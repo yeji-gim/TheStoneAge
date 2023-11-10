@@ -3,17 +3,13 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using JetBrains.Annotations;
 
 public class StoneClick : MonoBehaviour
 {
-    public GameObject[] incompleteStone; // 미완성 돌 이미지
-    public GameObject completeStone;   // 완성된 돌 이미지
-
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
-    public TMP_Text completeText;          // 완성 텍스트
-
-    public int clickCount = 0;
-    public int maxCount;
+    public TMP_Text completeText;      // 완성 텍스트
+    public int num;
 
     public GameObject Buttonobject;
 
@@ -24,12 +20,75 @@ public class StoneClick : MonoBehaviour
 
     void Update()
     {
-        // 클릭 횟수가 10번에 도달하면 완성된 돌 이미지 활성화
-        if (clickCount >= maxCount)
+        UIManager.Instance.itemNo = num;
+        
+        // 0: 주먹도끼
+        if (num == 0)
         {
-            ActivateCompleteStone();
-            // InvokeRepeating 멈추기
-            CancelInvoke("InstantiateButton");
+            Debug.Log("주먹도끼");
+            // 미완성 돌 이미지 활성화
+            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
+            {
+                item.SetActive(true);
+            }
+
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount - 5)
+            {
+                ActivateCompleteStone(num);
+                // InvokeRepeating 멈추기
+                CancelInvoke("InstantiateButton");
+            }
+        }
+
+        // 1: 돌 도끼
+        if (num == 1)
+        {
+            // 미완성 돌 이미지 활성화
+            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
+            {
+                item.SetActive(true);
+            }
+
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount - 2)
+            {
+                ActivateCompleteStone(num);
+                // InvokeRepeating 멈추기
+                CancelInvoke("InstantiateButton");
+            }
+        }
+
+        // 2: 창
+        if (num == 2)
+        {
+            // 미완성 돌 이미지 활성화
+            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
+            {
+                item.SetActive(true);
+            }
+
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount +2)
+            {
+                ActivateCompleteStone(num);
+                // InvokeRepeating 멈추기
+                CancelInvoke("InstantiateButton");
+            }
+        }
+
+        // 3: 돌 화살
+        if (num == 3)
+        {
+            // 미완성 돌 이미지 활성화
+            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
+            {
+                item.SetActive(true);
+            }
+
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount + 5)
+            {
+                ActivateCompleteStone(num);
+                // InvokeRepeating 멈추기
+                CancelInvoke("InstantiateButton");
+            }
         }
     }
 
@@ -40,16 +99,16 @@ public class StoneClick : MonoBehaviour
         Buttonobject.SetActive(true);
     }
 
-    void ActivateCompleteStone()
+    void ActivateCompleteStone(int i)
     {
         // 미완성 돌 이미지 비활성화
-        foreach (GameObject item in incompleteStone)
+        foreach (GameObject item in UIManager.Instance.incompleteStone[i])
         {
             item.SetActive(false);
         }
 
         // 완성된 돌 이미지 활성화
-        completeStone.SetActive(true);
+        UIManager.Instance.completeStone[UIManager.Instance.itemNo].SetActive(true);
 
         // 완성 텍스트
         completeText.gameObject.SetActive(true);
@@ -59,7 +118,7 @@ public class StoneClick : MonoBehaviour
     public void Success()
     {
         Buttonobject.GetComponent<Animator>().SetTrigger("isSuccess");
-        clickCount += 1;
+        UIManager.Instance.clickCount += 1;
 
         // 슬라이더 업데이트
         UpdateSlider();
@@ -75,7 +134,7 @@ public class StoneClick : MonoBehaviour
     // 슬라이더 업데이트
     void UpdateSlider()
     {
-        float normalizedValue = (float)clickCount / maxCount;
+        float normalizedValue = (float)UIManager.Instance.clickCount / UIManager.Instance.maxCount;
         clickCountSlider.value = normalizedValue;
     }
 }

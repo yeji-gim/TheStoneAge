@@ -16,10 +16,10 @@ public class craftManager : MonoBehaviour
     public Scenename scenename;
     public enum Scenename
     {
-        HandAxe,
-        StoneAxe,
-        Projectile,
-        Spear
+        BuildHandAxe,
+        BuildStoneAxe,
+        BuildArrow,
+        BuildSpear
     }
     SceneLoad sceneLoader;
 
@@ -31,11 +31,10 @@ public class craftManager : MonoBehaviour
         button.interactable = false;
         AllSetActive = true;
     }
-    void Update()
+    public void Update()
     {
         ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
         ItemSlotData[] Equipmentitems = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
-
 
         for (int i = 0; i < item.Length; i++)
         {
@@ -68,12 +67,13 @@ public class craftManager : MonoBehaviour
             }
         }
 
-        for(int i = 0; i<itemImages.Length;i++)
+        for (int i = 0; i < itemImages.Length; i++)
         {
             if (!itemImages[i].activeSelf)
             {
+                Debug.Log("비활성화된게 있음");
                 AllSetActive = false;
-                break; // 하나의 비활성화된 요소가 있으면 루프를 빠져나갑니다.
+                break;
             }
         }
         if (AllSetActive)
@@ -81,9 +81,30 @@ public class craftManager : MonoBehaviour
             button.interactable = true;
         }
     }
-
-    public void LoadSceneOnClick()
+    public void BuildHandAxeClick()
     {
-        sceneLoader.LoadSceneByEnum(scenename);
+        Debug.Log("BuildHandAxeClick");
+        UIManager.Instance.itemNo = 0;
+        SceneManager.LoadScene("BuildItem");
+        
+        UIManager.Instance.makingPanel.SetActive(false);
+    }
+    public void BuildStoneAxeClick()
+    {
+        SceneManager.LoadScene("BuildItem");
+        UIManager.Instance.itemNo = 1;
+        UIManager.Instance.makingPanel.SetActive(false);
+    }
+    public void BuildArrowClick()
+    {
+        SceneManager.LoadScene("BuildItem");
+        UIManager.Instance.itemNo = 2;
+        UIManager.Instance.makingPanel.SetActive(false);
+    }
+    public void BuildSpearClick()
+    {
+        SceneManager.LoadScene("BuildItem");
+        UIManager.Instance.itemNo = 3;
+        UIManager.Instance.makingPanel.SetActive(false);
     }
 }

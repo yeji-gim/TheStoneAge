@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Sister2
   m_EditorClassIdentifier: 
   questname: "\uC5F4\uB9E4 \uCC44\uC9D1"
-  description: "\uC81C\uC791\uB300\uC5D0\uC11C \uC8FC\uBA39\uB3C4\uB07C\uB97C \uC81C\uC791\uD55C
-    \uB2E4\uC74C\n\uC8FC\uBA39\uB3C4\uB07C\uB97C \uAC00\uC9C0\uACE0 \uC5F4\uB9E4\uB97C
+  description: "\uC8FC\uBA39\uB3C4\uB07C\uB97C \uC774\uC6A9\uD574\uC11C \uC5F4\uB9E4\uB97C
     \uCC44\uC9D1\uD574\uC624\uC790"
   requiredItems:
   - item: {fileID: 11400000, guid: 7247d19ed3c9f534f87f2a544f393ee9, type: 2}
     itemCount: 2
-  isCompleted: 0
+  isCompleted: 1

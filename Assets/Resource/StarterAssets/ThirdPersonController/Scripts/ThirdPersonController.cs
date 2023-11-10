@@ -504,12 +504,38 @@ namespace StarterAssets
         public void Farming()
         {
             Collider[] _target = Physics.OverlapSphere(transform.position, ViewSize, ItemLayer);
+            ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
+            List<string> collectedItems = new List<string>();
+            for (int i = 0; i < items.Length; i++)
+            {
+                if (items[i].itemData != null  && !collectedItems.Contains(items[i].itemData.itemName))
+                {
+                    collectedItems.Add(items[i].itemData.itemName);
+                }
+            }
             for (int i = 0; i < _target.Length; i++)
             {
-                if (_target[i].GetComponent<InteractableObject>())
+                string itemName = _target[i].GetComponent<InteractableObject>().item.itemName;
+                if (collectedItems.Contains(itemName))
                 {
-                    Farmingui.Itemqueue.Enqueue(_target[i].GetComponent<InteractableObject>().item.itemName);
-                    _target[i].GetComponent<InteractableObject>().GetItem();
+                    Debug.Log($"포함됨 {_target[i].name}");
+                    for (int j = 0; j < items.Length; j++)
+                    {
+                        items[i].itemData.quantity++;
+                        Debug.Log(items[i].itemData.quantity);
+                        break;
+                    }
+                    _target[i].GetComponent<InteractableObject>().oldItem();
+                    Farmingui.Itemqueue.Enqueue(itemName);
+                    UIManager.Instance.RenderInventory();
+                }
+                else
+                {
+                    Debug.Log($"포함안됨 {_target[i].name}");
+                    collectedItems.Add(itemName);
+                    _target[i].GetComponent<InteractableObject>().newItem();
+                    
+                    Farmingui.Itemqueue.Enqueue(itemName);
                 }
             }
         }
