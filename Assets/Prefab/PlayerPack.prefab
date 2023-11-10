@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -586,7 +586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6943698272530656170
 Transform:
   m_ObjectHideFlags: 0
@@ -596,7 +596,7 @@ Transform:
   m_GameObject: {fileID: 1961808846880241036}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.992737, y: 4.8184814, z: -40.033607}
+  m_LocalPosition: {x: 47.9928, y: 4.8185, z: -40.033604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -709,7 +709,7 @@ Transform:
   m_GameObject: {fileID: 2215989923862664454}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.37985402, z: -0, w: 0.92504644}
-  m_LocalPosition: {x: -675.20917, y: -517.7627, z: -27.733416}
+  m_LocalPosition: {x: 47.850517, y: 4.8185, z: -40.174156}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -748,7 +748,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 20
+  field of view: 40
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -2970,7 +2970,7 @@ Transform:
   m_GameObject: {fileID: 4986278240802716014}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.850464, y: 4.8184814, z: -40.174156}
+  m_LocalPosition: {x: 47.850517, y: 4.8185, z: -40.174156}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3210,8 +3210,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC90D\uAE30"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4348a7f962144484c9322605152a0d94, type: 2}
-  m_sharedMaterial: {fileID: 5684038910578685487, guid: 4348a7f962144484c9322605152a0d94, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}
+  m_sharedMaterial: {fileID: -2040515395388781819, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4864,8 +4864,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<color=yellow>\uB3CC</color> \uC744 \uD68D\uB4DD\uD558\uC600\uC2B5\uB2C8\uB2E4."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4348a7f962144484c9322605152a0d94, type: 2}
-  m_sharedMaterial: {fileID: 5684038910578685487, guid: 4348a7f962144484c9322605152a0d94, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}
+  m_sharedMaterial: {fileID: -2040515395388781819, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4889,7 +4889,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 53.65
+  m_fontSize: 61.2
   m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4925,7 +4925,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 84.83777, y: 14.139618, z: 78.55347, w: 14.139629}
+  m_margin: {x: 84.83777, y: 29.001524, z: 78.55347, w: 15.79092}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6181,31 +6181,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.021
+      value: -0.025577288
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.033
+      value: 0.033453036
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.005
+      value: 0.0040230737
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: -0.10759674
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.7276411
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.66722775
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.117339395
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6213,11 +6213,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 198.321
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
+      value: -94.96
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 000ba2c73107f78469f54c6a080de4ea, type: 3}
       propertyPath: m_Materials.Array.data[0]

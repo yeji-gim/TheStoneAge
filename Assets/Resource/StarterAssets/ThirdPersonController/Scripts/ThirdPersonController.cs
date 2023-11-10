@@ -523,32 +523,35 @@ namespace StarterAssets
             }
             for (int i = 0; i < _target.Length; i++)
             {
-                string itemName = _target[i].GetComponent<InteractableObject>().item.itemName;
-
-                if (collectedItems.Contains(itemName))
+                if (_target[i].GetComponent<InteractableObject>())
                 {
-                    Debug.Log($"포함됨 {_target[i].name}");
+                    string itemName = _target[i].GetComponent<InteractableObject>().item.itemName;
 
-                    // 수량 처리
-                    for (int j = 0; j < items.Length; j++)
+                    if (collectedItems.Contains(itemName))
                     {
-                        if (items[j].itemData != null && items[j].itemData.itemName == itemName)
-                        {
-                            items[j].AddQuantity();
-                            break; // 해당 아이템을 찾았으니 더 이상 확인할 필요 없음
-                        }
-                    }
+                        Debug.Log($"포함됨 {_target[i].name}");
 
-                    _target[i].GetComponent<InteractableObject>().oldItem();
-                    Farmingui.Itemqueue.Enqueue(itemName);
-                    UIManager.Instance.RenderInventory();
-                }
-                else
-                {
-                    Debug.Log($"포함안됨 {_target[i].name}");
-                    collectedItems.Add(itemName);
-                    _target[i].GetComponent<InteractableObject>().newItem();
-                    Farmingui.Itemqueue.Enqueue(itemName);
+                        // 수량 처리
+                        for (int j = 0; j < items.Length; j++)
+                        {
+                            if (items[j].itemData != null && items[j].itemData.itemName == itemName)
+                            {
+                                items[j].AddQuantity();
+                                break; // 해당 아이템을 찾았으니 더 이상 확인할 필요 없음
+                            }
+                        }
+
+                        _target[i].GetComponent<InteractableObject>().oldItem();
+                        Farmingui.Itemqueue.Enqueue(itemName);
+                        UIManager.Instance.RenderInventory();
+                    }
+                    else
+                    {
+                        Debug.Log($"포함안됨 {_target[i].name}");
+                        collectedItems.Add(itemName);
+                        _target[i].GetComponent<InteractableObject>().newItem();
+                        Farmingui.Itemqueue.Enqueue(itemName);
+                    }
                 }
             }
         }
@@ -572,7 +575,7 @@ namespace StarterAssets
 
 
 
-                if ((aimDirection * arrow.GetComponent<Arrow>().speed).magnitude > 1000)
+                if ((aimDirection * arrow.GetComponent<Arrow>().speed).magnitude > 2000)
                 {
                     arrow.GetComponent<Rigidbody>().AddForce(aimDirection.normalized * 1000f);
                 }

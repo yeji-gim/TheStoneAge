@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class Animal : MonoBehaviour
 {
     [SerializeField] private string animalName; // 동물의 이름
-    [SerializeField] private int hp;  // 동물의 체력
+    public int hp;  // 동물의 체력
 
     [SerializeField] private float walkSpeed;  // 걷기 속력
     [SerializeField] private float runSpeed;  // 걷기 속력
@@ -174,6 +174,7 @@ public class Animal : MonoBehaviour
     {
         nav.ResetPath();
         anim.SetTrigger("isDie");
+        gameObject.layer = LayerMask.NameToLayer("Item");
     }
 
     public void hit()

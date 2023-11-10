@@ -50,8 +50,8 @@ MonoBehaviour:
   AnimalLayer:
     serializedVersion: 2
     m_Bits: 536870912
-  AttackSize: 1
-  speed: 50
+  AttackSize: 2
+  speed: 100
 --- !u!54 &3942248744804844349
 Rigidbody:
   m_ObjectHideFlags: 0

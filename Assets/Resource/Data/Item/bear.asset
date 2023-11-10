@@ -16,5 +16,5 @@ MonoBehaviour:
   description: "\uB0B4\uAC00 \uC9C1\uC811 \uC5BB\uC740 \uACF0\uC774\uB2E4.\n\uB9C8\uC9C0\uB9C9
     \uC784\uBB34\uC5D0 \uD544\uC694\uD558\uB2E4."
   thumbnail: {fileID: -649081039, guid: 9b1f46a2df71af84095f9fc1df06ec5d, type: 3}
-  gameModel: {fileID: 0}
+  gameModel: {fileID: 353355851734507627, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
   quantity: 1

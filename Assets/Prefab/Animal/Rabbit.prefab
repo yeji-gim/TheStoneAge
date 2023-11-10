@@ -1360,6 +1360,7 @@ GameObject:
   - component: {fileID: 2445884274597616125}
   - component: {fileID: 5143027044126384192}
   - component: {fileID: 3317861186275219494}
+  - component: {fileID: -8470101668343271322}
   m_Layer: 29
   m_Name: Rabbit
   m_TagString: Untagged
@@ -1429,6 +1430,9 @@ MonoBehaviour:
     m_Bits: 1073741824
   viewDistance: 10
   viewAngle: 90
+  Itemlayer:
+    serializedVersion: 2
+    m_Bits: 268435456
 --- !u!54 &7471597943059649646
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1553,6 +1557,19 @@ CapsuleCollider:
   m_Height: 1.6777247
   m_Direction: 1
   m_Center: {x: 0, y: 0.33886236, z: 0}
+--- !u!114 &-8470101668343271322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745787729340787534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e647b7f2f6998cf46b23cd0fc5b96a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 13119758729cf63489c0d83a33f8001d, type: 2}
 --- !u!1 &8858782552061955302
 GameObject:
   m_ObjectHideFlags: 0

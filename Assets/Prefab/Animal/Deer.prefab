@@ -722,6 +722,7 @@ GameObject:
   - component: {fileID: 8300073509449762000}
   - component: {fileID: 4868290526219782766}
   - component: {fileID: 4278266370424026023}
+  - component: {fileID: 66067393321806610}
   m_Layer: 29
   m_Name: Deer
   m_TagString: Untagged
@@ -792,6 +793,9 @@ MonoBehaviour:
     m_Bits: 1073741824
   viewDistance: 10
   viewAngle: 90
+  Itemlayer:
+    serializedVersion: 2
+    m_Bits: 268435456
 --- !u!54 &8006210981748250796
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -916,6 +920,19 @@ CapsuleCollider:
   m_Height: 1.9752808
   m_Direction: 1
   m_Center: {x: 0, y: 0.48764038, z: 0.21456164}
+--- !u!114 &66067393321806610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3583054197718919730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e647b7f2f6998cf46b23cd0fc5b96a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 13119758729cf63489c0d83a33f8001d, type: 2}
 --- !u!1 &3588032906730957390
 GameObject:
   m_ObjectHideFlags: 0

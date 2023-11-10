@@ -190,6 +190,7 @@ public class Bear : MonoBehaviour
     {
         nav.ResetPath();
         anim.SetTrigger("isDie");
+        gameObject.layer = LayerMask.NameToLayer("Item");
     }
 
     public void hit()

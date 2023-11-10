@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 2870529348409632261}
   - component: {fileID: 965500574863268408}
   - component: {fileID: 6751018530881802280}
+  - component: {fileID: -7533195456153288812}
   m_Layer: 29
   m_Name: Bear
   m_TagString: Untagged
@@ -245,6 +246,19 @@ CapsuleCollider:
   m_Height: 1.9752808
   m_Direction: 1
   m_Center: {x: 0, y: 0.48764038, z: 0.21456164}
+--- !u!114 &-7533195456153288812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353355851734507627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e647b7f2f6998cf46b23cd0fc5b96a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: b4be0e62b55ba0c46b35af46cd219bcf, type: 2}
 --- !u!1 &1331138780546005390
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6177614530027099745}
-  m_Layer: 29
+  m_Layer: 0
   m_Name: Attackpos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
