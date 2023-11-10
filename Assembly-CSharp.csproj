@@ -62,6 +62,7 @@
     <Compile Include="Assets/Script/UI/Inventory/EquipmentData.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/DialoguePrompt.cs" />
     <Compile Include="Assets/Script/UI/Inventory/ItemData.cs" />
+    <Compile Include="Assets/Script/ThirdPersonShooterController.cs" />
     <Compile Include="Assets/Script/UI/Quest/QuestData.cs" />
     <Compile Include="Assets/Resource/Animal pack deluxe/Scripts/MoveCamera.cs" />
     <Compile Include="Assets/Resource/StarterAssets/ThirdPersonController/Scripts/BasicRigidBodyPush.cs" />
