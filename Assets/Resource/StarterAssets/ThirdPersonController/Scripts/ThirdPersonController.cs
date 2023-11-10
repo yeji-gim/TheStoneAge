@@ -516,15 +516,21 @@ namespace StarterAssets
             for (int i = 0; i < _target.Length; i++)
             {
                 string itemName = _target[i].GetComponent<InteractableObject>().item.itemName;
+
                 if (collectedItems.Contains(itemName))
                 {
                     Debug.Log($"포함됨 {_target[i].name}");
+
+                    // 수량 처리
                     for (int j = 0; j < items.Length; j++)
                     {
-                        items[i].itemData.quantity++;
-                        Debug.Log(items[i].itemData.quantity);
-                        break;
+                        if (items[j].itemData != null && items[j].itemData.itemName == itemName)
+                        {
+                            items[j].AddQuantity();
+                            break; // 해당 아이템을 찾았으니 더 이상 확인할 필요 없음
+                        }
                     }
+
                     _target[i].GetComponent<InteractableObject>().oldItem();
                     Farmingui.Itemqueue.Enqueue(itemName);
                     UIManager.Instance.RenderInventory();
@@ -534,7 +540,6 @@ namespace StarterAssets
                     Debug.Log($"포함안됨 {_target[i].name}");
                     collectedItems.Add(itemName);
                     _target[i].GetComponent<InteractableObject>().newItem();
-                    
                     Farmingui.Itemqueue.Enqueue(itemName);
                 }
             }

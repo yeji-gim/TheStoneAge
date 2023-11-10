@@ -908,7 +908,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5667569732527033561, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6655212965499023536, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_fontAsset
@@ -921,7 +921,11 @@ PrefabInstance:
     - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: Items.Array.data[1].itemData
       value: 
-      objectReference: {fileID: 11400000, guid: 7247d19ed3c9f534f87f2a544f393ee9, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: Items.Array.data[1].quantity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: Items.Array.data[2].itemData
       value: 

@@ -33,6 +33,7 @@ public class craftManager : MonoBehaviour
     }
     public void Update()
     {
+        UIManager.Instance.RenderInventory();
         ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
         ItemSlotData[] Equipmentitems = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
 
