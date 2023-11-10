@@ -101,6 +101,7 @@
     <Compile Include="Assets\Script\UI\UIManager.cs" />
     <Compile Include="Assets\Script\DontDestroy.cs" />
     <Compile Include="Assets\Script\UI\SceneLoad.cs" />
+    <Compile Include="Assets\Script\Build Stone\IncompleteItem.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\DialogueEnding.cs" />
     <Compile Include="Assets\Resource\LowPolyWater_Pack\Scripts\LowPolyWater.cs" />
     <Compile Include="Assets\Script\UI\makeTable.cs" />

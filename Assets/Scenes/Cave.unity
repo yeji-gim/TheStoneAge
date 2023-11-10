@@ -974,6 +974,14 @@ PrefabInstance:
       propertyPath: scenename
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7614037905746899805, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: incompleteStone.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614037905746899805, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: incompleteStone.Array.data[0].incomplete.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7970505285492378235, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_SizeDelta.x
       value: 300
