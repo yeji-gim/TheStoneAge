@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3731193, g: 0.3807401, b: 0.358727, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -107,7 +107,7 @@ NavMeshSettings:
     serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 5
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 62ccc442605aa2147960c860bf7dd1d2, type: 2}
 --- !u!1001 &21098255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -134,6 +134,10 @@ PrefabInstance:
     - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_Name
       value: Canyon_Wall_4B
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4691135086138494, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -197,6 +201,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon_Wall_2C (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.099995
@@ -257,6 +265,90 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4558397995094870, guid: 2b44409cf841e394399e7c15cb10fd4e, type: 3}
   m_PrefabInstance: {fileID: 412700646}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &195844364
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 353355851734507627, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_Name
+      value: Bear
+      objectReference: {fileID: 0}
+    - target: {fileID: 965500574863268408, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: fc94ee0dd5070844d9c3ca85a0427471, type: 2}
+    - target: {fileID: 2376083933084854736, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: hp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376083933084854736, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: viewAngle
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2376083933084854736, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: viewDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.2408152
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.523
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.99932444
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.036751874
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 355.788
+      objectReference: {fileID: 0}
+    - target: {fileID: 7203371683888030338, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+--- !u!114 &264934025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1402595296791996575, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+  m_PrefabInstance: {fileID: 889424372}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97916ea116510d7429d0c3fa6f9b608e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &372179754
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +572,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon_Wall_4B (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4691135086138494, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27
@@ -542,6 +638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon_Wall_4B (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4691135086138494, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -27.1
@@ -603,6 +703,10 @@ PrefabInstance:
     - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_Name
       value: Canyon_Wall_2C (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -804,6 +908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon_Wall_4B (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4691135086138494, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -45.4
@@ -854,6 +962,171 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4691135086138494, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
   m_PrefabInstance: {fileID: 852871862}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &889424372
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1221761064699827309, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221761064699827309, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221761064699827309, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 264934025}
+    - target: {fileID: 1221761064699827309, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221761064699827309, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuildArrowClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221761064699827309, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: craftManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221761064699827309, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2035469392718763036, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}
+    - target: {fileID: 2309222122973139953, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuildHandAxeClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926334581988295071, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926334581988295071, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926334581988295071, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1994580049}
+    - target: {fileID: 2926334581988295071, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926334581988295071, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuildSpearClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926334581988295071, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: craftManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2926334581988295071, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4163444023269577611, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_Name
+      value: Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4200710171648055539, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655212965499023536, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}
+    - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: Items.Array.data[2].itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7247d19ed3c9f534f87f2a544f393ee9, type: 2}
+    - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: Items.Array.data[2].quantity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065948938070727969, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065948938070727969, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065948938070727969, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1936297355}
+    - target: {fileID: 7065948938070727969, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065948938070727969, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuildStoneAxeClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065948938070727969, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: craftManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7065948938070727969, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7539058697787670959, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+      propertyPath: scenename
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
 --- !u!1 &994453705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon_Wall_2C
       objectReference: {fileID: 0}
+    - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.121994
@@ -1087,6 +1364,10 @@ PrefabInstance:
     - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_Name
       value: Canyon_Wall_4B (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4691135086138494, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1215,6 +1496,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPack
       objectReference: {fileID: 0}
+    - target: {fileID: 4409003468449649873, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
+      propertyPath: weaponnum
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4986278240802715793, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.1500015
@@ -1237,7 +1522,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7877946281688097019, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.682
+      value: 2.83
       objectReference: {fileID: 0}
     - target: {fileID: 7877946281688097019, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1250,6 +1535,10 @@ PrefabInstance:
     - target: {fileID: 7877946281688097019, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8204559416829995945, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1267,6 +1556,10 @@ PrefabInstance:
     - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_Name
       value: Canyon_Wall_4B (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982598976072686, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4691135086138494, guid: 7dfe339f739b9824aa34f5ed0307601a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1329,6 +1622,10 @@ PrefabInstance:
     - target: {fileID: 1173556608670646, guid: e21e9964985906040ad1b6a62d9ef15a, type: 3}
       propertyPath: m_Name
       value: Canyon_Overpass_1B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1173556608670646, guid: e21e9964985906040ad1b6a62d9ef15a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4193040823988504, guid: e21e9964985906040ad1b6a62d9ef15a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1395,6 +1692,10 @@ PrefabInstance:
     - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_Name
       value: Canyon_Wall_2C (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1520,6 +1821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canyon_Wall_2C (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.4
@@ -1581,6 +1886,10 @@ PrefabInstance:
     - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_Name
       value: Canyon_Wall_2C (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1677,6 +1986,17 @@ Transform:
   - {fileID: 1418477759}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1936297355 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7539058697787670959, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+  m_PrefabInstance: {fileID: 889424372}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97916ea116510d7429d0c3fa6f9b608e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1991465419
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1688,6 +2008,10 @@ PrefabInstance:
     - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_Name
       value: Canyon_Wall_2C (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1789476410449060, guid: 24e29205bf6714b42a61134436965e44, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1739,6 +2063,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4248677659956986, guid: 24e29205bf6714b42a61134436965e44, type: 3}
   m_PrefabInstance: {fileID: 1991465419}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1994580049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1291783797873668856, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+  m_PrefabInstance: {fileID: 889424372}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97916ea116510d7429d0c3fa6f9b608e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2087391934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1960,3 +2295,5 @@ SceneRoots:
   - {fileID: 994453706}
   - {fileID: 1044548112}
   - {fileID: 1165413951}
+  - {fileID: 195844364}
+  - {fileID: 889424372}

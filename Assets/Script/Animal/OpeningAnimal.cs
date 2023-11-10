@@ -20,6 +20,6 @@ public class OpeningAnimal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigid.velocity = transform.forward * speed;
+        rigid.velocity = new Vector3(transform.forward.x * speed,rigid.velocity.y, transform.forward.z * speed);
     }
 }

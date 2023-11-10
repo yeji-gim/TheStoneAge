@@ -48,7 +48,7 @@ public class Bear : MonoBehaviour
 
     void Start()
     {
-        currentTime = waitTime;   // 대기 시작
+        currentTime = 0;   // 대기 시작
         isAction = true;   // 대기도 행동
         anim = GetComponent<Animator>();
         rigidl = GetComponent<Rigidbody>();
