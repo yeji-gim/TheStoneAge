@@ -95,6 +95,7 @@ public class UIManager : MonoBehaviour
 
         toolHandSlot.Display(InventoryManager.Instance.equippedTool);
     }
+
     void RenderInventoryPanel(ItemSlotData[] slots, InventorySlot[] uiSlots)
     {
         for (int i = 0; i < uiSlots.Length; i++)
@@ -189,12 +190,22 @@ public class UIManager : MonoBehaviour
 
     public void TogglemakeHandAxeButton()
     {
+        if(handAxePanel.activeSelf)
+        {
+            craftManager handAxe = handAxePanel.GetComponent<craftManager>();
+            handAxe.CheckItem();
+        }
         handAxePanel.SetActive(!handAxePanel.activeSelf);
 
     }
 
     public void TogglemakestoneAxePanelButton()
     {
+        if (stoneAxePanel.activeSelf)
+        {
+            craftManager stoneAxe = stoneAxePanel.GetComponent<craftManager>();
+            stoneAxe.CheckItem();
+        }
         stoneAxePanel.SetActive(!stoneAxePanel.activeSelf);
     }
 
