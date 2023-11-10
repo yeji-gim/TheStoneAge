@@ -42,6 +42,7 @@ public class InteractableObject : MonoBehaviour
                 if (items[i].itemData == null)
                 {
                     items[i].itemData = item;
+                    items[i].AddQuantity();
                     item = null;
                     break;
                 }
