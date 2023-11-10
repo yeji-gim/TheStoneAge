@@ -217,4 +217,6 @@ public class UIManager : MonoBehaviour
             npcCamera.SetActive(false);
         }
     }
+
+
 }

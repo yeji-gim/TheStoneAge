@@ -9,7 +9,7 @@ public class StoneClick : MonoBehaviour
 {
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
     public TMP_Text completeText;      // 완성 텍스트
-    int num;
+    public int num;
 
     public GameObject Buttonobject;
 
@@ -20,9 +20,12 @@ public class StoneClick : MonoBehaviour
 
     void Update()
     {
+        UIManager.Instance.itemNo = num;
+        
         // 0: 주먹도끼
         if (num == 0)
         {
+            Debug.Log("주먹도끼");
             // 미완성 돌 이미지 활성화
             foreach (GameObject item in UIManager.Instance.incompleteStone[num])
             {
