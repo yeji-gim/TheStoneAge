@@ -28,6 +28,7 @@ namespace StarterAssets
 
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
+        public float Sensitivity = 1f;
 
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
@@ -150,6 +151,8 @@ namespace StarterAssets
         public Transform ArrowPos;
         public GameObject ArrowPrefab;
 
+        public GameObject debugAim;
+
         private void Awake()
         {
             // get a reference to our main camera
@@ -241,8 +244,8 @@ namespace StarterAssets
                 //Don't multiply mouse input by Time.deltaTime;
                 float deltaTimeMultiplier = IsCurrentDeviceMouse ? 1.0f : Time.deltaTime;
 
-                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier;
-                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier;
+                _cinemachineTargetYaw += _input.look.x * deltaTimeMultiplier * Sensitivity;
+                _cinemachineTargetPitch += _input.look.y * deltaTimeMultiplier * Sensitivity;
             }
 
             // clamp our rotations so our values are limited 360 degrees
@@ -445,6 +448,11 @@ namespace StarterAssets
                 new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z),
                 GroundedRadius);
         }
+        public void SetSensitivity(float newSensitivity)
+        {
+            Sensitivity = newSensitivity;
+        }
+
 
         private void OnFootstep(AnimationEvent animationEvent)
         {
@@ -557,7 +565,29 @@ namespace StarterAssets
 
         public void BowAttack()
         {
-            GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, transform.rotation);
+            if (debugAim.activeSelf)
+            {
+                Vector3 aimDirection = (debugAim.transform.position - ArrowPos.position);
+                GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, Quaternion.Euler(aimDirection.normalized));
+
+
+
+                if ((aimDirection * arrow.GetComponent<Arrow>().speed).magnitude > 1000)
+                {
+                    arrow.GetComponent<Rigidbody>().AddForce(aimDirection.normalized * 1000f);
+                }
+                else
+                {
+                    arrow.GetComponent<Rigidbody>().AddForce(aimDirection * arrow.GetComponent<Arrow>().speed);
+                }
+
+                arrow.GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
+            }
+            else
+            {
+                GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, transform.rotation);
+                arrow.GetComponent<Rigidbody>().velocity = transform.forward * arrow.GetComponent<Arrow>().speed + Vector3.down * 0.1f;
+            }
         }
     }
 }

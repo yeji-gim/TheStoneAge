@@ -5,12 +5,15 @@ using UnityEngine;
 public class Arrow : MonoBehaviour
 {
     public LayerMask AnimalLayer;
+    
     public float AttackSize;
     public float speed;
 
+    private Rigidbody rigid;
+
     void Awake()
     {
-        GetComponent<Rigidbody>().velocity = transform.forward*speed + Vector3.down*0.1f;
+        rigid = GetComponent<Rigidbody>();
     }
 
     private void OnDrawGizmos()
@@ -33,6 +36,8 @@ public class Arrow : MonoBehaviour
                 _target[i].GetComponent<Plant>().hit();
             Destroy(gameObject);
         }
+
+        transform.rotation = Quaternion.LookRotation(rigid.velocity);
     }
     void OnCollisionEnter(Collision collision)
     {
