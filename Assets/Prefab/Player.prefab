@@ -1439,6 +1439,7 @@ MonoBehaviour:
   move: {x: 0, y: 0}
   look: {x: 0, y: 0}
   jump: 0
+  attack: 0
   sprint: 0
   analogMovement: 0
   cursorLocked: 1
@@ -1466,6 +1467,7 @@ MonoBehaviour:
   Gravity: -15
   JumpTimeout: 0.5
   FallTimeout: 0.15
+  AttackTimeout: 0.5
   Grounded: 1
   GroundedOffset: -0.2
   GroundedRadius: 0.28
@@ -1477,6 +1479,24 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  AnimalLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  Attackpos: {fileID: 0}
+  AttackSize: 0
+  canMove: 1
+  HitUI: {fileID: 0}
+  ItemLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  ViewSize: 0
+  FarmingButton: {fileID: 0}
+  Farmingui: {fileID: 0}
+  weaponnum: 0
+  weapongObjects: []
+  weaponrange: []
+  ArrowPos: {fileID: 0}
+  ArrowPrefab: {fileID: 0}
 --- !u!1 &4592868726208875273
 GameObject:
   m_ObjectHideFlags: 0
