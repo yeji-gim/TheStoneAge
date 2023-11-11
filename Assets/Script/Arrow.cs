@@ -36,8 +36,8 @@ public class Arrow : MonoBehaviour
                 _target[i].GetComponent<Plant>().hit();
             Destroy(gameObject);
         }
-
-        transform.rotation = Quaternion.LookRotation(rigid.velocity);
+        if(rigid.velocity.magnitude != 0)
+            transform.rotation = Quaternion.LookRotation(rigid.velocity);
     }
     void OnCollisionEnter(Collision collision)
     {

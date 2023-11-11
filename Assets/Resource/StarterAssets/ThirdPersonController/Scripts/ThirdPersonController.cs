@@ -571,18 +571,8 @@ namespace StarterAssets
             if (debugAim.activeSelf)
             {
                 Vector3 aimDirection = (debugAim.transform.position - ArrowPos.position);
-                GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, Quaternion.Euler(aimDirection.normalized));
-
-
-
-                if ((aimDirection * arrow.GetComponent<Arrow>().speed).magnitude > 2000)
-                {
-                    arrow.GetComponent<Rigidbody>().AddForce(aimDirection.normalized * 1000f);
-                }
-                else
-                {
-                    arrow.GetComponent<Rigidbody>().AddForce(aimDirection * arrow.GetComponent<Arrow>().speed);
-                }
+                GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, transform.rotation);
+                arrow.GetComponent<Rigidbody>().AddForce(aimDirection.normalized * 1000f);
 
                 arrow.GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
             }
