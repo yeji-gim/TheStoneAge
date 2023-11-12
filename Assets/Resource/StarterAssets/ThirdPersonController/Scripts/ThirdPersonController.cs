@@ -405,7 +405,7 @@ namespace StarterAssets
                     if (_hasAnimator)
                     {
                         _animator.SetFloat("AttackTree",weaponnum);
-                        weapongObjects[weaponnum].SetActive(true);
+                        ChangeWeapon(weaponnum);
                         _animator.SetTrigger(_animIDAttack);
                         _AttackTimeoutDelta = AttackTimeout;
                         Invoke("AttackBoxon", 1f);

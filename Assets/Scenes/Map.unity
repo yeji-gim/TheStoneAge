@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427135, b: 0.56452316, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366757, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2585,7 +2585,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c4dde15922669423db70fdbf25583bb8, type: 2}
     - target: {fileID: 2215989923862664451, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23.715633
+      value: 23.573349
       objectReference: {fileID: 0}
     - target: {fileID: 2215989923862664451, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2593,7 +2593,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2215989923862664451, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -216.02458
+      value: -216.16515
       objectReference: {fileID: 0}
     - target: {fileID: 2972495721203133187, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_IsActive
@@ -2610,6 +2610,10 @@ PrefabInstance:
     - target: {fileID: 4409003468449649873, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: JumpHeight
       value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4409003468449649873, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
+      propertyPath: GroundLayers.m_Bits
+      value: 129
       objectReference: {fileID: 0}
     - target: {fileID: 4409003468449649873, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: weapongObjects.Array.size
@@ -2743,7 +2747,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6390403579585541242, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3500,7 +3505,7 @@ GameObject:
   - component: {fileID: 451815228}
   - component: {fileID: 451815227}
   - component: {fileID: 451815226}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
