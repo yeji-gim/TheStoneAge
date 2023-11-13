@@ -10,7 +10,6 @@ public class baseDialogue : MonoBehaviour
     bool isOne = false;
     Ray ray;
     public int index = 0;
-    QuestManager questManager;
 
     private void Start()
     {
@@ -44,16 +43,19 @@ public class baseDialogue : MonoBehaviour
             }
         }
     }
-
+    
     protected void StartDialogue(GameObject questObject, GameObject quest)
     {
-        questManager = questObject.GetComponent<QuestManager>();
+        QuestManager questManager = questObject.GetComponent<QuestManager>();
         npcController npccontroller = quest.GetComponent<npcController>();
         if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
         {
             isOne = true; index = 1;
         }
-        if (questManager.quest[1].CheckCompletion(inventoryItemSlots)) isTwo = true;
+        if (questManager.quest[1].CheckCompletion(inventoryItemSlots))
+        {
+            isTwo = true;
+        }
         if (DialogueManager.Instance != null)
         {
             if (isTwo)

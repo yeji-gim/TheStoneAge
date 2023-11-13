@@ -44,14 +44,14 @@ public class craftManager : MonoBehaviour
         {
             if (!itemImages[i].activeSelf)
             {
-                Debug.Log("비활성화된게 있음");
+                //Debug.Log("비활성화된게 있음");
                 AllSetActive = false;
                 break;
             }
         }
         if (AllSetActive)
         {
-            Debug.Log("활성화된게 있음");
+            //Debug.Log("활성화된게 있음");
             button.interactable = true;
         }
     }
@@ -73,7 +73,7 @@ public class craftManager : MonoBehaviour
 
     public void BuildHandAxeClick()
     {
-        Debug.Log("BuildHandAxeClick");
+        //Debug.Log("BuildHandAxeClick");
         SceneManager.LoadScene("BuildItem");
         StoneClick.num = 0;
         UIManager.Instance.makingPanel.SetActive(false);
