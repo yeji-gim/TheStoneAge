@@ -59,25 +59,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Script/Build Stone/StoneClick.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventHandler.cs" />
     <Compile Include="Assets/Script/UI/Inventory/EquipmentData.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeA.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/DialoguePrompt.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/EnvMapAnimator.cs" />
     <Compile Include="Assets/Script/UI/Inventory/ItemData.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_A.cs" />
     <Compile Include="Assets/Script/ThirdPersonShooterController.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01_UGUI.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SimpleScript.cs" />
     <Compile Include="Assets/Script/UI/Quest/QuestData.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark04.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ChatController.cs" />
     <Compile Include="Assets/Resource/Animal pack deluxe/Scripts/MoveCamera.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_DigitValidator.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_FrameRateCounter.cs" />
     <Compile Include="Assets/Resource/StarterAssets/ThirdPersonController/Scripts/BasicRigidBodyPush.cs" />
     <Compile Include="Assets/Script/UI/Inventory/InteractableObject.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark01.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshSpawner.cs" />
     <Compile Include="Assets/Script/UI/Inventory/InventoryManager.cs" />
     <Compile Include="Assets/Resource/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
     <Compile Include="Assets/Script/UI/craftManager.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/momDialogue.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
     <Compile Include="Assets/Resource/StarterAssets/TutorialInfo/Scripts/Readme.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/CharacterData.cs" />
     <Compile Include="Assets/Script/Farming/ButtonClick.cs" />
     <Compile Include="Assets/Script/Animal/Bear.cs" />
     <Compile Include="Assets/Script/UI/Inventory/InventorySlot.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/DialogueManager.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/CameraController.cs" />
+    <Compile Include="Assets/Script/ExpandMiniMap.cs" />
     <Compile Include="Assets/Resource/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
     <Compile Include="Assets/Resource/StarterAssets/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
     <Compile Include="Assets/Script/UI/Quest/QuestManager.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/grandFatherDialogue.cs" />
@@ -86,20 +102,39 @@
     <Compile Include="Assets/Script/UI/Dialogue/sisterDialogue.cs" />
     <Compile Include="Assets/Script/Scene/LocalEntryPoint.cs" />
     <Compile Include="Assets/Script/Farming/Item.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_ExampleScript_01.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexShakeB.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/DropdownSample.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexColorCycler.cs" />
     <Compile Include="Assets/Resource/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualButton.cs" />
     <Compile Include="Assets/Resource/StarterAssets/InputSystem/StarterAssetsInputs.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/nextDialogue.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ObjectSpin.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_PhoneNumberValidator.cs" />
+    <Compile Include="Assets/Script/PauseMenu.cs" />
     <Compile Include="Assets/Script/Farming/Plant.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexJitter.cs" />
     <Compile Include="Assets/Resource/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
     <Compile Include="Assets/Script/UI/Inventory/ItemSlotData.cs" />
     <Compile Include="Assets/Script/Scene/SceneTransitionManager.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextConsoleSimulator.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TeleType.cs" />
     <Compile Include="Assets/Script/UI/Inventory/HandInventorySlot.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextEventCheck.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets/Script/UI/GetObjectInfo.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/baseDialogue.cs" />
     <Compile Include="Assets/Script/Animal/OpeningAnimal.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
     <Compile Include="Assets/Script/Animal/Animal.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
     <Compile Include="Assets/Script/UI/Quest/npcController.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TextMeshProFloatingText.cs" />
     <Compile Include="Assets/Script/UI/UIManager.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/ShaderPropAnimator.cs" />
     <Compile Include="Assets/Script/DontDestroy.cs" />
     <Compile Include="Assets/Script/UI/SceneLoad.cs" />
     <Compile Include="Assets/Script/Build Stone/IncompleteItem.cs" />
@@ -109,6 +144,7 @@
     <Compile Include="Assets/Script/Arrow.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/DialogueLine.cs" />
     <Compile Include="Assets/Script/No_Camera_Rotation.cs" />
+    <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/dadDialogue.cs" />
     <Compile Include="Assets/Resource/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
   </ItemGroup>
@@ -117,6 +153,8 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets/Resource/caveman/human models/Caveman Girl/shader/2-sided Alpha Cutout.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
+    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Oswald-Bold - OFL.txt" />
+    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Anton OFL.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader" />
     <None Include="Assets/Resource/EXPLORER - Stone Age/Shaders/Stylized_Water.shader" />
@@ -143,6 +181,7 @@
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
+    <None Include="Assets/TextMesh Pro/Examples &amp; Extras/Fonts/Bangers - OFL.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
