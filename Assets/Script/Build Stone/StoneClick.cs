@@ -9,35 +9,66 @@ public class StoneClick : MonoBehaviour
 {
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
     public TMP_Text completeText;      // 완성 텍스트
+    public GameObject[] handAxeItems;
+    public GameObject[] stoneAxeItems;
+    public GameObject[] spearItems;
+    public GameObject[] arrowItems;
+
+    public GameObject[] completeItems;
     public static int num;
 
     public GameObject Buttonobject;
 
     private void Awake()
     {
-        InvokeRepeating("InstantiateButton", 1f, 4f);
-        GameObject[] stoneAxeObjects = GameObject.FindGameObjectsWithTag("StoneAxeItems");
-        Debug.Log(stoneAxeObjects.Length);
-        foreach (GameObject item in stoneAxeObjects)
+        if (num == 0)
         {
-            item.SetActive(true);
+            for(int i = 0;i<handAxeItems.Length;i++)
+            {
+                Debug.Log(handAxeItems[i].name);
+                handAxeItems[i].SetActive(true);
+            }
+            UIManager.Instance.maxCount -= 5;
+            InvokeRepeating("InstantiateButton", 1f, 4f);
+        }
+        if (num == 1)
+        {
+            foreach (GameObject item in stoneAxeItems)
+            {
+                Debug.Log(item.name);
+                item.SetActive(true);
+            }
+            UIManager.Instance.maxCount -= 2;
+            InvokeRepeating("InstantiateButton", 1f, 3f);
+        }
+        if (num == 2)
+        {
+            foreach (GameObject item in arrowItems)
+                item.SetActive(true);
+            UIManager.Instance.maxCount += 2;
+            InvokeRepeating("InstantiateButton", 1f, 2f);
+        }
+        if (num == 3)
+        {
+            foreach (GameObject item in arrowItems)
+                item.SetActive(true);
+            UIManager.Instance.maxCount += 5;
+            InvokeRepeating("InstantiateButton", 1f, 1f);
         }
     }
 
     void Update()
     {
-       
+        if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
+        {
+            ActivateCompleteStone(num);
+            CancelInvoke("InstantiateButton");
+        }
+        /*
         // 0: 주먹도끼
         if (num == 0)
         {
-            Debug.Log("주먹도끼");
-            // 미완성 돌 이미지 활성화
-            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
-            {
-                item.SetActive(true);
-            }
-
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount - 5)
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
             {
                 ActivateCompleteStone(num);
                 // InvokeRepeating 멈추기
@@ -48,18 +79,7 @@ public class StoneClick : MonoBehaviour
         // 1: 돌 도끼
         if (num == 1)
         {
-            Debug.Log("돌도끼");
-            // 미완성 돌 이미지 활성화
-            GameObject[] stoneAxeObjects = GameObject.FindGameObjectsWithTag("StoneAxeItems");
-            foreach (GameObject item in stoneAxeObjects)
-            //foreach (GameObject item in UIManager.Instance.incompleteStone)
-            {
-                Debug.Log("before: "+item.name);
-                item.SetActive(true);
-                Debug.Log("after: " + item.name);
-            }
-
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount - 2)
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
             {
                 ActivateCompleteStone(num);
                 // InvokeRepeating 멈추기
@@ -70,13 +90,7 @@ public class StoneClick : MonoBehaviour
         // 2: 창
         if (num == 2)
         {
-            // 미완성 돌 이미지 활성화
-            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
-            {
-                item.SetActive(true);
-            }
-
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount +2)
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
             {
                 ActivateCompleteStone(num);
                 // InvokeRepeating 멈추기
@@ -87,19 +101,14 @@ public class StoneClick : MonoBehaviour
         // 3: 돌 화살
         if (num == 3)
         {
-            // 미완성 돌 이미지 활성화
-            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
-            {
-                item.SetActive(true);
-            }
-
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount + 5)
+            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
             {
                 ActivateCompleteStone(num);
                 // InvokeRepeating 멈추기
                 CancelInvoke("InstantiateButton");
             }
         }
+        */
     }
 
     void InstantiateButton()
@@ -109,16 +118,32 @@ public class StoneClick : MonoBehaviour
         Buttonobject.SetActive(true);
     }
 
-    void ActivateCompleteStone(int i)
+    void ActivateCompleteStone(int num)
     {
         // 미완성 돌 이미지 비활성화
-        foreach (GameObject item in UIManager.Instance.incompleteStone[i])
+        if (num == 0)
         {
-            item.SetActive(false);
+            foreach(GameObject item in handAxeItems)
+                item.SetActive(false);
+        }
+        if (num == 1)
+        {
+            foreach(GameObject item in stoneAxeItems)
+                item.SetActive(false);
+        }
+        if (num == 2)
+        {
+            foreach(GameObject item in spearItems)
+                item.SetActive(false);
+        }
+        if (num == 3)
+        {
+            foreach (GameObject item in arrowItems)
+                item.SetActive(false);
         }
 
         // 완성된 돌 이미지 활성화
-        UIManager.Instance.completeStone[num].SetActive(true);
+        completeItems[num].SetActive(true);
 
         // 완성 텍스트
         completeText.gameObject.SetActive(true);

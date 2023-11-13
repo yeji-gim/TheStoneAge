@@ -10,7 +10,7 @@ public class IncompleteItem
     {
         return ((IEnumerable<GameObject>)incomplete).GetEnumerator();
     }
-    /*
+     /*
     IEnumerator IEnumerable.GetEnumerator()
     {
         return incomplete.GetEnumerator();
