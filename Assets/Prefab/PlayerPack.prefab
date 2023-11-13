@@ -4862,7 +4862,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<color=yellow>\uB3CC</color> \uC744 \uD68D\uB4DD\uD558\uC600\uC2B5\uB2C8\uB2E4."
+  m_text: "\uD68D\uB4DD"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}
   m_sharedMaterial: {fileID: -2040515395388781819, guid: 8367c49100fa04945bf3f1108a7030b6, type: 2}

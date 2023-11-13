@@ -46,6 +46,11 @@ public class Animal : MonoBehaviour
         rigidl = GetComponent<Rigidbody>();
         boxCol = GetComponent<BoxCollider>();
         nav = GetComponent<NavMeshAgent>();
+
+        isWalking = false;
+        anim.SetBool("isWalk", isWalking);
+        isRunning = false;
+        anim.SetBool("isRun", isRunning);
     }
 
     void Update()
@@ -115,7 +120,7 @@ public class Animal : MonoBehaviour
     private void Eat()  // 풀 뜯기
     {
         currentTime = waitTime;
-        anim.SetBool("isEat",true);
+        anim.SetBool("isEat", true);
     }
 
     private void TryWalk()  // 걷기
@@ -145,28 +150,14 @@ public class Animal : MonoBehaviour
         for (int i = 0; i < _target.Length; i++)
         {
             Transform _targetTf = _target[i].transform;
-            if (_targetTf.name == "Player")
-            {
-                Vector3 _direction = (_targetTf.position - transform.position).normalized;
-                float _angle = Vector3.Angle(_direction, transform.forward);
 
-                if (_angle < viewAngle * 0.5f)
-                {
-                    RaycastHit _hit;
-                    if (Physics.Raycast(transform.position + transform.up, _direction, out _hit, viewDistance))
-                    {
-                        if (_hit.transform.name == "Player" && !isRunning)
-                        {
-                            Debug.DrawRay(transform.position + transform.up, _direction, Color.blue);
+            Vector3 _direction = (_targetTf.position - transform.position).normalized;
+            float _angle = Vector3.Angle(_direction, transform.forward);
 
-                            Run(_targetTf.transform.position);
+            if (_angle < viewAngle)
+                Run(_targetTf.transform.position);
 
 
-                            return true;
-                        }
-                    }
-                }
-            }
         }
         return false;
     }
@@ -189,5 +180,10 @@ public class Animal : MonoBehaviour
                 Dead();
             }
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = new Color(0, 0, 1, 0.3f);
+        Gizmos.DrawSphere(transform.position, viewDistance);
     }
 }
