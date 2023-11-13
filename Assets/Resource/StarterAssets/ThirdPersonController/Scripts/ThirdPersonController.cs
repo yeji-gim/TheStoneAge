@@ -483,6 +483,8 @@ namespace StarterAssets
                     _target[i].GetComponent<Animal>().hit();
                 if (_target[i].GetComponent<Bear>())
                     _target[i].GetComponent<Bear>().hit();
+                if (_target[i].GetComponent<Fish>())
+                    _target[i].GetComponent<Fish>().hit();
                 if (_target[i].GetComponent<Plant>())
                     _target[i].GetComponent<Plant>().hit();
             }
@@ -523,7 +525,7 @@ namespace StarterAssets
             }
             for (int i = 0; i < _target.Length; i++)
             {
-                if (_target[i].GetComponent<InteractableObject>())
+                if (_target[i].GetComponent<InteractableObject>() && _target[i].GetComponent<InteractableObject>().item)
                 {
                     string itemName = _target[i].GetComponent<InteractableObject>().item.itemName;
 

@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c296a49fdeeae7e4ba6a6158a07b7e09, type: 3}
+      propertyPath: m_TagString
+      value: StoneAxe
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c296a49fdeeae7e4ba6a6158a07b7e09, type: 3}
       propertyPath: m_LocalScale.x
       value: 2

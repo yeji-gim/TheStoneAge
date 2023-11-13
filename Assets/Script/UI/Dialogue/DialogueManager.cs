@@ -122,7 +122,6 @@ public class DialogueManager : MonoBehaviour
             {
                 GameObject dadObject = GameObject.FindGameObjectWithTag("dadquest");
                 QuestManager dadquest = dadObject.GetComponent<QuestManager>();
-                dadquest.getQuest();
                 UIManager.Instance.ToggleDialoguePanel();
                 UIManager.Instance.npcCameraOff();
             }
@@ -132,10 +131,10 @@ public class DialogueManager : MonoBehaviour
                 QuestManager sisterquest = sisterOjbect.GetComponent<QuestManager>();
                 GameObject sister = GameObject.FindGameObjectWithTag("sister");
                 sisterDialogue sisterDialogue = sister.GetComponent<sisterDialogue>();
+                UIManager.Instance.ShowgetQuesPanel();
                 UIManager.Instance.button.gameObject.SetActive(false);
                 UIManager.Instance.DisplayQuest(sisterquest.quest[sisterDialogue.index]);
                 UIManager.Instance.ToggleDialoguePanel();
-                Debug.Log("sister");
                 UIManager.Instance.npcCameraOff();
             }
 
@@ -143,7 +142,6 @@ public class DialogueManager : MonoBehaviour
             {
                 GameObject sister = GameObject.FindGameObjectWithTag("grandfatherquest");
                 QuestManager sisterquest = sister.GetComponent<QuestManager>();
-                sisterquest.getQuest();
                 UIManager.Instance.ToggleDialoguePanel();
                 UIManager.Instance.npcCameraOff();
             }

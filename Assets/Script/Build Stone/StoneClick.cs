@@ -9,19 +9,24 @@ public class StoneClick : MonoBehaviour
 {
     public Slider clickCountSlider;    // 클릭 횟수를 표시할 슬라이더
     public TMP_Text completeText;      // 완성 텍스트
-    public int num;
+    public static int num;
 
     public GameObject Buttonobject;
 
     private void Awake()
     {
         InvokeRepeating("InstantiateButton", 1f, 4f);
+        GameObject[] stoneAxeObjects = GameObject.FindGameObjectsWithTag("StoneAxeItems");
+        Debug.Log(stoneAxeObjects.Length);
+        foreach (GameObject item in stoneAxeObjects)
+        {
+            item.SetActive(true);
+        }
     }
 
     void Update()
     {
-        UIManager.Instance.itemNo = num;
-        
+       
         // 0: 주먹도끼
         if (num == 0)
         {
@@ -43,10 +48,15 @@ public class StoneClick : MonoBehaviour
         // 1: 돌 도끼
         if (num == 1)
         {
+            Debug.Log("돌도끼");
             // 미완성 돌 이미지 활성화
-            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
+            GameObject[] stoneAxeObjects = GameObject.FindGameObjectsWithTag("StoneAxeItems");
+            foreach (GameObject item in stoneAxeObjects)
+            //foreach (GameObject item in UIManager.Instance.incompleteStone)
             {
+                Debug.Log("before: "+item.name);
                 item.SetActive(true);
+                Debug.Log("after: " + item.name);
             }
 
             if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount - 2)
@@ -108,7 +118,7 @@ public class StoneClick : MonoBehaviour
         }
 
         // 완성된 돌 이미지 활성화
-        UIManager.Instance.completeStone[UIManager.Instance.itemNo].SetActive(true);
+        UIManager.Instance.completeStone[num].SetActive(true);
 
         // 완성 텍스트
         completeText.gameObject.SetActive(true);

@@ -8,26 +8,7 @@ public class InteractableObject : MonoBehaviour
 
     public void oldItem()
     {
-        /*bool isPanelActive = UIManager.Instance.IsInventoryPanelActive();
-        if (!isPanelActive)
-        {
-            ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
- 
-
-            for (int i = 0; i < items.Length; i++)
-            {
-                if (items[i].Stackable(item))
-                {
-                    // 같은 아이템이 이미 있으면 수량을 추가
-                    items[i].AddQuantity();
-                    break;
-                }
-            }
-
-            UIManager.Instance.RenderInventory();
-        */
             Destroy(gameObject);
-        
     }
     public void newItem()
     {
