@@ -110,16 +110,21 @@ public class Animal : MonoBehaviour
     private void Wait()  // 대기
     {
         currentTime = waitTime;
+        rigidl.velocity = Vector3.zero;
+        rigidl.useGravity = false;
     }
 
     private void Eat()  // 풀 뜯기
     {
         currentTime = waitTime;
+        rigidl.velocity = Vector3.zero;
+        rigidl.useGravity = false;
         anim.SetBool("isEat",true);
     }
 
     private void TryWalk()  // 걷기
     {
+        rigidl.useGravity = true;
         currentTime = walkTime;
         isWalking = true;
         anim.SetBool("isWalk", isWalking);
@@ -128,6 +133,7 @@ public class Animal : MonoBehaviour
 
     public void Run(Vector3 _targetPos)
     {
+        rigidl.useGravity = true;
         destination = new Vector3(transform.position.x - _targetPos.x, 0f, transform.position.z - _targetPos.z).normalized;
 
         currentTime = runTime;
@@ -150,7 +156,7 @@ public class Animal : MonoBehaviour
                 Vector3 _direction = (_targetTf.position - transform.position).normalized;
                 float _angle = Vector3.Angle(_direction, transform.forward);
 
-                if (_angle < viewAngle * 0.5f)
+                if (_angle < viewAngle)
                 {
                     RaycastHit _hit;
                     if (Physics.Raycast(transform.position + transform.up, _direction, out _hit, viewDistance))
@@ -172,6 +178,8 @@ public class Animal : MonoBehaviour
     }
     public void Dead()
     {
+        rigidl.useGravity = false;
+        rigidl.velocity = Vector3.zero;
         nav.ResetPath();
         anim.SetTrigger("isDie");
         gameObject.layer = LayerMask.NameToLayer("Item");
