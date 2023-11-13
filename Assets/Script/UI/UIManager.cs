@@ -190,34 +190,32 @@ public class UIManager : MonoBehaviour
     }
 
     public void TogglemakeHandAxeButton()
-    {
-        if(handAxePanel.activeSelf)
-        {
-            craftManager handAxe = handAxePanel.GetComponent<craftManager>();
-            handAxe.CheckItem();
-            Debug.Log("CHECK ITEM");
-        }
-        handAxePanel.SetActive(!handAxePanel.activeSelf);
+    {   
+        craftManager handAxe = handAxePanel.GetComponent<craftManager>();
+        handAxe.CheckItem();
+        Debug.Log("CHECK ITEM");
 
+        handAxePanel.SetActive(!handAxePanel.activeSelf);
     }
 
     public void TogglemakestoneAxePanelButton()
     {
-        if (stoneAxePanel.activeSelf)
-        {
-            craftManager stoneAxe = stoneAxePanel.GetComponent<craftManager>();
-            stoneAxe.CheckItem();
-        }
+        craftManager stoneAxe = stoneAxePanel.GetComponent<craftManager>();
+        stoneAxe.CheckItem();
         stoneAxePanel.SetActive(!stoneAxePanel.activeSelf);
     }
 
     public void TogglemakeprojectilePanelButton()
     {
+        craftManager projectileAxe = projectilePanel.GetComponent<craftManager>();
+        projectileAxe.CheckItem();
         projectilePanel.SetActive(!projectilePanel.activeSelf);
     }
 
     public void TogglemakespearPanelButton()
     {
+        craftManager spear = spearPanel.GetComponent<craftManager>();
+        spear.CheckItem();
         spearPanel.SetActive(!spearPanel.activeSelf);
     }
 
@@ -258,5 +256,4 @@ public class UIManager : MonoBehaviour
 
         getQuestPanel.SetActive(false);
     }
-
 }

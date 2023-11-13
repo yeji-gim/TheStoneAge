@@ -22,50 +22,21 @@ public class craftManager : MonoBehaviour
         BuildSpear
     }
     SceneLoad sceneLoader;
-    bool AllSetActive;
 
-
+    
     private void Start()
     {
         button.interactable = false;
-        AllSetActive = true;
-        Debug.Log("start");
+
     }
+
     public void CheckItem()
     {
         ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
         ItemSlotData[] Equipmentitems = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
-
-        for (int i = 0; i < item.Length; i++)
-        {
-            for (int j = 0; j < items.Length; j++)
-            {
-                if (items[j].itemData != null && item[i] != null)
-                {
-                    if (items[j].itemData.name == item[i].name)
-                    {
-                        itemImages[i].gameObject.SetActive(true);
-                        break;
-                    }
-                }
-            }
-        }
-
-        for (int i = 0; i < item.Length; i++)
-        {
-            for (int j = 0; j < Equipmentitems.Length; j++)
-            {
-                if (Equipmentitems[j].itemData != null && item[i] != null)
-                {
-                    if (Equipmentitems[j].itemData.name == item[i].name)
-                    {
-                        Debug.Log(item[i].name);
-                        itemImages[i].gameObject.SetActive(true);
-                        break;
-                    }
-                }
-            }
-        }
+        bool AllSetActive = true;
+        CheckItemArray(items);
+        CheckItemArray(Equipmentitems);
 
         for (int i = 0; i < itemImages.Length; i++)
         {
@@ -78,9 +49,26 @@ public class craftManager : MonoBehaviour
         }
         if (AllSetActive)
         {
+            Debug.Log("활성화된게 있음");
             button.interactable = true;
         }
     }
+
+    private void CheckItemArray(ItemSlotData[] items)
+    {
+        for (int i = 0; i < item.Length; i++)
+        {
+            for (int j = 0; j < items.Length; j++)
+            {
+                if (items[j].itemData != null && item[i] != null && items[j].itemData.name == item[i].name)
+                {
+                    itemImages[i].gameObject.SetActive(true);
+                    break;
+                }
+            }
+        }
+    }
+
     public void BuildHandAxeClick()
     {
         Debug.Log("BuildHandAxeClick");
