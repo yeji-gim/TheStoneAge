@@ -4563,6 +4563,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7606563714951684800, guid: 3f020d68f85dc3b44badf90085792301, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780117420093127665, guid: 3f020d68f85dc3b44badf90085792301, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10980,6 +10988,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 3008221989747791254, guid: 86dad766d04a049f2a36a04c316e4c7c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 20.727
+      objectReference: {fileID: 0}
     - target: {fileID: 3021422815562073923, guid: 86dad766d04a049f2a36a04c316e4c7c, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -12275,6 +12287,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1760395799}
     m_Modifications:
+    - target: {fileID: 925209484103694913, guid: 2731d37af0fbea84e8c005a838da8743, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3682130444401576767, guid: 2731d37af0fbea84e8c005a838da8743, type: 3}
       propertyPath: m_Name
       value: Plant
@@ -12548,7 +12564,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f0550e1491e6341028cc6b30a2e119f0, type: 3}
       propertyPath: m_Name
-      value: Cave_Entrance_2A
+      value: BearCave
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f0550e1491e6341028cc6b30a2e119f0, type: 3}
       propertyPath: m_LocalScale.x
@@ -13534,6 +13550,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock
       objectReference: {fileID: 0}
+    - target: {fileID: 7606563714951684800, guid: 3f020d68f85dc3b44badf90085792301, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8780117420093127665, guid: 3f020d68f85dc3b44badf90085792301, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13550,6 +13574,10 @@ PrefabInstance:
     - target: {fileID: 2193011020313657754, guid: 73b558c371d2af348a643c0156cd0c43, type: 3}
       propertyPath: m_Name
       value: BranchTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 4600923249900890022, guid: 73b558c371d2af348a643c0156cd0c43, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7836444406176907974, guid: 73b558c371d2af348a643c0156cd0c43, type: 3}
       propertyPath: m_LocalPosition.x
