@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4462989012207999288}
   m_Layer: 28
   m_Name: StoneAxeBranch
-  m_TagString: Branch
+  m_TagString: StoneAxeItems
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

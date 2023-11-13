@@ -68,6 +68,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8db23c630c7c8a8408217dada7c6c08c, type: 3}
+      propertyPath: m_TagString
+      value: HandAxe
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -5786060314825918683, guid: 8db23c630c7c8a8408217dada7c6c08c, type: 3}
     - {fileID: -6722085885383957590, guid: 8db23c630c7c8a8408217dada7c6c08c, type: 3}

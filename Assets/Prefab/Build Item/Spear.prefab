@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7d7726ba87534474d8701791694a3c19, type: 3}
+      propertyPath: m_TagString
+      value: Spear
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7d7726ba87534474d8701791694a3c19, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5

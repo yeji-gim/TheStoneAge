@@ -16,6 +16,12 @@ public class StoneClick : MonoBehaviour
     private void Awake()
     {
         InvokeRepeating("InstantiateButton", 1f, 4f);
+        GameObject[] stoneAxeObjects = GameObject.FindGameObjectsWithTag("StoneAxeItems");
+        Debug.Log(stoneAxeObjects.Length);
+        foreach (GameObject item in stoneAxeObjects)
+        {
+            item.SetActive(true);
+        }
     }
 
     void Update()
@@ -28,7 +34,6 @@ public class StoneClick : MonoBehaviour
             // 미완성 돌 이미지 활성화
             foreach (GameObject item in UIManager.Instance.incompleteStone[num])
             {
-                Debug.Log("Before setting active: " + item.name);
                 item.SetActive(true);
             }
 
@@ -43,10 +48,15 @@ public class StoneClick : MonoBehaviour
         // 1: 돌 도끼
         if (num == 1)
         {
+            Debug.Log("돌도끼");
             // 미완성 돌 이미지 활성화
-            foreach (GameObject item in UIManager.Instance.incompleteStone[num])
+            GameObject[] stoneAxeObjects = GameObject.FindGameObjectsWithTag("StoneAxeItems");
+            foreach (GameObject item in stoneAxeObjects)
+            //foreach (GameObject item in UIManager.Instance.incompleteStone)
             {
+                Debug.Log("before: "+item.name);
                 item.SetActive(true);
+                Debug.Log("after: " + item.name);
             }
 
             if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount - 2)

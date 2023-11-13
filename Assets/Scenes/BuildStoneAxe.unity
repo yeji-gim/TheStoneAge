@@ -2031,6 +2031,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoneAxeBranch
       objectReference: {fileID: 0}
+    - target: {fileID: 721749976174258241, guid: b9ff8979c4b2d0f45a21e5d79f6df20b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7869008427877557383, guid: b9ff8979c4b2d0f45a21e5d79f6df20b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 119.6
