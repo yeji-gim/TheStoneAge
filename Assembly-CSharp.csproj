@@ -162,6 +162,7 @@
     <None Include="Assets/Resource/caveman/shaders/2-sided Alpha Cutout.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets/Resource/LowPolyWater_Pack/Shaders/WaterShaded.shader" />
+    <None Include="Assets/Resource/caveman/NewAssemblyReference.asmref" />
     <None Include="Assets/Resource/caveman/shaders/diffusespecularnormal.shader" />
     <None Include="Assets/Resource/EXPLORER - Stone Age/Documentation/EXPLORER - Stone Age.txt" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader" />
