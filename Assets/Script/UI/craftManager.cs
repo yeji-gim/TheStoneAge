@@ -22,7 +22,6 @@ public class craftManager : MonoBehaviour
         BuildSpear
     }
     SceneLoad sceneLoader;
-
     bool AllSetActive;
 
 
@@ -30,6 +29,7 @@ public class craftManager : MonoBehaviour
     {
         button.interactable = false;
         AllSetActive = true;
+        Debug.Log("start");
     }
     public void CheckItem()
     {
@@ -84,27 +84,26 @@ public class craftManager : MonoBehaviour
     public void BuildHandAxeClick()
     {
         Debug.Log("BuildHandAxeClick");
-        UIManager.Instance.itemNo = 0;
         SceneManager.LoadScene("BuildItem");
-        
+        StoneClick.num = 0;
         UIManager.Instance.makingPanel.SetActive(false);
     }
     public void BuildStoneAxeClick()
     {
         SceneManager.LoadScene("BuildItem");
-        UIManager.Instance.itemNo = 1;
+        StoneClick.num = 1;
         UIManager.Instance.makingPanel.SetActive(false);
     }
     public void BuildArrowClick()
     {
         SceneManager.LoadScene("BuildItem");
-        UIManager.Instance.itemNo = 2;
+        StoneClick.num = 2;
         UIManager.Instance.makingPanel.SetActive(false);
     }
     public void BuildSpearClick()
     {
         SceneManager.LoadScene("BuildItem");
-        UIManager.Instance.itemNo = 3;
+        StoneClick.num = 3;
         UIManager.Instance.makingPanel.SetActive(false);
     }
 }

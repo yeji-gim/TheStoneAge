@@ -10,6 +10,7 @@ public class baseDialogue : MonoBehaviour
     bool isOne = false;
     Ray ray;
     public int index = 0;
+    QuestManager questManager;
 
     private void Start()
     {
@@ -46,7 +47,7 @@ public class baseDialogue : MonoBehaviour
 
     protected void StartDialogue(GameObject questObject, GameObject quest)
     {
-        QuestManager questManager = questObject.GetComponent<QuestManager>();
+        questManager = questObject.GetComponent<QuestManager>();
         npcController npccontroller = quest.GetComponent<npcController>();
         if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
         {
@@ -59,17 +60,13 @@ public class baseDialogue : MonoBehaviour
             {
                 DialogueManager.Instance.StartDialogue(npccontroller.charcterData.completedialogueLines);
                 isTwo = true;
-                Debug.Log("quest2");
                 return;
             }
             else if (isOne)
             {
-                Debug.Log("두번째 퀘스트 완료");
                 DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
-                Debug.Log("quest1");
                 return;
             }
-            Debug.Log("완료전");
            DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
         }
     }

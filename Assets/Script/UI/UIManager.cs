@@ -52,8 +52,9 @@ public class UIManager : MonoBehaviour
     public GameObject stoneAxePanel;
     public GameObject projectilePanel;
     public GameObject spearPanel;
-
-    public int itemNo; // 아이템 번호
+    [Header("Quest")]
+    public GameObject CompleteQuest;
+    public GameObject getQuestPanel;
     
     public IncompleteItem[] incompleteStone; // 미완성 돌 이미지
     public GameObject[] completeStone;   // 완성된 돌 이미지
@@ -194,6 +195,7 @@ public class UIManager : MonoBehaviour
         {
             craftManager handAxe = handAxePanel.GetComponent<craftManager>();
             handAxe.CheckItem();
+            Debug.Log("CHECK ITEM");
         }
         handAxePanel.SetActive(!handAxePanel.activeSelf);
 
@@ -229,5 +231,32 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void ShowQuestCompletionPanel()
+    {
+        CompleteQuest.SetActive(true);
+
+        StartCoroutine(HideQuestCompletionPanel());
+    }
+
+    private IEnumerator HideQuestCompletionPanel()
+    {
+        yield return new WaitForSeconds(1f);
+
+        CompleteQuest.SetActive(false);
+    }
+
+    public void ShowgetQuesPanel()
+    {
+        getQuestPanel.SetActive(true);
+
+        StartCoroutine(HidegetQuestPanel());
+    }
+
+    private IEnumerator HidegetQuestPanel()
+    {
+        yield return new WaitForSeconds(1f);
+
+        getQuestPanel.SetActive(false);
+    }
 
 }
