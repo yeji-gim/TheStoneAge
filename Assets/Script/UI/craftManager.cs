@@ -27,9 +27,11 @@ public class craftManager : MonoBehaviour
     private void Start()
     {
         button.interactable = false;
-
     }
-
+    private void Update()
+    {
+        CheckItem();
+    }
     public void CheckItem()
     {
         ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
