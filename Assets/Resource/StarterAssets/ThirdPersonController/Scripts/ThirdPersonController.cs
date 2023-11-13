@@ -483,6 +483,8 @@ namespace StarterAssets
                     _target[i].GetComponent<Animal>().hit();
                 if (_target[i].GetComponent<Bear>())
                     _target[i].GetComponent<Bear>().hit();
+                if (_target[i].GetComponent<Fish>())
+                    _target[i].GetComponent<Fish>().hit();
                 if (_target[i].GetComponent<Plant>())
                     _target[i].GetComponent<Plant>().hit();
             }

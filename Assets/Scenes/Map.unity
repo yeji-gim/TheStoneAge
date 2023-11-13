@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 60
     agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -5374,7 +5374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.2
+      value: -2.94
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13969,15 +13969,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.1
+      value: -33.4
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.2
+      value: -3.13
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55.1
+      value: -56.29
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15088,7 +15088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.2
+      value: -1.5300002
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17504,15 +17504,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.7
+      value: -6.725
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.2
+      value: -2.1799998
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.5
+      value: -49.03
       objectReference: {fileID: 0}
     - target: {fileID: 653266924419273459, guid: 61381a95c1860a741844703fba3898b8, type: 3}
       propertyPath: m_LocalRotation.w

@@ -25,8 +25,6 @@ public class Animal : MonoBehaviour
 
     // 필요한 컴포넌트
     private Animator anim;
-    private Rigidbody rigidl;
-    private BoxCollider boxCol;
 
     protected Vector3 destination;  // 목적지
     protected NavMeshAgent nav;
@@ -43,8 +41,6 @@ public class Animal : MonoBehaviour
         currentTime = waitTime;   // 대기 시작
         isAction = true;   // 대기도 행동
         anim = GetComponent<Animator>();
-        rigidl = GetComponent<Rigidbody>();
-        boxCol = GetComponent<BoxCollider>();
         nav = GetComponent<NavMeshAgent>();
 
         isWalking = false;

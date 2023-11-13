@@ -62,5 +62,6 @@ public class ThirdPersonShooterController : MonoBehaviour
             thirdPersonController.SetSensitivity(normalSensitivity);
         }
         AimUI.color = Color.Lerp(AimUI.color, new Color(1,1,1,AimUIColor), Time.deltaTime*2f);
+        AimUI.transform.localScale = Vector3.Lerp(AimUI.transform.localScale, Vector3.one * (2-AimUIColor), Time.deltaTime * 2f);
     }
 }

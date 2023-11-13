@@ -177,6 +177,7 @@ public class Bear : MonoBehaviour
     }
     public void Dead()
     {
+        CancelInvoke();
         nav.ResetPath();
         anim.SetTrigger("isDie");
         gameObject.layer = LayerMask.NameToLayer("Item");
@@ -208,7 +209,8 @@ public class Bear : MonoBehaviour
                     anim.SetTrigger("isAttack");
                     Attackcul = maxAttackcul;
                     Invoke("AttackBoxon", 0.7f);
-                    Invoke("AttackBoxon", 1.5f);
+                    if(animalName=="Bear")
+                        Invoke("AttackBoxon", 1.5f);
 
                     nav.ResetPath();
 

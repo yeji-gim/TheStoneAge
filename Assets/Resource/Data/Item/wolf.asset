@@ -10,11 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
-  m_Name: bear
+  m_Name: wolf
   m_EditorClassIdentifier: 
-  itemName: "\uACF0"
-  description: "\uB0B4\uAC00 \uC9C1\uC811 \uC5BB\uC740 \uACF0\uC774\uB2E4.\n\uC131\uC778\uC2DD\uC5D0
-    \uD544\uC694\uD558\uB2E4."
+  itemName: "\uB291\uB300"
+  description: "\uB291\uB300\uB2E4."
   thumbnail: {fileID: -649081039, guid: 9b1f46a2df71af84095f9fc1df06ec5d, type: 3}
-  gameModel: {fileID: 353355851734507627, guid: b90bf4b662612ae43a65a8359f80876e, type: 3}
+  gameModel: {fileID: 896692754598311364, guid: 9b5d8a5453b85f645bd8deea2ae04e1a, type: 3}
   quantity: 1
