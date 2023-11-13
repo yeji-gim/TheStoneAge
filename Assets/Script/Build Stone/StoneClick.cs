@@ -19,25 +19,19 @@ public class StoneClick : MonoBehaviour
 
     public GameObject Buttonobject;
 
-    private void Awake()
+    private void Start()
     {
         if (num == 0)
         {
-            for(int i = 0;i<handAxeItems.Length;i++)
-            {
-                Debug.Log(handAxeItems[i].name);
-                handAxeItems[i].SetActive(true);
-            }
+            foreach (GameObject item in handAxeItems)
+                item.SetActive(true);
             UIManager.Instance.maxCount -= 5;
             InvokeRepeating("InstantiateButton", 1f, 4f);
         }
         if (num == 1)
         {
             foreach (GameObject item in stoneAxeItems)
-            {
-                Debug.Log(item.name);
                 item.SetActive(true);
-            }
             UIManager.Instance.maxCount -= 2;
             InvokeRepeating("InstantiateButton", 1f, 3f);
         }
@@ -64,51 +58,6 @@ public class StoneClick : MonoBehaviour
             ActivateCompleteStone(num);
             CancelInvoke("InstantiateButton");
         }
-        /*
-        // 0: ¡÷∏‘µµ≥¢
-        if (num == 0)
-        {
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
-            {
-                ActivateCompleteStone(num);
-                // InvokeRepeating ∏ÿ√ﬂ±‚
-                CancelInvoke("InstantiateButton");
-            }
-        }
-
-        // 1: µπ µµ≥¢
-        if (num == 1)
-        {
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
-            {
-                ActivateCompleteStone(num);
-                // InvokeRepeating ∏ÿ√ﬂ±‚
-                CancelInvoke("InstantiateButton");
-            }
-        }
-
-        // 2: √¢
-        if (num == 2)
-        {
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
-            {
-                ActivateCompleteStone(num);
-                // InvokeRepeating ∏ÿ√ﬂ±‚
-                CancelInvoke("InstantiateButton");
-            }
-        }
-
-        // 3: µπ »≠ªÏ
-        if (num == 3)
-        {
-            if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
-            {
-                ActivateCompleteStone(num);
-                // InvokeRepeating ∏ÿ√ﬂ±‚
-                CancelInvoke("InstantiateButton");
-            }
-        }
-        */
     }
 
     void InstantiateButton()
