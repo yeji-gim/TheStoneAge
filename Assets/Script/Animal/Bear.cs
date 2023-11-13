@@ -166,21 +166,10 @@ public class Bear : MonoBehaviour
                 Vector3 _direction = (_targetTf.position - transform.position).normalized;
                 float _angle = Vector3.Angle(_direction, transform.forward);
 
-                if (_angle < viewAngle * 0.5f)
+                if (_angle < viewAngle)
                 {
-                    RaycastHit _hit;
-                    if (Physics.Raycast(transform.position + transform.up, _direction, out _hit, viewDistance))
-                    {
-                        if (_hit.transform.name == "Player" && !isRunning)
-                        {
-                            Debug.DrawRay(transform.position + transform.up, _direction, Color.blue);
-
-                            Run(_targetTf.transform.position);
-
-
-                            return true;
-                        }
-                    }
+                    Debug.DrawRay(transform.position + transform.up, _direction, Color.blue);
+                    Run(_targetTf.transform.position);
                 }
             }
         }
@@ -246,7 +235,10 @@ public class Bear : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.color = new Color(1,0,0,0.3f);
+        Gizmos.color = new Color(1, 0, 0, 0.3f);
         Gizmos.DrawSphere(Attackpos.position, AttackSize);
+
+        Gizmos.color = new Color(0, 0, 1, 0.3f);
+        Gizmos.DrawSphere(transform.position, viewDistance);
     }
 }

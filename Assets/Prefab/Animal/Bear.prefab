@@ -43,8 +43,6 @@ GameObject:
   - component: {fileID: 7203371683888030338}
   - component: {fileID: 2117682224985988284}
   - component: {fileID: 2376083933084854736}
-  - component: {fileID: 418236695120661303}
-  - component: {fileID: 70792527752556299}
   - component: {fileID: 2870529348409632261}
   - component: {fileID: 965500574863268408}
   - component: {fileID: 6751018530881802280}
@@ -122,54 +120,6 @@ MonoBehaviour:
   Attackpos: {fileID: 6177614530027099745}
   AttackSize: 1
   maxAttackcul: 2
---- !u!54 &418236695120661303
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353355851734507627}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 112
-  m_CollisionDetection: 0
---- !u!65 &70792527752556299
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353355851734507627}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.76, y: 0.9966633, z: 2.24}
-  m_Center: {x: 0, y: 0.47650352, z: 0.2026912}
 --- !u!195 &2870529348409632261
 NavMeshAgent:
   m_ObjectHideFlags: 0
