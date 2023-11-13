@@ -5,21 +5,28 @@ using UnityEngine.UI;
 
 public class ExpandMiniMap : MonoBehaviour
 {
-    private GameObject cam;
+    public GameObject Extended;
+    public GameObject Minimized;
     public Camera mapCamera;
     public float big = 30.0f;
+    private float origin;
     public Slider mapZoom;
 
     void Start()
     {
-        cam = GameObject.Find("MiniMapCamera");
-        // mapCamera = cam.GetComponent<Camera>();
+        origin = mapCamera.orthographicSize;
     }
 
     void Update()
     {
-        mapCamera.orthographicSize = big;
-        // mapCamera.orthographicSize = mapZoom.value;
+        if (Extended.activeSelf)
+        {
+            mapCamera.orthographicSize = big;
+        }
 
+        if (Minimized.activeSelf)
+        {
+            mapCamera.orthographicSize = origin;
+        }
     }
 }
