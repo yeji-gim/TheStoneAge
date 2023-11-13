@@ -29,6 +29,7 @@ public class StoneClick : MonoBehaviour
             // 미완성 돌 이미지 활성화
             foreach (GameObject item in UIManager.Instance.incompleteStone[num])
             {
+                Debug.Log("Before setting active: " + item.name);
                 item.SetActive(true);
             }
 
