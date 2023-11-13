@@ -2,6 +2,7 @@
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 using System.Collections.Generic;
+using UnityEngine.UI;
 #endif
 
 /* Note: animations are called via the controller for both the character and capsule using animator null checks
@@ -153,6 +154,11 @@ namespace StarterAssets
 
         public GameObject debugAim;
 
+        public Transform DivePos;
+        public LayerMask WaterLayer;
+        public Image DiveUI;
+        private float DiveAlpha;
+
         private void Awake()
         {
             // get a reference to our main camera
@@ -203,6 +209,9 @@ namespace StarterAssets
 
             Gizmos.color = new Color(0, 1, 0, 0.3f);
             Gizmos.DrawSphere(transform.position, ViewSize);
+
+            Gizmos.color = new Color(0, 0, 1, 0.3f);
+            Gizmos.DrawSphere(DivePos.position, 0.1f);
         }
 
         private void LateUpdate()
@@ -291,8 +300,11 @@ namespace StarterAssets
             {
                 _speed = targetSpeed;
             }
+            if (_AttackTimeoutDelta <= 0.0f)
+                _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
+            else
+                _animationBlend = 0f;
 
-            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed, Time.deltaTime * SpeedChangeRate);
             if (_animationBlend < 0.01f) _animationBlend = 0f;
 
             // normalise input direction
@@ -510,6 +522,7 @@ namespace StarterAssets
                 FarmingButton.SetActive(true);
             else
                 FarmingButton.SetActive(false);
+            DiveUI.color = Color.Lerp(DiveUI.color, new Color(DiveUI.color.r, DiveUI.color.g, DiveUI.color.b, DiveAlpha), Time.deltaTime);
         }
         public void Farming()
         {
@@ -582,6 +595,22 @@ namespace StarterAssets
             {
                 GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, transform.rotation);
                 arrow.GetComponent<Rigidbody>().velocity = transform.forward * arrow.GetComponent<Arrow>().speed + Vector3.down * 0.1f;
+            }
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.CompareTag("Water"))
+            {
+                DiveAlpha = 0.5f;
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("Water"))
+            {
+                DiveAlpha = 0;
             }
         }
     }

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6baf96778c00e4b4883a91b95153769d, type: 3}
+  m_Name: deer
+  m_EditorClassIdentifier: 
+  itemName: "\uC0AC\uC2B4"
+  description: "\uB0B4\uAC00 \uC9C1\uC811 \uC5BB\uC740 \uC0AC\uC2B4\uC774\uB2E4."
+  thumbnail: {fileID: 996328817, guid: dbf548123fefd774db0af21d9d26e9a8, type: 3}
+  gameModel: {fileID: 3583054197718919730, guid: 61381a95c1860a741844703fba3898b8, type: 3}
+  quantity: 1

@@ -31,6 +31,7 @@ TagManager:
   - StoneAxeItems
   - SpearItems
   - ArrowItems
+  - Water
   layers:
   - Default
   - TransparentFX
