@@ -99,6 +99,7 @@
     <Compile Include="Assets/Script/UI/Dialogue/grandFatherDialogue.cs" />
     <Compile Include="Assets/Script/UI/Setting/VolumeSetting.cs" />
     <Compile Include="Assets/Script/Farming/FamingUI.cs" />
+    <Compile Include="Assets/Script/Animal/Fish.cs" />
     <Compile Include="Assets/Script/UI/Dialogue/sisterDialogue.cs" />
     <Compile Include="Assets/Script/Scene/LocalEntryPoint.cs" />
     <Compile Include="Assets/Script/Farming/Item.cs" />
