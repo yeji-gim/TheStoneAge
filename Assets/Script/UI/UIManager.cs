@@ -232,28 +232,43 @@ public class UIManager : MonoBehaviour
     public void ShowQuestCompletionPanel()
     {
         CompleteQuest.SetActive(true);
-
-        StartCoroutine(HideQuestCompletionPanel());
+        StartCoroutine(FadeOut(CompleteQuest));
     }
-
-    private IEnumerator HideQuestCompletionPanel()
-    {
-        yield return new WaitForSeconds(1f);
-
-        CompleteQuest.SetActive(false);
-    }
-
     public void ShowgetQuesPanel()
     {
         getQuestPanel.SetActive(true);
 
-        StartCoroutine(HidegetQuestPanel());
+        StartCoroutine(FadeOut(getQuestPanel));
     }
 
-    private IEnumerator HidegetQuestPanel()
+    private IEnumerator FadeOut(GameObject panel)
     {
-        yield return new WaitForSeconds(1f);
+        float duration = 2f;
+        float elapsedTime = 0f;
 
-        getQuestPanel.SetActive(false);
+        Image panelImage = panel.GetComponent<Image>();
+        TMP_Text textMeshPro = panel.GetComponentInChildren<TMP_Text>(); 
+
+        while (elapsedTime < duration)
+        {
+            elapsedTime += Time.deltaTime;
+
+
+            float panelAlpha = Mathf.Lerp(1f, 0f, elapsedTime / duration);
+            panelImage.color = new Color(1f, 1f, 1f, panelAlpha);
+
+
+            float textAlpha = Mathf.Lerp(1f, 0f, elapsedTime / duration);
+            textMeshPro.color = new Color(1f, 1f, 1f, textAlpha);
+
+            yield return null;
+        }
+
+        panelImage.color = new Color(1f, 1f, 1f, 0f);
+        textMeshPro.color = new Color(1f, 1f, 1f, 0f);
+        panel.SetActive(false);
     }
+
 }
+
+
