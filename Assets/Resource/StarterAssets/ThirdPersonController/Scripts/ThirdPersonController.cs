@@ -159,6 +159,7 @@ namespace StarterAssets
         public Image DiveUI;
         private float DiveAlpha;
 
+        private TrailsFX.TrailEffect traileffect;
         private void Awake()
         {
             // get a reference to our main camera
@@ -186,6 +187,9 @@ namespace StarterAssets
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
+
+            traileffect = GetComponent<TrailsFX.TrailEffect>();
+            ChangeWeapon(weaponnum);
         }
 
         private void Update()
@@ -321,6 +325,11 @@ namespace StarterAssets
 
                 // rotate to face input direction relative to camera position
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+
+                if (weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
+                {
+                    weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>().enabled = false;
+                }
             }
 
 
@@ -335,6 +344,14 @@ namespace StarterAssets
             if (_hasAnimator)
             {
                 _animator.SetFloat(_animIDSpeed, _animationBlend);
+                if (_animationBlend > 5f)
+                {
+                    traileffect.enabled = true;
+                }
+                else
+                {
+                    traileffect.enabled = false;
+                }
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
         }
@@ -369,6 +386,10 @@ namespace StarterAssets
                     if (_hasAnimator)
                     {
                         _animator.SetBool(_animIDJump, true);
+                    }
+                    if (weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
+                    {
+                        weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>().enabled = false;
                     }
                 }
 
@@ -425,6 +446,13 @@ namespace StarterAssets
                         if (weaponnum == 4)
                         {
                             Invoke("BowAttack", 1f);
+                        }
+                        else
+                        {
+                            if (weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
+                            {
+                                weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>().enabled = true;
+                            }
                         }
                     }
                 }
@@ -508,6 +536,10 @@ namespace StarterAssets
             canMove = false;
             Invoke("moveCan",0.66f);
             HitUI.SetTrigger("ishit");
+            if (weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
+            {
+                weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>().enabled = false;
+            }
         }
         public void moveCan()
         {
