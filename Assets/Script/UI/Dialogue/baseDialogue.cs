@@ -5,7 +5,6 @@ using UnityEngine;
 public class baseDialogue : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    ItemSlotData[] inventoryItemSlots;
     bool isTwo = false;
     bool isOne = false;
     Ray ray;
@@ -14,10 +13,6 @@ public class baseDialogue : MonoBehaviour
     private void Start()
     {
         dialoguePanel.gameObject.SetActive(false);
-    }
-    private void Update()
-    {
-        inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -43,19 +38,30 @@ public class baseDialogue : MonoBehaviour
             }
         }
     }
-    
-    protected void StartDialogue(GameObject questObject, GameObject quest)
+    protected void checkQuest(GameObject questObject, GameObject quest)
     {
+        ItemSlotData[] inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
         QuestManager questManager = questObject.GetComponent<QuestManager>();
         npcController npccontroller = quest.GetComponent<npcController>();
         if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
         {
-            isOne = true; index = 1;
+            UIManager.Instance.ShowQuestCompletionPanel();
+            isOne = true;
+            index = 1;
         }
+
         if (questManager.quest[1].CheckCompletion(inventoryItemSlots))
         {
+            UIManager.Instance.ShowQuestCompletionPanel();
             isTwo = true;
         }
+        
+    }
+
+    protected void StartDialogue(GameObject questObject, GameObject quest)
+    {
+        QuestManager questManager = questObject.GetComponent<QuestManager>();
+        npcController npccontroller = quest.GetComponent<npcController>();
         if (DialogueManager.Instance != null)
         {
             if (isTwo)
@@ -69,7 +75,7 @@ public class baseDialogue : MonoBehaviour
                 DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
                 return;
             }
-           DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
+            DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
         }
     }
 }

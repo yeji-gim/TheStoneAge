@@ -5,6 +5,13 @@ using UnityEngine;
 public class sisterDialogue : baseDialogue
 {
     public GameObject camera;
+
+    private void Update()
+    {
+        GameObject sisterQuest = GameObject.FindGameObjectWithTag("sisterquest");
+        GameObject sister = GameObject.FindGameObjectWithTag("sister");
+        checkQuest(sisterQuest, sister);
+    }
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);
