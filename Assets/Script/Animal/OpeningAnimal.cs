@@ -7,6 +7,9 @@ public class OpeningAnimal : MonoBehaviour
     public float speed;
     public bool isRun;
     Rigidbody rigid;
+
+    public float starttime = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,8 @@ public class OpeningAnimal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigid.velocity = new Vector3(transform.forward.x * speed,rigid.velocity.y, transform.forward.z * speed);
+        starttime -= Time.deltaTime;
+        if(starttime<0)
+            rigid.velocity = new Vector3(transform.forward.x * speed,rigid.velocity.y, transform.forward.z * speed);
     }
 }
