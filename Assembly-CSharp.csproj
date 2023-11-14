@@ -132,6 +132,7 @@
     <Compile Include="Assets\Script\UI\Dialogue\baseDialogue.cs" />
     <Compile Include="Assets\Script\Animal\OpeningAnimal.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Script\Ending\EndingPlayer.cs" />
     <Compile Include="Assets\Script\Animal\Animal.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Script\UI\Quest\npcController.cs" />
