@@ -11,11 +11,11 @@ public class SceneTransitionManager : MonoBehaviour
 
     public enum SceneState
     {
-        Map,Cave,
+        MapBackup,Cave,
     }
     public SceneState sceneState;
 
-    public enum Location { Map,Cave }
+    public enum Location { MapBackup, Cave }
     public Location currentLocation;
 
     private void Awake()

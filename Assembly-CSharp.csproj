@@ -78,6 +78,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Resource\StarterAssets\ThirdPersonController\Scripts\BasicRigidBodyPush.cs" />
     <Compile Include="Assets\Script\UI\Inventory\InteractableObject.cs" />
+    <Compile Include="Assets\Script\UI\SoundController.cs" />
     <Compile Include="Assets\Trails FX\Scripts\TrailEffectProfile.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
@@ -85,12 +86,14 @@
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
     <Compile Include="Assets\Script\UI\craftManager.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\momDialogue.cs" />
+    <Compile Include="Assets\Script\UI\AudioManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Resource\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\CharacterData.cs" />
     <Compile Include="Assets\Script\Farming\ButtonClick.cs" />
     <Compile Include="Assets\Script\Animal\Bear.cs" />
     <Compile Include="Assets\Script\UI\Inventory\InventorySlot.cs" />
+    <Compile Include="Assets\Script\UI\Sound.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\DialogueManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Script\ExpandMiniMap.cs" />
@@ -98,6 +101,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Trails FX\Scripts\TrailEffect.cs" />
     <Compile Include="Assets\Resource\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Script\Animal\BearStone.cs" />
     <Compile Include="Assets\Script\UI\Quest\QuestManager.cs" />
     <Compile Include="Assets\Script\UI\Dialogue\grandFatherDialogue.cs" />
     <Compile Include="Assets\Script\UI\Setting\VolumeSetting.cs" />

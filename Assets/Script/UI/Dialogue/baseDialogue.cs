@@ -7,6 +7,8 @@ public class baseDialogue : MonoBehaviour
     public GameObject dialoguePanel;
     bool isTwo = false;
     bool isOne = false;
+    private bool questCompleted1Shown = false;
+    private bool questCompleted2Shown = false;
     Ray ray;
     public int index = 0;
 
@@ -45,14 +47,22 @@ public class baseDialogue : MonoBehaviour
         npcController npccontroller = quest.GetComponent<npcController>();
         if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
         {
-            UIManager.Instance.ShowQuestCompletionPanel();
+            if (!questCompleted1Shown)
+            {
+                UIManager.Instance.ShowQuestCompletionPanel();
+                questCompleted1Shown = true;
+            }
             isOne = true;
             index = 1;
         }
 
         if (questManager.quest[1].CheckCompletion(inventoryItemSlots))
         {
-            UIManager.Instance.ShowQuestCompletionPanel();
+            if (!questCompleted2Shown)
+            {
+                UIManager.Instance.ShowQuestCompletionPanel();
+                questCompleted2Shown = true;
+            }
             isTwo = true;
         }
         
