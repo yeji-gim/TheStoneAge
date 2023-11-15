@@ -45,6 +45,14 @@ public class Bear : MonoBehaviour
     private float Attackcul;
     public float maxAttackcul;
 
+    public Transform StonePos;
+    public GameObject Stone;
+
+    public float StonePower;
+    public float Stonemaxcul;
+
+    public float Stonecul = 10;
+
 
     void Start()
     {
@@ -66,6 +74,7 @@ public class Bear : MonoBehaviour
                 ElapseTime();
                 View();
                 Attack();
+                StoneAttack();
             }
         }
         if (hpcul > 0)
@@ -76,6 +85,7 @@ public class Bear : MonoBehaviour
         {
             Attackcul -= Time.deltaTime;
         }
+        Stonecul -= Time.deltaTime;
     }
 
     private void Move()
@@ -193,6 +203,7 @@ public class Bear : MonoBehaviour
             if (animalName == "Bear" && hp <= 5)
             {
                 GetComponent<TrailsFX.TrailEffect>().enabled = true;
+                runSpeed = 4.5f;
             }
             if (hp == 0)
             {
@@ -214,18 +225,10 @@ public class Bear : MonoBehaviour
                     Invoke("AttackBoxon", 0.7f);
                     if (animalName == "Bear")
                     {
-                        if (hp <= 5)
-                        {
                             Invoke("AttackBoxon", 1.5f);
-                            anim.SetTrigger("isAttack");
-                        }
-                        else
-                        {
-                            anim.SetTrigger("isAttack2");
-                        }
+
                     }
-                    else
-                        anim.SetTrigger("isAttack");
+                    anim.SetTrigger("isAttack");
 
                     nav.ResetPath();
 
@@ -248,6 +251,34 @@ public class Bear : MonoBehaviour
             if (_target[i].GetComponent<ThirdPersonController>())
                 _target[i].GetComponent<ThirdPersonController>().hit();
         }
+    }
+    public void StoneAttack()
+    {
+        if(Attackcul<=0 && Stonecul <= 0)
+        {
+            Stonecul = Stonemaxcul;
+            Attackcul = 5f;
+
+            anim.SetTrigger("isAttack2");
+
+            nav.ResetPath();
+
+            isWalking = false;
+            anim.SetBool("isWalk", isWalking);
+            isRunning = false;
+            anim.SetBool("isRun", isRunning);
+            nav.speed = walkSpeed;
+
+            Invoke("ThrowStone", 3f);
+
+        }
+    }
+    public void ThrowStone()
+    {
+        Vector3 aimDirection = (GameObject.FindGameObjectWithTag("Player").transform.position - transform.position);
+        GameObject bearstone = Instantiate(Stone, StonePos.position, Quaternion.identity);
+        bearstone.GetComponent<Rigidbody>().AddForce(aimDirection*StonePower);
+        bearstone.GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
     }
 
     private void OnDrawGizmos()
