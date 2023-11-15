@@ -19,6 +19,8 @@ public class StoneClick : MonoBehaviour
 
     public GameObject Buttonobject;
 
+    public ParticleSystem StoneStun;
+
     private void Start()
     {
         if (num == 0)
@@ -96,6 +98,9 @@ public class StoneClick : MonoBehaviour
 
         // 완성 텍스트
         completeText.gameObject.SetActive(true);
+
+        // 이펙트 재생
+        StoneStun.Play();
     }
 
     // Success 버튼과 onClick으로 연결
@@ -116,13 +121,13 @@ public class StoneClick : MonoBehaviour
                 animationSpeed = 1.0f; // num == 0에 대한 속도 설정
                 break;
             case 1:
-                animationSpeed = 2.0f; // num == 1에 대한 속도 설정
+                animationSpeed = 1.5f; // num == 1에 대한 속도 설정
                 break;
             case 2:
-                animationSpeed = 0.5f; // num == 2에 대한 속도 설정
+                animationSpeed = 2.0f; // num == 2에 대한 속도 설정
                 break;
             case 3:
-                animationSpeed = 1.5f; // num == 3에 대한 속도 설정
+                animationSpeed = 2.5f; // num == 3에 대한 속도 설정
                 break;
             default:
                 break;
