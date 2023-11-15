@@ -750,18 +750,6 @@ PrefabInstance:
       propertyPath: m_Navigation.m_Mode
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1858540981111639106, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1858540981111639106, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 524372486}
-    - target: {fileID: 1858540981111639106, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
-      objectReference: {fileID: 0}
     - target: {fileID: 3675890580124624113, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -857,18 +845,6 @@ PrefabInstance:
     - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: tools.Array.data[2].quantity
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7351742926970926890, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7351742926970926890, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 524372486}
-    - target: {fileID: 7351742926970926890, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 7811977899834273286, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1951,11 +1927,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4749574039635860, guid: 6e742d9b2e8748b468d53ea218904008, type: 3}
   m_PrefabInstance: {fileID: 643641908}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &524372486 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 354943088540908258, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
-  m_PrefabInstance: {fileID: 1604613972}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &535635799
 GameObject:
@@ -4310,10 +4281,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 245325638967962433, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 354943088540908258, guid: 970220665ff798c4181e6ce524525ed7, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
