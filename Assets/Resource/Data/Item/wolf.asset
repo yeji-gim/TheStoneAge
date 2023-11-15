@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: "\uB291\uB300"
   description: "\uB291\uB300\uB2E4."
-  thumbnail: {fileID: -649081039, guid: 9b1f46a2df71af84095f9fc1df06ec5d, type: 3}
+  thumbnail: {fileID: -388925053, guid: 9fdb3dc626799a141a77a416ba048518, type: 3}
   gameModel: {fileID: 896692754598311364, guid: 9b5d8a5453b85f645bd8deea2ae04e1a, type: 3}
   quantity: 1
