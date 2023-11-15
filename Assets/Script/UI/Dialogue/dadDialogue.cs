@@ -5,7 +5,6 @@ using UnityEngine;
 public class dadDialogue : baseDialogue
 {
     public GameObject camera;
-
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);

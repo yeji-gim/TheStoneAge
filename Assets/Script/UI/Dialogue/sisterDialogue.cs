@@ -28,9 +28,4 @@ public class sisterDialogue : baseDialogue
             Debug.Log("오브젝트를 찾지 못한 경우에 대한 처리");
         }
     }
-    public void isCompletePanel()
-    {
-        //if (isComplete) UIManager.Instance.ShowQuestCompletionPanel(); return;
-       // if(isComplete2) UIManager.Instance.ShowQuestCompletionPanel(); return;
-    }
 }

@@ -387,7 +387,7 @@ namespace StarterAssets
                     {
                         _animator.SetBool(_animIDJump, true);
                     }
-                    if (weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
+                    if (weaponnum>0 &&weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
                     {
                         weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>().enabled = false;
                     }
@@ -536,7 +536,7 @@ namespace StarterAssets
             canMove = false;
             Invoke("moveCan",0.66f);
             HitUI.SetTrigger("ishit");
-            if (weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
+            if (weaponnum>0 && weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
             {
                 weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>().enabled = false;
             }
