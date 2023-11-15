@@ -190,6 +190,10 @@ public class Bear : MonoBehaviour
             hpcul = 1;
             hp -= 1;
             Run(GameObject.FindGameObjectWithTag("Player").transform.position);
+            if (animalName == "Bear" && hp <= 5)
+            {
+                GetComponent<TrailsFX.TrailEffect>().enabled = true;
+            }
             if (hp == 0)
             {
                 Dead();
@@ -206,11 +210,22 @@ public class Bear : MonoBehaviour
             if (_target[i].GetComponent<ThirdPersonController>())
                 if (Attackcul <= 0.0f)
                 {
-                    anim.SetTrigger("isAttack");
                     Attackcul = maxAttackcul;
                     Invoke("AttackBoxon", 0.7f);
-                    if(animalName=="Bear")
-                        Invoke("AttackBoxon", 1.5f);
+                    if (animalName == "Bear")
+                    {
+                        if (hp <= 5)
+                        {
+                            Invoke("AttackBoxon", 1.5f);
+                            anim.SetTrigger("isAttack");
+                        }
+                        else
+                        {
+                            anim.SetTrigger("isAttack2");
+                        }
+                    }
+                    else
+                        anim.SetTrigger("isAttack");
 
                     nav.ResetPath();
 
