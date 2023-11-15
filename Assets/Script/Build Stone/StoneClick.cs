@@ -20,6 +20,7 @@ public class StoneClick : MonoBehaviour
     public GameObject Buttonobject;
 
     public ParticleSystem StoneStun;
+    private bool hasActivatedCompleteStone = false;
 
     private void Start()
     {
@@ -35,30 +36,31 @@ public class StoneClick : MonoBehaviour
             foreach (GameObject item in stoneAxeItems)
                 item.SetActive(true);
             UIManager.Instance.maxCount -= 2;
-            InvokeRepeating("InstantiateButton", 1f, 3f);
+            InvokeRepeating("InstantiateButton", 0.8f, 3f);
         }
         if (num == 2)
         {
             foreach (GameObject item in arrowItems)
                 item.SetActive(true);
             UIManager.Instance.maxCount += 2;
-            InvokeRepeating("InstantiateButton", 1f, 2f);
+            InvokeRepeating("InstantiateButton", 0.7f, 2f);
         }
         if (num == 3)
         {
             foreach (GameObject item in arrowItems)
                 item.SetActive(true);
             UIManager.Instance.maxCount += 5;
-            InvokeRepeating("InstantiateButton", 1f, 1f);
+            InvokeRepeating("InstantiateButton", 0.5f, 1f);
         }
     }
 
     void Update()
     {
-        if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount)
+        if (UIManager.Instance.clickCount >= UIManager.Instance.maxCount && !hasActivatedCompleteStone)
         {
             ActivateCompleteStone(num);
             CancelInvoke("InstantiateButton");
+            hasActivatedCompleteStone = true;
         }
     }
 
@@ -93,14 +95,17 @@ public class StoneClick : MonoBehaviour
                 item.SetActive(false);
         }
 
-        // 완성된 돌 이미지 활성화
-        completeItems[num].SetActive(true);
-
         // 완성 텍스트
         completeText.gameObject.SetActive(true);
 
-        // 이펙트 재생
+        CameraManager.Instance.MoveCamera(new Vector3(120, 10, 5));
+
         StoneStun.Play();
+
+        // 완성된 돌 이미지 활성화
+        completeItems[num].SetActive(true);
+
+        CameraManager.Instance.MoveCamera(new Vector3(120, 3, 5));
     }
 
     // Success 버튼과 onClick으로 연결
