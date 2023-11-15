@@ -57,8 +57,8 @@ public class InventoryManager : MonoBehaviour
 
     public void HandToIventory()
     {
-        //ThirdPersonController player = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonController>();
-       // player.ChangeWeapon(0);
+        ThirdPersonController player = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonController>();
+        player.ChangeWeapon(0);
         for (int i = 0; i < tools.Length; i++)
         {
             if (tools[i].itemData == null)
