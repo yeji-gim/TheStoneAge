@@ -146,6 +146,10 @@ public class DialogueManager : MonoBehaviour
                 UIManager.Instance.npcCameraOff();
             }
         }
+        if (button_name.text.Contains("¼ºÀÎ½Ä"))
+        {
+            SceneManager.LoadScene("Ending2");
+        }
 
     }
 }

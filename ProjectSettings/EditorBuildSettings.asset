@@ -29,5 +29,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BearInCave.unity
     guid: b27bd30afe5aa4dd9bdcd36da81deb9b
+  - enabled: 1
+    path: Assets/Scenes/NewEnding.unity
+    guid: 4773f96646d61174494ab2c816bf176b
+  - enabled: 1
+    path: Assets/Scenes/Ending2.unity
+    guid: 3b316fb2c3103894ab2b100c92be2747
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

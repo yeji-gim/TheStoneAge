@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndingPlayer : MonoBehaviour
 {
@@ -28,5 +29,10 @@ public class EndingPlayer : MonoBehaviour
         {
             peopleanimator[i].SetBool("isDance", true);
         }
+    }
+
+    public void event4()
+    {
+        SceneManager.LoadScene("newEnding");
     }
 }
