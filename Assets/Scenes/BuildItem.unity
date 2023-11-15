@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -177,6 +177,11 @@ MonoBehaviour:
   - {fileID: 1940392717}
   - {fileID: 1945991922}
   - {fileID: 1443027962}
+  itemData:
+  - {fileID: 11400000, guid: 05c45e819007def41b7d96a59e00b52b, type: 2}
+  - {fileID: 11400000, guid: cb619cae92792cc4eb00407ffba79e88, type: 2}
+  - {fileID: 11400000, guid: 3a7cd9cc1cd8a3745968820498fb9eca, type: 2}
+  - {fileID: 11400000, guid: c1337174e747cd34393e322ba629f534, type: 2}
   Buttonobject: {fileID: 216776419}
   StoneStun: {fileID: 237997293}
 --- !u!4 &24116887

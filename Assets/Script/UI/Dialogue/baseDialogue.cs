@@ -43,17 +43,19 @@ public class baseDialogue : MonoBehaviour
         ItemSlotData[] inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
         QuestManager questManager = questObject.GetComponent<QuestManager>();
         npcController npccontroller = quest.GetComponent<npcController>();
-        if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
+        if (!isOne&questManager.quest[0].CheckCompletion(inventoryItemSlots))
         {
             UIManager.Instance.ShowQuestCompletionPanel();
             isOne = true;
             index = 1;
+            return;
         }
 
-        if (questManager.quest[1].CheckCompletion(inventoryItemSlots))
+        if (!isTwo&questManager.quest[1].CheckCompletion(inventoryItemSlots))
         {
             UIManager.Instance.ShowQuestCompletionPanel();
             isTwo = true;
+            return;
         }
         
     }
