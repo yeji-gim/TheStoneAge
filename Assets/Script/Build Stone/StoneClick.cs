@@ -107,6 +107,28 @@ public class StoneClick : MonoBehaviour
         // 슬라이더 업데이트
         UpdateSlider();
 
+        // num에 따라 애니메이션 속도 조절
+        float animationSpeed = 1.0f; // 기본 속도
+
+        switch (num)
+        {
+            case 0:
+                animationSpeed = 1.0f; // num == 0에 대한 속도 설정
+                break;
+            case 1:
+                animationSpeed = 2.0f; // num == 1에 대한 속도 설정
+                break;
+            case 2:
+                animationSpeed = 0.5f; // num == 2에 대한 속도 설정
+                break;
+            case 3:
+                animationSpeed = 1.5f; // num == 3에 대한 속도 설정
+                break;
+            default:
+                break;
+        }
+
+        Buttonobject.GetComponent<Animator>().speed = animationSpeed;
     }
 
     // Fail 버튼과 onClick으로 연결
