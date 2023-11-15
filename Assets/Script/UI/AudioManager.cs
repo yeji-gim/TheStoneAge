@@ -15,17 +15,17 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(Instance);
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            Destroy(Instance);
+            Destroy(gameObject);
         }
     }
 
     public void start()
     {
-        PlayMusic("Theme");
+        PlayMusic("Th");
     }
 
     public void PlayMusic(string name)
