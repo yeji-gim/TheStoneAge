@@ -326,7 +326,7 @@ namespace StarterAssets
                 // rotate to face input direction relative to camera position
                 transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
 
-                if (weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
+                if (weaponnum>0 && weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>())
                 {
                     weapongObjects[weaponnum].GetComponent<TrailsFX.TrailEffect>().enabled = false;
                 }
@@ -610,7 +610,8 @@ namespace StarterAssets
             {
                 weapongObjects[i].SetActive(false);
             }
-            weapongObjects[num].SetActive(true);
+            if(num>0)
+                weapongObjects[num].SetActive(true);
         }
 
         public void BowAttack()
