@@ -74,8 +74,7 @@ public class Bear : MonoBehaviour
                 ElapseTime();
                 View();
                 Attack();
-                if(animalName == "Bear")
-                    StoneAttack();
+                StoneAttack();
             }
         }
         if (hpcul > 0)

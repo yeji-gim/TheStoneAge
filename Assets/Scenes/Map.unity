@@ -6769,7 +6769,11 @@ Transform:
   - {fileID: 93519794}
   m_Father: {fileID: 840531285}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> parent of 4c357c87 (맵 복구 및 수정)
 =======
 --- !u!1001 &744095793
 PrefabInstance:
@@ -6791,6 +6795,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -251
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1858540981111639106, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -6803,6 +6808,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 4c357c87 (맵 복구 및 수정)
     - target: {fileID: 4163444023269577611, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_Name
       value: Manager
@@ -6847,6 +6854,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 4310777653032694183, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -6859,12 +6867,15 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: SetActive
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 4c357c87 (맵 복구 및 수정)
     - target: {fileID: 7811977899834273286, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 133
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
+<<<<<<< HEAD
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6073122382035143017, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       insertIndex: 0
@@ -6878,6 +6889,34 @@ PrefabInstance:
       addedObject: {fileID: 1639690131}
   m_SourcePrefab: {fileID: 100100000, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
 >>>>>>> Stashed changes
+=======
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+--- !u!114 &744095794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1978236416652436239, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+  m_PrefabInstance: {fileID: 744095793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &744095795 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4861952126184207642, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
+  m_PrefabInstance: {fileID: 744095793}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> parent of 915a8778 (인벤토리 열 때 미니맵 클릭 문제 수정)
+>>>>>>> parent of 4c357c87 (맵 복구 및 수정)
 --- !u!1001 &759777079
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -13,15 +13,11 @@ public class OpeningAnimal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigid = GetComponent<Rigidbody>();
         if (isRun)
         {
-            Invoke("Run", Random.Range(0f, 1.0f));
+            GetComponent<Animator>().SetBool("isRun", true);
         }
-    }
-    public void Run()
-    {
-        GetComponent<Animator>().SetBool("isRun", true);
+        rigid = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
