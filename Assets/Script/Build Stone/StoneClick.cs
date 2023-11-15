@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
 public class StoneClick : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class StoneClick : MonoBehaviour
 
     public GameObject[] completeItems;
     public static int num;
-
+    public EquipmentData[] itemData;
     public GameObject Buttonobject;
 
     public ParticleSystem StoneStun;
@@ -61,6 +62,7 @@ public class StoneClick : MonoBehaviour
             ActivateCompleteStone(num);
             CancelInvoke("InstantiateButton");
             hasActivatedCompleteStone = true;
+            StartCoroutine(SceneToCave());
         }
     }
 
@@ -104,10 +106,76 @@ public class StoneClick : MonoBehaviour
 
         // 완성된 돌 이미지 활성화
         completeItems[num].SetActive(true);
-
+        getItem();
         CameraManager.Instance.MoveCamera(new Vector3(120, 3, 5));
     }
 
+    public void getItem()
+    {
+        ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (completeItems[num].name.Contains("HandAxe"))
+            {
+                if (items[i].itemData == null)
+                {
+                    Debug.Log("주먹도끼");
+                    newItem(itemData[0]);
+                    break;
+                }
+            }
+            if (completeItems[num].name.Contains("StoneAxe"))
+            {
+                if (items[i].itemData == null)
+                {
+                    newItem(itemData[1]);
+                    break;
+                }
+            }
+            if (completeItems[num].name.Contains("Arrow"))
+            {
+                if (items[i].itemData == null)
+                {
+                    newItem(itemData[2]);
+                    break;
+                }
+            }
+            if (completeItems[num].name.Contains("Spear"))
+            {
+                if (items[i].itemData == null)
+                {
+                    newItem(itemData[3]);
+                    break;
+                }
+            }
+
+
+        }
+    }
+    public void newItem(EquipmentData item)
+    {
+         ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
+
+
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i].itemData == null)
+            {
+                Debug.Log("NewItem");
+                items[i].itemData = item;
+                items[i].AddQuantity();
+                item = null;
+                break;
+            }
+            
+        }
+        UIManager.Instance.RenderInventory();
+    }
+    private IEnumerator SceneToCave()
+    {
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("Cave");
+    }
     // Success 버튼과 onClick으로 연결
     public void Success()
     {
