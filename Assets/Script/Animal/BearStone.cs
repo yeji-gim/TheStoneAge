@@ -7,6 +7,7 @@ public class BearStone : MonoBehaviour
 {
     [SerializeField] float rotateSpeed;//1초당 회전할 속도
     public float t;
+    public bool ishit = false;
 
     void Update()
     {
@@ -23,10 +24,19 @@ public class BearStone : MonoBehaviour
             if (collision.gameObject.tag == "Player")
             {
                 collision.gameObject.GetComponent<ThirdPersonController>().hit();
+                GetComponent<AudioSource>().Play();
+                if (!ishit)
+                    Destroy(gameObject, 1f);
+                ishit = true;
             }
             else
             {
-                Destroy(gameObject);
+                if (!ishit)
+                {
+                    GetComponent<AudioSource>().Play();
+                    ishit = true;
+                    Destroy(gameObject, 1f);
+                }
             }
         }
     }

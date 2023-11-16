@@ -618,7 +618,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1073741824
   viewDistance: 20
-  viewAngle: 180
+  viewAngle: 90
   Attackpos: {fileID: 6177614530027099745}
   AttackSize: 1
   maxAttackcul: 2

@@ -53,6 +53,10 @@ public class Bear : MonoBehaviour
 
     public float Stonecul = 10;
 
+    public AudioClip WalkSound;
+    public AudioClip AngrySound;
+    public AudioClip DieSound;
+
 
     void Start()
     {
@@ -205,9 +209,11 @@ public class Bear : MonoBehaviour
             {
                 GetComponent<TrailsFX.TrailEffect>().enabled = true;
                 runSpeed = 4.5f;
+                AudioSource.PlayClipAtPoint(AngrySound, transform.position, 1f);
             }
             if (hp == 0)
             {
+                AudioSource.PlayClipAtPoint(DieSound, transform.position, 1f);
                 Dead();
             }
         }
@@ -289,5 +295,10 @@ public class Bear : MonoBehaviour
 
         Gizmos.color = new Color(0, 0, 1, 0.3f);
         Gizmos.DrawSphere(transform.position, viewDistance);
+    }
+
+    public void WalkPlay()
+    {
+        AudioSource.PlayClipAtPoint(WalkSound, transform.position, 1f);
     }
 }

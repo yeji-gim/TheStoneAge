@@ -817,7 +817,7 @@ Transform:
   m_GameObject: {fileID: 2215989923862664454}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7089555, z: -0, w: 0.7052532}
-  m_LocalPosition: {x: -660.20294, y: -519.1952, z: 51.12113}
+  m_LocalPosition: {x: 17.257935, y: 5.508484, z: -214.24115}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -856,7 +856,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 500
-  field of view: 60
+  field of view: 40
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -5440,7 +5440,8 @@ MonoBehaviour:
   SpeedChangeRate: 10
   Sensitivity: 1
   LandingAudioClip: {fileID: 8300000, guid: ff697d3070687ce4583faa0561a145a2, type: 3}
-  FootstepAudioClips: []
+  FootstepAudioClips:
+  - {fileID: 8300000, guid: 72f526a6a9890f643a88e85a61c86c8a, type: 3}
   FootstepAudioVolume: 0.5
   JumpHeight: 1.2
   Gravity: -15
@@ -5492,6 +5493,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16
   DiveUI: {fileID: 5951773394264296894}
+  attackaudios:
+  - {fileID: 0}
+  - {fileID: 8300000, guid: ec4d7866fa6e3fd4cb1d5e11ce8db8f7, type: 3}
+  - {fileID: 8300000, guid: 57f5aca6425cce54fab930c42f9a403d, type: 3}
+  - {fileID: 8300000, guid: 16139e7a21322014ba4e8fbac4a7bac4, type: 3}
+  - {fileID: 8300000, guid: 75fa11e3e3549644d9c833e97572cd0c, type: 3}
+  FarmingAudio: {fileID: 8300000, guid: c75f9a1fccc76774e86193f5b79e9c97, type: 3}
+  Diveaudio: {fileID: 8300000, guid: ee41e16bf8f976546994e11e7310afb2, type: 3}
 --- !u!114 &247568830657514586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5509,7 +5518,7 @@ MonoBehaviour:
   aimSensitivity: 0.1
   aimColliderLayerMask:
     serializedVersion: 2
-    m_Bits: 536870913
+    m_Bits: 536871057
   debugAim: {fileID: 3806246604482235287}
   AimUI: {fileID: 7193645704200149647}
 --- !u!114 &7736503051528781220
@@ -7308,6 +7317,7 @@ PrefabInstance:
     - {fileID: 680486356094527567, guid: 69e53d1dd31fa2147ac2efc9665b82b3, type: 3}
     - {fileID: 3942248744804844349, guid: 69e53d1dd31fa2147ac2efc9665b82b3, type: 3}
     - {fileID: 4013555789831996624, guid: 69e53d1dd31fa2147ac2efc9665b82b3, type: 3}
+    - {fileID: 7222264472470619894, guid: 69e53d1dd31fa2147ac2efc9665b82b3, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

@@ -159,7 +159,13 @@ namespace StarterAssets
         public Image DiveUI;
         private float DiveAlpha;
 
+        public AudioClip[] attackaudios;
+
         private TrailsFX.TrailEffect traileffect;
+
+        public AudioClip FarmingAudio;
+
+        public AudioClip Diveaudio;
         private void Awake()
         {
             // get a reference to our main camera
@@ -558,6 +564,7 @@ namespace StarterAssets
         }
         public void Farming()
         {
+            AudioSource.PlayClipAtPoint(FarmingAudio, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             Collider[] _target = Physics.OverlapSphere(transform.position, ViewSize, ItemLayer);
             ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
             List<string> collectedItems = new List<string>();
@@ -627,7 +634,9 @@ namespace StarterAssets
             else
             {
                 GameObject arrow = Instantiate(ArrowPrefab, ArrowPos.position, transform.rotation);
-                arrow.GetComponent<Rigidbody>().velocity = transform.forward * arrow.GetComponent<Arrow>().speed + Vector3.down * 0.1f;
+                arrow.GetComponent<Rigidbody>().AddForce(transform.forward.normalized * 1000f);
+
+                arrow.GetComponent<Rigidbody>().AddForce(Vector3.up * 200f);
             }
         }
 
@@ -636,6 +645,10 @@ namespace StarterAssets
             if(other.CompareTag("Water"))
             {
                 DiveAlpha = 0.5f;
+                MoveSpeed *= 0.5f;
+                SprintSpeed *= 0.5f;
+                Gravity *= 0.2f;
+                AudioSource.PlayClipAtPoint(Diveaudio, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
 
@@ -644,7 +657,14 @@ namespace StarterAssets
             if (other.CompareTag("Water"))
             {
                 DiveAlpha = 0;
+                MoveSpeed *= 2f;
+                SprintSpeed *= 2f;
+                Gravity *= 5f;
             }
+        }
+        public void AttackSound()
+        {
+            AudioSource.PlayClipAtPoint(attackaudios[weaponnum], transform.TransformPoint(_controller.center), FootstepAudioVolume);
         }
     }
 }
