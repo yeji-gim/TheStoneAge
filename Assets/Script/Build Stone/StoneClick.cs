@@ -22,10 +22,18 @@ public class StoneClick : MonoBehaviour
     public GameObject Buttonobject;
 
     public ParticleSystem StoneStun;
+
+    public AudioClip clickSound;
+    public AudioClip completeSound;
+    private AudioSource clickAudio;
+    private AudioSource completeAudio;
+    private AudioSource backgroundAudio;
+
     private bool hasActivatedCompleteStone = false;
 
     private void Start()
     {
+        UIManager.Instance.clickCount = 0;
         if (num == 0)
         {
             foreach (GameObject item in handAxeItems)
@@ -37,7 +45,7 @@ public class StoneClick : MonoBehaviour
         {
             foreach (GameObject item in stoneAxeItems)
                 item.SetActive(true);
-            UIManager.Instance.maxCount -= 2;
+            UIManager.Instance.maxCount *= 2;
             InvokeRepeating("InstantiateButton", 0.8f, 3f);
         }
         if (num == 2)
@@ -54,6 +62,10 @@ public class StoneClick : MonoBehaviour
             UIManager.Instance.maxCount += 5;
             InvokeRepeating("InstantiateButton", 0.5f, 1f);
         }
+        // AudioSource 컴포넌트 추가
+        clickAudio = gameObject.AddComponent<AudioSource>();
+        completeAudio = gameObject.AddComponent<AudioSource>();
+        backgroundAudio = Camera.main.gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -130,20 +142,25 @@ public class StoneClick : MonoBehaviour
         // 완성 텍스트
         completeText.gameObject.SetActive(true);
 
-        CameraManager.Instance.MoveCamera(new Vector3(120, 10, 5));
+        CameraManager.Instance.MoveCamera(new Vector3(120, 6, 5));
 
         StoneStun.Play();
+        // 효과음 재생
+        if (completeSound != null && completeAudio != null)
+        {
+            completeAudio.PlayOneShot(completeSound);
+        }
 
         // 완성된 돌 이미지 활성화
         completeItems[num].SetActive(true);
         GetItem(GetName(completeItems[num].name));
         StartCoroutine(goCave());
-        CameraManager.Instance.MoveCamera(new Vector3(120, 3, 5));
     }
 
     IEnumerator goCave()
     {
         yield return new WaitForSeconds(3.0f);
+        CameraManager.Instance.MoveCamera(new Vector3(120, 3, 5));
         SceneManager.LoadScene("Cave");
     }
 
@@ -152,6 +169,12 @@ public class StoneClick : MonoBehaviour
     {
         Buttonobject.GetComponent<Animator>().SetTrigger("isSuccess");
         UIManager.Instance.clickCount += 1;
+
+        // 효과음 재생
+        if (clickSound != null && clickAudio != null)
+        {
+            clickAudio.PlayOneShot(clickSound);
+        }
 
         // 슬라이더 업데이트
         UpdateSlider();
