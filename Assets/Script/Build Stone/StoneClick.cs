@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
 public class StoneClick : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class StoneClick : MonoBehaviour
     public GameObject[] spearItems;
     public GameObject[] arrowItems;
 
+    public EquipmentData[] equipment;
     public GameObject[] completeItems;
     public static int num;
 
@@ -71,6 +73,36 @@ public class StoneClick : MonoBehaviour
         Buttonobject.SetActive(true);
     }
 
+    void GetItem(EquipmentData item)
+    {
+        ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
+
+
+        for (int i = 0; i < items.Length; i++)
+        {
+            if (items[i].itemData == null)
+            {
+                items[i].itemData = item;
+                items[i].AddQuantity();
+                item = null;
+                break;
+            }
+        }
+        UIManager.Instance.RenderInventory();
+    }
+
+    EquipmentData GetName(string name)
+    {
+        if (name.Contains("HandAxe"))
+            return equipment[0];
+        if (name.Contains("StoneAxe"))
+            return equipment[1];
+        if (name.Contains("Spear"))
+            return equipment[2];
+        if (name.Contains("Arrow"))
+            return equipment[0];
+        return equipment[0];
+    }
     void ActivateCompleteStone(int num)
     {
         // 미완성 돌 이미지 비활성화
@@ -104,8 +136,15 @@ public class StoneClick : MonoBehaviour
 
         // 완성된 돌 이미지 활성화
         completeItems[num].SetActive(true);
-
+        GetItem(GetName(completeItems[num].name));
+        StartCoroutine(goCave());
         CameraManager.Instance.MoveCamera(new Vector3(120, 3, 5));
+    }
+
+    IEnumerator goCave()
+    {
+        yield return new WaitForSeconds(3.0f);
+        SceneManager.LoadScene("Cave");
     }
 
     // Success 버튼과 onClick으로 연결

@@ -825,7 +825,7 @@ PrefabInstance:
     - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: tools.Array.data[0].itemData
       value: 
-      objectReference: {fileID: 11400000, guid: 05c45e819007def41b7d96a59e00b52b, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 6909355695444011854, guid: 7d86b64a567185947b4394908b3263e0, type: 3}
       propertyPath: tools.Array.data[0].quantity
       value: 0
@@ -4281,13 +4281,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 47f45ef7b5767674393cc401fc325705, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.06
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 89
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
