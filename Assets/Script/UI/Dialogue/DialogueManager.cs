@@ -134,7 +134,7 @@ public class DialogueManager : MonoBehaviour
                 UIManager.Instance.ShowgetQuesPanel();
                 UIManager.Instance.button.gameObject.SetActive(false);
                 UIManager.Instance.DisplayQuest(sisterquest.quest[sisterDialogue.index]);
-                UIManager.Instance.ToggleDialoguePanel();
+                UIManager.Instance.dialoguepanel.SetActive(false);
                 UIManager.Instance.npcCameraOff();
             }
 
