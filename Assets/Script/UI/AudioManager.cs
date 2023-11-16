@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void start()
+    public void Start()
     {
         PlayMusic("Theme");
     }
@@ -38,6 +38,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Music Found");
             musicSource.clip = sound.clip;
             musicSource.Play();
         }
