@@ -648,6 +648,7 @@ namespace StarterAssets
                 MoveSpeed *= 0.5f;
                 SprintSpeed *= 0.5f;
                 Gravity *= 0.2f;
+                _verticalVelocity *= 0.2f;
                 AudioSource.PlayClipAtPoint(Diveaudio, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             }
         }
@@ -660,6 +661,7 @@ namespace StarterAssets
                 MoveSpeed *= 2f;
                 SprintSpeed *= 2f;
                 Gravity *= 5f;
+                _verticalVelocity *= 5f;
             }
         }
         public void AttackSound()

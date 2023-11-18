@@ -213,6 +213,7 @@ public class Bear : MonoBehaviour
             }
             if (hp == 0)
             {
+                if(DieSound)
                 AudioSource.PlayClipAtPoint(DieSound, transform.position, 1f);
                 Dead();
             }
