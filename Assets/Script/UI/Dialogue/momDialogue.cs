@@ -6,6 +6,12 @@ using UnityEngine.EventSystems;
 public class momDialogue : baseDialogue
 {
     public GameObject camera;
+    private void Update()
+    {
+        GameObject momQuest = GameObject.FindGameObjectWithTag("momquest");
+        GameObject mom = GameObject.FindGameObjectWithTag("mom");
+        checkQuest(momQuest, mom);
+    }
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);

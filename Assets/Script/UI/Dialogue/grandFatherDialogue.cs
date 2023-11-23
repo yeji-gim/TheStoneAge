@@ -5,6 +5,14 @@ using UnityEngine;
 public class grandFatherDialogue : baseDialogue
 {
     public GameObject camera;
+
+    private void Update()
+    {
+        GameObject grandfatherquest = GameObject.FindGameObjectWithTag("grandfatherquest");
+        GameObject grandfather = GameObject.FindGameObjectWithTag("grandfather");
+        checkQuest(grandfatherquest, grandfather);
+    }
+
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);

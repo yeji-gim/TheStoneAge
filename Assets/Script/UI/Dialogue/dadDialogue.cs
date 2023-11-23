@@ -5,6 +5,13 @@ using UnityEngine;
 public class dadDialogue : baseDialogue
 {
     public GameObject camera;
+
+    private void Update()
+    {
+        GameObject dadQuest = GameObject.FindGameObjectWithTag("dadquest");
+        GameObject dad = GameObject.FindGameObjectWithTag("dad");
+        checkQuest(dadQuest, dad);
+    }
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);
