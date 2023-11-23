@@ -73,27 +73,31 @@ public class craftManager : MonoBehaviour
 
     public void BuildHandAxeClick()
     {
-        //Debug.Log("BuildHandAxeClick");
+        Debug.Log("BuildHandAxeClick");
         SceneManager.LoadScene("BuildItem");
         StoneClick.num = 0;
         UIManager.Instance.makingPanel.SetActive(false);
+        UIManager.Instance.handAxePanel.SetActive(false);
     }
     public void BuildStoneAxeClick()
     {
         SceneManager.LoadScene("BuildItem");
         StoneClick.num = 1;
         UIManager.Instance.makingPanel.SetActive(false);
+        UIManager.Instance.stoneAxePanel.SetActive(false);
     }
     public void BuildArrowClick()
     {
         SceneManager.LoadScene("BuildItem");
         StoneClick.num = 2;
         UIManager.Instance.makingPanel.SetActive(false);
+        UIManager.Instance.projectilePanel.SetActive(false);
     }
     public void BuildSpearClick()
     {
         SceneManager.LoadScene("BuildItem");
         StoneClick.num = 3;
         UIManager.Instance.makingPanel.SetActive(false);
+        UIManager.Instance.spearPanel.SetActive(false);
     }
 }

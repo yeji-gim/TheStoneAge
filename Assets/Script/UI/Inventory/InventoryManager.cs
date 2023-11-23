@@ -32,33 +32,39 @@ public class InventoryManager : MonoBehaviour
         ItemData toolToEquip = tools[slotIndex].itemData;
         tools[slotIndex].itemData = equippedTool;
         equippedTool = toolToEquip;
-              //Change the Inventory Slot to the Hand's
 
         ThirdPersonController player = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonController>();
         
-        //Change the Hand's Slot to the Inventory Slot's
         equippedTool = toolToEquip;
-        if (toolToEquip.itemName == "¡÷∏‘µµ≥¢")
+        if (equippedTool != null && player != null)
         {
-            player.ChangeWeapon(1);
+            if (toolToEquip.itemName == "¡÷∏‘µµ≥¢")
+            {
+                player.ChangeWeapon(1);
+            }
+            else if (toolToEquip.itemName == "µπµµ≥¢")
+            {
+                player.ChangeWeapon(2);
+            }
+            else if (toolToEquip.itemName == "√¢")
+            {
+                player.ChangeWeapon(3);
+            }
+            else
+            {
+                player.ChangeWeapon(0);
+            }
         }
-        else if (toolToEquip.itemName == "µπµµ≥¢")
-        {
-            player.ChangeWeapon(2);
-        }
-        else if (toolToEquip.itemName == "√¢")
-        {
-            player.ChangeWeapon(3);
-        }
-        
-
         UIManager.Instance.RenderInventory();
     }
 
     public void HandToIventory()
     {
         ThirdPersonController player = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonController>();
-        player.ChangeWeapon(0);
+        if (equippedTool != null && player != null)
+        {
+            player.ChangeWeapon(0);
+        }
         for (int i = 0; i < tools.Length; i++)
         {
             if (tools[i].itemData == null)
@@ -68,6 +74,7 @@ public class InventoryManager : MonoBehaviour
                 break;
             }
         }
+
         UIManager.Instance.RenderInventory();
     }
 

@@ -138,12 +138,11 @@ public class DialogueManager : MonoBehaviour
                 UIManager.Instance.DisplayQuest(sisterquest.quest[sisterDialogue.index]);
                 HandleUI();
             }
-
             if (speaker == "grandfather")
             {
                 GameObject grandfatherObject = GameObject.FindGameObjectWithTag("grandfatherquest");
                 GameObject grandfather = GameObject.FindGameObjectWithTag("grandfather");
-                QuestManager grandfatherquest = grandfather.GetComponent<QuestManager>();
+                QuestManager grandfatherquest = grandfatherObject.GetComponent<QuestManager>();
                 grandFatherDialogue grandfatherDialogue = grandfather.GetComponent<grandFatherDialogue>();
                 UIManager.Instance.DisplayQuest(grandfatherquest.quest[grandfatherDialogue.index]);
                 HandleUI();

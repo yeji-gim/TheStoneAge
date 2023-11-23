@@ -19,7 +19,6 @@ public class grandFatherDialogue : baseDialogue
         camera.SetActive(true);
         GameObject grandfatherquest = GameObject.FindGameObjectWithTag("grandfatherquest");
         GameObject grandfather = GameObject.FindGameObjectWithTag("grandfather");
-
         if (grandfatherquest != null && grandfather != null)
         {
             StartDialogue(grandfatherquest, grandfather);
