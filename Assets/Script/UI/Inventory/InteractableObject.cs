@@ -8,14 +8,14 @@ public class InteractableObject : MonoBehaviour
 
     public void oldItem()
     {
-            Destroy(gameObject);
+        Destroy(gameObject);
     }
     public void newItem()
     {
-        bool isPanelActive = UIManager.Instance.IsInventoryPanelActive();
+        bool isPanelActive = UIManager.Instance.isInventoryPanelActive();
         if (!isPanelActive)
         {
-            ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
+            ItemSlotData[] items = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Item);
 
 
             for (int i = 0; i < items.Length; i++)
@@ -29,8 +29,7 @@ public class InteractableObject : MonoBehaviour
                 }
             }
         }
-        // 인벤토리를 다시 렌더링하고 현재 게임 오브젝트를 제거합니다.
-        UIManager.Instance.RenderInventory();
+        UIManager.Instance.renderInventory();
 
         Destroy(gameObject);
     }

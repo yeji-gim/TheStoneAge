@@ -6,6 +6,6 @@ public class makeTable : MonoBehaviour
 {
     private void OnMouseDown()
     {
-        UIManager.Instance.TogglemakingPanel();
+        UIManager.Instance.togglemakingPanel();
     }
 }

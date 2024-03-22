@@ -55,49 +55,47 @@ public class UIManager : MonoBehaviour
     [Header("Quest")]
     public GameObject CompleteQuest;
     public GameObject getQuestPanel;
-    
-    public IncompleteItem[] incompleteStone; // 미완성 돌 이미지
-    public GameObject[] completeStone;   // 완성된 돌 이미지
+    [Header("Stone")]
+    public IncompleteItem[] incompleteStone; 
+    public GameObject[] completeStone;   
 
     public int clickCount = 0;
     public int maxCount;
 
-    //public Canvas uiCanvas; // 활성화할 UI 알림창 캔버스
 
     private void Start()
     {
-        RenderInventory();
-        AssignSlotIndexes();
-        // uiCanvas.enabled = false;
+        renderInventory();
+        assignSlotIndexes();
     }
 
-    public void TriggerDialogePrompt(string name1, System.Action first)
+    public void triggerDialogePrompt(string name, System.Action first)
     {
         DialoguePrompt.gameObject.SetActive(true);
-        DialoguePrompt.Createbutton(name1,  first);
+        DialoguePrompt.createButton(name,  first);
     }
 
-    public void AssignSlotIndexes()
+    public void assignSlotIndexes()
     {
         for (int i = 0; i < toolSlots.Length; i++)
         {
-            toolSlots[i].AssignIndex(i);
-            ItemSlots[i].AssignIndex(i);
+            toolSlots[i].assignIndex(i);
+            ItemSlots[i].assignIndex(i);
         }
     }
-    public void RenderInventory()
+    public void renderInventory()
     {
-        ItemSlotData[] inventoryToolSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
-        ItemSlotData[] inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
+        ItemSlotData[] inventoryToolSlots = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Tool);
+        ItemSlotData[] inventoryItemSlots = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Item);
 
-        RenderInventoryPanel(inventoryToolSlots, toolSlots);
-        RenderInventoryPanel(inventoryItemSlots, ItemSlots);
+        renderInventoryPanel(inventoryToolSlots, toolSlots);
+        renderInventoryPanel(inventoryItemSlots, ItemSlots);
 
 
         toolHandSlot.Display(InventoryManager.Instance.equippedTool);
     }
 
-    void RenderInventoryPanel(ItemSlotData[] slots, InventorySlot[] uiSlots)
+    void renderInventoryPanel(ItemSlotData[] slots, InventorySlot[] uiSlots)
     {
         for (int i = 0; i < uiSlots.Length; i++)
         {
@@ -107,7 +105,7 @@ public class UIManager : MonoBehaviour
     public void ToggleInventoryPanel()
     {
         InventoryPanel.SetActive(!InventoryPanel.activeSelf);
-        RenderInventory();
+        renderInventory();
     }
     public void DisplayItemInfo(ItemData data)
     {
@@ -145,12 +143,12 @@ public class UIManager : MonoBehaviour
         }
 
     }
-    public bool IsInventoryPanelActive()
+    public bool isInventoryPanelActive()
     {
         return InventoryPanel.activeSelf;
     }
 
-    public bool IsDialoguePromptActive()
+    public bool isDialoguePromptActive()
     {
         return dialoguepanel.activeSelf;
     }
@@ -159,60 +157,57 @@ public class UIManager : MonoBehaviour
     {
         Infoprompt.SetActive(!gameObject.activeSelf);
     }
-    public void ToggleQuestPanel()
+    public void toggleQuestPanel()
     {
         getQuest.gameObject.SetActive(false);
         QuestPanel.SetActive(!QuestPanel.activeSelf);
     }
-    public void ToggleDialoguePanel()
+    public void toggleDialoguePanel()
     {
         dialoguepanel.SetActive(!dialoguepanel.activeSelf);
     }
-    public void TogglesettingPanell()
+    public void togglesettingPanell()
     {
         settingPanel.SetActive(!settingPanel.activeSelf);
     }
-    public void TogglecreditPanel()
+    public void togglecreditPanel()
     {
         creditPanel.SetActive(!creditPanel.activeSelf);
     }
-    public void TogglemakingPanel()
+    public void togglemakingPanel()
     {
         makingPanel.SetActive(!makingPanel.activeSelf);
     }
     public void fornextButton()
     {
-        Debug.Log("Click");
         if (DialogueManager.Instance.dialougePanel.activeSelf)
         {
-            DialogueManager.Instance.UpdateDialogue();
+            DialogueManager.Instance.updateDialogue();
         }
     }
 
-    public void TogglemakeHandAxeButton()
+    public void togglemakeHandAxeButton()
     {   
         craftManager handAxe = handAxePanel.GetComponent<craftManager>();
         handAxe.CheckItem();
-        Debug.Log("CHECK ITEM");
-
         handAxePanel.SetActive(!handAxePanel.activeSelf);
     }
 
-    public void TogglemakestoneAxePanelButton()
+    public void togglemakestoneAxePanelButton()
     {
         craftManager stoneAxe = stoneAxePanel.GetComponent<craftManager>();
         stoneAxe.CheckItem();
         stoneAxePanel.SetActive(!stoneAxePanel.activeSelf);
     }
 
-    public void TogglemakeprojectilePanelButton()
+    public void togglemakeprojectilePanelButton()
     {
         craftManager projectileAxe = projectilePanel.GetComponent<craftManager>();
         projectileAxe.CheckItem();
         projectilePanel.SetActive(!projectilePanel.activeSelf);
     }
 
-    public void TogglemakespearPanelButton()
+    public void togglemakespearPanelButton()
     {
         craftManager spear = spearPanel.GetComponent<craftManager>();
         spear.CheckItem();
@@ -229,16 +224,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void ShowQuestCompletionPanel()
+    public void showQuestCompletionPanel()
     {
-        StartCoroutine(FadeOut(CompleteQuest));
+        StartCoroutine(fadeOut(CompleteQuest));
     }
-    public void ShowgetQuesPanel()
+    public void showgetQuesPanel()
     {
-        StartCoroutine(FadeOut(getQuestPanel));
+        StartCoroutine(fadeOut(getQuestPanel));
     }
 
-    private IEnumerator FadeOut(GameObject panel)
+    private IEnumerator fadeOut(GameObject panel)
     {
         panel.SetActive(true);
         yield return new WaitForSeconds(1f);

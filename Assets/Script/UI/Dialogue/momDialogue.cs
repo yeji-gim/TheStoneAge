@@ -8,24 +8,15 @@ public class momDialogue : baseDialogue
     public GameObject camera;
     private void Update()
     {
-        GameObject momQuest = GameObject.FindGameObjectWithTag("momquest");
-        GameObject mom = GameObject.FindGameObjectWithTag("mom");
-        checkQuest(momQuest, mom);
+        if(DialogueManager.Instance.momQuest != null) checkQuest(DialogueManager.Instance.momQuest);
+
     }
-    public void AcceptButton()
+    public void acceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);
         camera.SetActive(true);
         GameObject momQuest = GameObject.FindGameObjectWithTag("momquest");
-        GameObject mom = GameObject.FindGameObjectWithTag("mom");
 
-        if (momQuest != null && mom != null)
-        {
-            StartDialogue(momQuest, mom);
-        }
-        else
-        {
-            Debug.Log("오브젝트를 찾지 못한 경우에 대한 처리");
-        }
+        if (momQuest != null) startDialogue(momQuest);
     }
 }

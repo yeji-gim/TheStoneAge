@@ -566,7 +566,7 @@ namespace StarterAssets
         {
             AudioSource.PlayClipAtPoint(FarmingAudio, transform.TransformPoint(_controller.center), FootstepAudioVolume);
             Collider[] _target = Physics.OverlapSphere(transform.position, ViewSize, ItemLayer);
-            ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
+            ItemSlotData[] items = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Item);
             List<string> collectedItems = new List<string>();
             for (int i = 0; i < items.Length; i++)
             {
@@ -583,25 +583,22 @@ namespace StarterAssets
 
                     if (collectedItems.Contains(itemName))
                     {
-                        Debug.Log($"포함됨 {_target[i].name}");
-
-                        // 수량 처리
                         for (int j = 0; j < items.Length; j++)
                         {
                             if (items[j].itemData != null && items[j].itemData.itemName == itemName)
                             {
                                 items[j].AddQuantity();
-                                break; // 해당 아이템을 찾았으니 더 이상 확인할 필요 없음
+                                break; 
                             }
                         }
-
+                        // 포함되어 있음
                         _target[i].GetComponent<InteractableObject>().oldItem();
                         Farmingui.Itemqueue.Enqueue(itemName);
-                        UIManager.Instance.RenderInventory();
+                        UIManager.Instance.renderInventory();
                     }
                     else
                     {
-                        Debug.Log($"포함안됨 {_target[i].name}");
+                        // 포함 안됨
                         collectedItems.Add(itemName);
                         _target[i].GetComponent<InteractableObject>().newItem();
                         Farmingui.Itemqueue.Enqueue(itemName);

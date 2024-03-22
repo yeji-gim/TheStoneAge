@@ -7,27 +7,22 @@ using UnityEngine.UI;
 
 public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, IEndDragHandler
 {
-    public ItemData itemToDisplay;
-    int quantity;
-    public Image itemDisplayImage;
-    public Image dragImage;
-    public TMP_Text quantityText;
-    public int slotIndex;
+    [SerializeField] private ItemData itemToDisplay;
+    [SerializeField] private  Image itemDisplayImage;
+    [SerializeField] private  Image dragImage;
+    [SerializeField] private  TMP_Text quantityText;
+    [SerializeField] private  int slotIndex;
+    [SerializeField] private InventoryType inventoryType;
     Transform originalPosition;
-
+    int quantity;
     public enum InventoryType
     {
         Item, Tool
     }
 
-    public InventoryType inventoryType;
-    
-    private RectTransform rectTransform;
-
     void Awake()
     {
         originalPosition = transform.parent;
-        rectTransform = GetComponent<RectTransform>();
     }
 
     public void Display(ItemSlotData itemSlot)
@@ -39,9 +34,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
         {  
             itemDisplayImage.sprite = itemToDisplay.thumbnail;
             if (quantity > 1)
-            {
                 quantityText.text = quantity.ToString();
-            }
             itemDisplayImage.gameObject.SetActive(true);
             return;
         }
@@ -64,9 +57,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
     public virtual void OnPointerClick(PointerEventData eventData)
     {
         if (itemToDisplay != null)
-        {
             UIManager.Instance.DisplayItemInfo(itemToDisplay);
-        }
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -75,12 +66,10 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
         {
             if (inventoryType == InventoryType.Tool)
             {
-
                 dragImage.sprite = itemToDisplay.thumbnail;
                 dragImage.gameObject.SetActive(true);
                 dragImage.transform.position = eventData.position;
 
-                // 원래 아이템 이미지 숨김
                 itemDisplayImage.gameObject.SetActive(false);
             }
         }
@@ -94,50 +83,42 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler, IDragHandler, 
             {
                 itemDisplayImage.gameObject.SetActive(true);
 
-                if (CheckForCollision(eventData))
-                {
-                    Debug.Log("아이템");
-                    InventoryManager.Instance.InventoryToHand(slotIndex,inventoryType);
-                }
+                if (checkCollision(eventData))
+                    InventoryManager.Instance.inventoryToHand(slotIndex, inventoryType);
                 else
-                {
-
-                    ReturnToOriginalPosition();
-                }
+                    returnPosition();
 
                 dragImage.gameObject.SetActive(false);
-                UIManager.Instance.RenderInventory();
+                UIManager.Instance.renderInventory();
             }
         }
     }
-    private void ReturnToOriginalPosition()
+    private void returnPosition()
     {
         transform.SetParent(originalPosition);
     }
-    private bool CheckForCollision(PointerEventData eventData)
+    private bool checkCollision(PointerEventData eventData)
     {
-        GraphicRaycaster raycaster = GetComponentInParent<GraphicRaycaster>();
+        GraphicRaycaster ray = GetComponentInParent<GraphicRaycaster>();
 
-        if (raycaster != null)
+        if (ray != null)
         {
             PointerEventData pointerEventData = new PointerEventData(EventSystem.current);
             pointerEventData.position = eventData.position;
 
             List<RaycastResult> results = new List<RaycastResult>();
-            raycaster.Raycast(pointerEventData, results);
+            ray.Raycast(pointerEventData, results);
 
             foreach (RaycastResult result in results)
             {
-                if (result.gameObject.CompareTag("HandSlot"))
-                {
+                if (result.gameObject.CompareTag("HandSlot")) 
                     return true;
-                }
             }
         }
 
         return false;
     }
-    public void AssignIndex(int slotIndex)
+    public void assignIndex(int slotIndex)
     {
         this.slotIndex = slotIndex;
     }

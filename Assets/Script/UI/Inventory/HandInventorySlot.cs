@@ -7,6 +7,6 @@ public class HandInventorySlot : InventorySlot
 {
     public override void OnPointerClick(PointerEventData eventData)
     {
-        InventoryManager.Instance.HandToIventory();
+        InventoryManager.Instance.handToIventory();
     }
 }

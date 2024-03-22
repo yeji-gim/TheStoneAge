@@ -8,29 +8,23 @@ using UnityEngine.UI;
 public class DialoguePrompt : MonoBehaviour
 {
     [Header("Button")]
-    public GameObject button;
-    public Button firstButton;
-    public TMP_Text first;
+    [SerializeField] private GameObject button;
+    [SerializeField] private Button questButton;
+    [SerializeField] private TMP_Text buttonInfo;
 
-    Action onfistSelected = null;
+    Action onQuestSelected = null;
 
-    private void Awake()
+    public void createButton(string button_text, Action buttonAction)
     {
-        Debug.Log("Awake");
-
-
-    }
-    public void Createbutton(string first_text, Action firstAction)
-    {
-        onfistSelected = firstAction;
-        first.text = first_text;
-        firstButton.onClick.AddListener(() => {
-            firstAction?.Invoke();
+        onQuestSelected = buttonAction;
+        buttonInfo.text = button_text;
+        questButton.onClick.AddListener(() => {
+            buttonAction?.Invoke();
         });
     }
-    public void OnFirstButtonClicked()
+    public void onQuestButtonClicked()
     {
-        onfistSelected?.Invoke();
+        onQuestSelected?.Invoke();
         button.SetActive(false);
     }
 }

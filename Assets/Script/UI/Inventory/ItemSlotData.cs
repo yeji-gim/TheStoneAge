@@ -23,25 +23,18 @@ public class ItemSlotData
 
     public void AddQuantity()
     {
-        AddQuantity(1);
+        quantity += 1;
     }
-    public void AddQuantity(int amountToAdd)
+
+    public void Remove()
     {
-        quantity += amountToAdd;
-    }
-   
-    public void Remove(int count)
-    {
-        quantity -= count;
+        quantity -= 1;
         ValidateQuantity();
     }
 
     private void ValidateQuantity()
     {
-        if (quantity <= 0 || itemData == null)
-        {
-            Empty();
-        }
+        if (quantity <= 0 || itemData == null) Empty();
     }
 
     public void Empty()
@@ -56,7 +49,6 @@ public class ItemSlotData
     }
     public bool Stackable(ItemData itemToCompare)
     {
-        // 현재 슬롯의 아이템이 비어 있지 않고, 이름이 같은 경우에만 스택 가능
         return !IsEmpty() && itemToCompare != null && itemToCompare.name == itemData.name;
     }
 }

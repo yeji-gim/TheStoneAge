@@ -21,11 +21,9 @@ public class baseDialogue : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            bool isPanelActive = UIManager.Instance.IsDialoguePromptActive();
+            bool isPanelActive = UIManager.Instance.isDialoguePromptActive();
             if (!isPanelActive)
-            {
                 dialoguePanel.gameObject.SetActive(true);
-            }
         }
     }
 
@@ -33,37 +31,31 @@ public class baseDialogue : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            bool isPanelActive = UIManager.Instance.IsDialoguePromptActive();
+            bool isPanelActive = UIManager.Instance.isDialoguePromptActive();
             if (!isPanelActive)
-            {
                 dialoguePanel.gameObject.SetActive(false);
-            }
         }
     }
-    protected void checkQuest(GameObject questObject, GameObject quest)
+    protected void checkQuest(QuestData[] questObject)
     {
         
-        ItemSlotData[] inventoryItemSlots = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
-        QuestManager questManager = questObject.GetComponent<QuestManager>();
-        npcController npccontroller = quest.GetComponent<npcController>();
-        if (questManager.quest[0].CheckCompletion(inventoryItemSlots))
+        ItemSlotData[] inventoryItemSlots = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Item);
+        if (questObject[0].checkCompletion(inventoryItemSlots))
         {
-            Debug.Log("Äù½ºÆ® ¿Ï·á!");
             if (!questCompleted1Shown)
             {
-                Debug.Log("Äù½ºÆ® ¿Ï·á!");
-                UIManager.Instance.ShowQuestCompletionPanel();
+                UIManager.Instance.showQuestCompletionPanel();
                 questCompleted1Shown = true;
             }
             isOne = true;
             index = 1;
         }
 
-        if (questManager.quest[1].CheckCompletion(inventoryItemSlots))
+        if (questObject[1].checkCompletion(inventoryItemSlots))
         {
             if (!questCompleted2Shown)
             {
-                UIManager.Instance.ShowQuestCompletionPanel();
+                UIManager.Instance.showQuestCompletionPanel();
                 questCompleted2Shown = true;
             }
             isTwo = true;
@@ -71,24 +63,23 @@ public class baseDialogue : MonoBehaviour
         
     }
 
-    protected void StartDialogue(GameObject questObject, GameObject quest)
+    protected void startDialogue(GameObject quest)
     {
-        QuestManager questManager = questObject.GetComponent<QuestManager>();
         npcController npccontroller = quest.GetComponent<npcController>();
         if (DialogueManager.Instance != null)
         {
             if (isTwo)
             {
-                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.completedialogueLines);
+                DialogueManager.Instance.startDialogue(npccontroller.charcterData.completedialogueLines);
                 isTwo = true;
                 return;
             }
             else if (isOne)
             {
-                DialogueManager.Instance.StartDialogue(npccontroller.charcterData.secondQuestdialogueLines);
+                DialogueManager.Instance.startDialogue(npccontroller.charcterData.secondQuestdialogueLines);
                 return;
             }
-            DialogueManager.Instance.StartDialogue(npccontroller.charcterData.firstquestdialogueLines);
+            DialogueManager.Instance.startDialogue(npccontroller.charcterData.firstquestdialogueLines);
         }
     }
 }

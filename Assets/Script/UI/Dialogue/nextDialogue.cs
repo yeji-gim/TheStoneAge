@@ -9,7 +9,7 @@ public class nextDialogue : MonoBehaviour, IPointerClickHandler
     {
         if (DialogueManager.Instance.dialougePanel.activeSelf)
         {
-            DialogueManager.Instance.UpdateDialogue();
+            DialogueManager.Instance.updateDialogue();
         }
     }
 }

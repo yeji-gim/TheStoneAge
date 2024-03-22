@@ -21,8 +21,6 @@ public class craftManager : MonoBehaviour
         BuildArrow,
         BuildSpear
     }
-    SceneLoad sceneLoader;
-
     
     private void Start()
     {
@@ -34,8 +32,8 @@ public class craftManager : MonoBehaviour
     }
     public void CheckItem()
     {
-        ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Item);
-        ItemSlotData[] Equipmentitems = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
+        ItemSlotData[] items = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Item);
+        ItemSlotData[] Equipmentitems = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Tool);
         bool AllSetActive = true;
         CheckItemArray(items);
         CheckItemArray(Equipmentitems);
@@ -44,16 +42,12 @@ public class craftManager : MonoBehaviour
         {
             if (!itemImages[i].activeSelf)
             {
-                //Debug.Log("비활성화된게 있음");
                 AllSetActive = false;
                 break;
             }
         }
         if (AllSetActive)
-        {
-            //Debug.Log("활성화된게 있음");
             button.interactable = true;
-        }
     }
 
     private void CheckItemArray(ItemSlotData[] items)
@@ -73,7 +67,6 @@ public class craftManager : MonoBehaviour
 
     public void BuildHandAxeClick()
     {
-        Debug.Log("BuildHandAxeClick");
         SceneManager.LoadScene("BuildItem");
         StoneClick.num = 0;
         UIManager.Instance.makingPanel.SetActive(false);

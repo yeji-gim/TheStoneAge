@@ -8,24 +8,14 @@ public class dadDialogue : baseDialogue
 
     private void Update()
     {
-        GameObject dadQuest = GameObject.FindGameObjectWithTag("dadquest");
-        GameObject dad = GameObject.FindGameObjectWithTag("dad");
-        checkQuest(dadQuest, dad);
+        if(DialogueManager.Instance.dadQuest != null) checkQuest(DialogueManager.Instance.dadQuest);
     }
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);
         camera.SetActive(true);
-        GameObject dadQuest = GameObject.FindGameObjectWithTag("dadquest");
         GameObject dad = GameObject.FindGameObjectWithTag("dad");
 
-        if (dadQuest != null && dad != null)
-        {
-            StartDialogue(dadQuest, dad);
-        }
-        else
-        {
-            Debug.Log("오브젝트를 찾지 못한 경우에 대한 처리");
-        }
+        if (dad != null) startDialogue(dad);
     }
 }

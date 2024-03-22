@@ -87,7 +87,7 @@ public class StoneClick : MonoBehaviour
 
     void GetItem(EquipmentData item)
     {
-        ItemSlotData[] items = InventoryManager.Instance.GetInventorySlots(InventorySlot.InventoryType.Tool);
+        ItemSlotData[] items = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Tool);
 
 
         for (int i = 0; i < items.Length; i++)
@@ -100,7 +100,7 @@ public class StoneClick : MonoBehaviour
                 break;
             }
         }
-        UIManager.Instance.RenderInventory();
+        UIManager.Instance.renderInventory();
     }
 
     EquipmentData GetName(string name)
