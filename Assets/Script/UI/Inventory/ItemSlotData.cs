@@ -7,13 +7,6 @@ public class ItemSlotData
     public ItemData itemData;
     public int quantity;
 
-    public ItemSlotData(ItemData itemData, int quantity)
-    {
-        this.itemData = itemData;
-        this.quantity = quantity;
-        ValidateQuantity();
-    }
-
     public ItemSlotData(ItemData itemData)
     {
         this.itemData = itemData;

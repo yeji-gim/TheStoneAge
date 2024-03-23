@@ -12,16 +12,6 @@ public class craftManager : MonoBehaviour
     private GameObject[] itemImages;
     [SerializeField]
     private Button button;
-    [SerializeField]
-    public Scenename scenename;
-    public enum Scenename
-    {
-        BuildHandAxe,
-        BuildStoneAxe,
-        BuildArrow,
-        BuildSpear
-    }
-    
     private void Start()
     {
         button.interactable = false;

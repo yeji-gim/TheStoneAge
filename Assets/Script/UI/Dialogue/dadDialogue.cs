@@ -10,6 +10,7 @@ public class dadDialogue : baseDialogue
     {
         if(DialogueManager.Instance.dadQuest != null) checkQuest(DialogueManager.Instance.dadQuest);
     }
+    // 대화하기 버튼을 눌렀을 경우 다이얼로그 시작
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);

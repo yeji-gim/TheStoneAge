@@ -23,29 +23,29 @@ public class UIManager : MonoBehaviour
         }
     }
     [Header("Inventory Systems")]
-    public InventorySlot[] toolSlots;
-    public InventorySlot[] ItemSlots;
-    public HandInventorySlot toolHandSlot;
+    public InventorySlot[] toolSlots; // 장비창 슬롯들
+    public InventorySlot[] ItemSlots; // 아이템창 슬롯들
+    public HandInventorySlot toolHandSlot; // 장비 장착 슬롯
     public GameObject InventoryPanel;
-    public GameObject Infoprompt;
-    public Image ItemImage;
-    public TMP_Text itemNameText;
-    public TMP_Text itemDescriptionText;
+    [SerializeField] private GameObject Infoprompt; // 장비 및 아이템 설명
+    [SerializeField] private Image ItemImage; // 설명에 필요한 이미지
+    [SerializeField] private TMP_Text itemNameText; // 설명에 필요한 이름
+    [SerializeField] private TMP_Text itemDescriptionText; //설명에 필요한 Description
     [Header("Quest Systems")]
-    public GameObject QuestPanel;
-    public Image getQuest;
-    public TMP_Text questName;
-    public TMP_Text questDescription;
-    public GameObject gridItemPrefab;
-    public GridLayoutGroup gridLayoutGroup;
+    [SerializeField] private GameObject QuestPanel;
+    [SerializeField] private Image getQuest; // 
+    [SerializeField] private TMP_Text questName;
+    [SerializeField] private TMP_Text questDescription;
+    [SerializeField] private GameObject gridItemPrefab;
+    [SerializeField] private GridLayoutGroup gridLayoutGroup;
     [Header("Dialogue")]
     public DialoguePrompt DialoguePrompt;
     public Button button;
     public TMP_Text button_name;
     public GameObject dialoguepanel;
     [Header("Settings")]
-    public GameObject settingPanel;
-    public GameObject creditPanel;
+    [SerializeField] private GameObject settingPanel;
+    [SerializeField] private GameObject creditPanel;
     [Header("Making")]
     public GameObject makingPanel;
     public GameObject handAxePanel;
@@ -53,8 +53,8 @@ public class UIManager : MonoBehaviour
     public GameObject projectilePanel;
     public GameObject spearPanel;
     [Header("Quest")]
-    public GameObject CompleteQuest;
-    public GameObject getQuestPanel;
+    [SerializeField] private GameObject CompleteQuest; // 퀘스트 완료 알림 ui
+    [SerializeField] private GameObject getQuestPanel; // 퀘스트 생김 알림 ui
     [Header("Stone")]
     public IncompleteItem[] incompleteStone; 
     public GameObject[] completeStone;   
@@ -75,6 +75,7 @@ public class UIManager : MonoBehaviour
         DialoguePrompt.createButton(name,  first);
     }
 
+    // slot에 index 설정
     public void assignSlotIndexes()
     {
         for (int i = 0; i < toolSlots.Length; i++)
@@ -83,6 +84,8 @@ public class UIManager : MonoBehaviour
             ItemSlots[i].assignIndex(i);
         }
     }
+
+    // 인벤토리 업데이트
     public void renderInventory()
     {
         ItemSlotData[] inventoryToolSlots = InventoryManager.Instance.getInventorySlots(InventorySlot.InventoryType.Tool);
@@ -91,10 +94,10 @@ public class UIManager : MonoBehaviour
         renderInventoryPanel(inventoryToolSlots, toolSlots);
         renderInventoryPanel(inventoryItemSlots, ItemSlots);
 
-
         toolHandSlot.Display(InventoryManager.Instance.equippedTool);
     }
 
+    // 인벤토리 슬롯 정보들 업데이트
     void renderInventoryPanel(ItemSlotData[] slots, InventorySlot[] uiSlots)
     {
         for (int i = 0; i < uiSlots.Length; i++)
@@ -107,6 +110,7 @@ public class UIManager : MonoBehaviour
         InventoryPanel.SetActive(!InventoryPanel.activeSelf);
         renderInventory();
     }
+    // 슬롯 설명 설정
     public void DisplayItemInfo(ItemData data)
     {
         Infoprompt.SetActive(true);
@@ -120,6 +124,8 @@ public class UIManager : MonoBehaviour
         questDescription.gameObject.SetActive(!questDescription.gameObject.activeSelf);
         gridLayoutGroup.gameObject.SetActive(!gridLayoutGroup.gameObject.activeSelf);
     }
+
+    // Quest 내용 설정
     public void DisplayQuest(QuestData data)
     {
         ToggleQuestDescription();
@@ -127,11 +133,13 @@ public class UIManager : MonoBehaviour
         questName.text= data.questname;
         questDescription.text = data.description;
 
+        // gridLayoutGroup 초기화
         foreach (Transform child in gridLayoutGroup.transform)
         {
             Destroy(child.gameObject);
         }
 
+        // 필요한 아이템 gridLayout에 추가
         foreach (QuestData.RequiredItem requiredItem in data.requiredItems)
         {
             GameObject gridItem = Instantiate(gridItemPrefab, gridLayoutGroup.transform);
@@ -233,6 +241,7 @@ public class UIManager : MonoBehaviour
         StartCoroutine(fadeOut(getQuestPanel));
     }
 
+    // 1초 깜빡 효과
     private IEnumerator fadeOut(GameObject panel)
     {
         panel.SetActive(true);

@@ -26,6 +26,7 @@ public class InventoryManager : MonoBehaviour
     [Header("Items")]
     [SerializeField] private ItemSlotData[] Items = new ItemSlotData[18];
 
+    // 장비 장착
     public void inventoryToHand(int slotIndex, InventorySlot.InventoryType inventoryType)
     {
         ItemData toolToEquip = tools[slotIndex].itemData;
@@ -45,6 +46,7 @@ public class InventoryManager : MonoBehaviour
         UIManager.Instance.renderInventory();
     }
 
+    // 장비 장착 해제
     public void handToIventory()
     {
         ThirdPersonController player = GameObject.FindGameObjectWithTag("Player").GetComponent<ThirdPersonController>();
@@ -58,10 +60,10 @@ public class InventoryManager : MonoBehaviour
                 break;
             }
         }
-
         UIManager.Instance.renderInventory();
     }
 
+    // 인벤토리 슬롯 정보 가져오기
     public ItemSlotData[] getInventorySlots(InventorySlot.InventoryType inventoryType)
     {
         if (inventoryType == InventorySlot.InventoryType.Item) 

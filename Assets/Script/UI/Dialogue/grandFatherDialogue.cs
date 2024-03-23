@@ -10,7 +10,7 @@ public class grandFatherDialogue : baseDialogue
     {
         if(DialogueManager.Instance.grandFatherQuest != null ) checkQuest(DialogueManager.Instance.grandFatherQuest);
     }
-
+    // 대화하기 버튼을 눌렀을 경우 다이얼로그 시작
     public void acceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);

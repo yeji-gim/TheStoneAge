@@ -11,6 +11,7 @@ public class momDialogue : baseDialogue
         if(DialogueManager.Instance.momQuest != null) checkQuest(DialogueManager.Instance.momQuest);
 
     }
+    // 대화하기 버튼을 눌렀을 경우 다이얼로그 시작
     public void acceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);

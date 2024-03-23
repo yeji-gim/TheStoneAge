@@ -9,7 +9,6 @@ public class baseDialogue : MonoBehaviour
     bool isOne = false;
     static bool questCompleted1Shown = false;
     static bool questCompleted2Shown = false;
-    Ray ray;
     public int index = 0;
 
     private void Start()
@@ -17,6 +16,7 @@ public class baseDialogue : MonoBehaviour
         dialoguePanel.gameObject.SetActive(false);
     }
 
+    // 플레이어와 npc와 Trigger가 발생한 경우 대화하기 패널 활성화
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -27,6 +27,7 @@ public class baseDialogue : MonoBehaviour
         }
     }
 
+    // 플레이어와 npc와 Trigger가 끝났을 경우 대화하기 패널 비활성화
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -36,6 +37,8 @@ public class baseDialogue : MonoBehaviour
                 dialoguePanel.gameObject.SetActive(false);
         }
     }
+
+    // Quest가 완료되었는지 확인
     protected void checkQuest(QuestData[] questObject)
     {
         

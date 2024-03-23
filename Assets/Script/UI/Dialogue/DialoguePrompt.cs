@@ -14,14 +14,15 @@ public class DialoguePrompt : MonoBehaviour
 
     Action onQuestSelected = null;
 
+    // 버튼 생성 및 초기화
     public void createButton(string button_text, Action buttonAction)
     {
         onQuestSelected = buttonAction;
         buttonInfo.text = button_text;
-        questButton.onClick.AddListener(() => {
-            buttonAction?.Invoke();
-        });
+        questButton.onClick.AddListener(() => { buttonAction?.Invoke();});
     }
+
+    // 버튼이 클릭되었을때 호출
     public void onQuestButtonClicked()
     {
         onQuestSelected?.Invoke();

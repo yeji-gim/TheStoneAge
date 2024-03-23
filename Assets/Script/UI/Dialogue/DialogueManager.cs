@@ -60,7 +60,7 @@ public class DialogueManager : MonoBehaviour
         }
         DialogueLine line = dialogueQueue.Dequeue();
 
-
+        // 버튼이 존재하는 경우
         if (!string.IsNullOrEmpty(line.button))
         {
             Talk(line.speaker,line.message, line.button);
@@ -89,6 +89,7 @@ public class DialogueManager : MonoBehaviour
         speaker = thisspeaker;
         StartCoroutine(typeText(message));
     }
+    // 타이핑 효과
     IEnumerator typeText(string textToType)
     {
         istyping = true;
@@ -106,6 +107,7 @@ public class DialogueManager : MonoBehaviour
         }
         istyping = false;
     }
+    // DialoguePrompt-CreateButton에 해당하는 Action
     public void questButtonClicked()
     {
         if (button_name.text.Contains("퀘스트"))

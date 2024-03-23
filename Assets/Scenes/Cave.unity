@@ -163,9 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843b047c04359894584fdf7795bd6869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest:
-  - {fileID: 11400000, guid: 6b23912570ea38f46b16417aa1c23a3f, type: 2}
-  - {fileID: 11400000, guid: 19defc6d92f91244ca8e1589dc477d3d, type: 2}
 --- !u!1001 &20763556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1278,9 +1275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843b047c04359894584fdf7795bd6869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest:
-  - {fileID: 11400000, guid: 3c7a62f7896d6884d82c65ede1b4eeda, type: 2}
-  - {fileID: 11400000, guid: bc1a3e4a148c88140a8b2fb8a3a41e00, type: 2}
 --- !u!4 &292479508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4615112721095082, guid: 2e70cb820aa7a014993037ab2b357339, type: 3}
@@ -1932,9 +1926,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843b047c04359894584fdf7795bd6869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest:
-  - {fileID: 11400000, guid: 4db9a0aa255e7784994752680d07a027, type: 2}
-  - {fileID: 11400000, guid: da3171b25e038a947955cb6d1d8f575a, type: 2}
 --- !u!1001 &576534887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3441,9 +3432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843b047c04359894584fdf7795bd6869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest:
-  - {fileID: 11400000, guid: af680c90b5b731441b10ca6f0c1353a3, type: 2}
-  - {fileID: 11400000, guid: b3a559e8dcdd0b544848067d2950814d, type: 2}
 --- !u!4 &1211062913 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4923979399350514, guid: 54eaa62dc0ca9b742950141d45ddf723, type: 3}
@@ -6964,7 +6952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419113636811206977, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2432038475328392742, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7170,6 +7158,10 @@ PrefabInstance:
       propertyPath: 'grandFatherQuest.Array.data[1]'
       value: 
       objectReference: {fileID: 11400000, guid: b3a559e8dcdd0b544848067d2950814d, type: 2}
+    - target: {fileID: 5527925790165275947, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
+      propertyPath: inventoryType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5713143468840053148, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: toggleQuestPanel

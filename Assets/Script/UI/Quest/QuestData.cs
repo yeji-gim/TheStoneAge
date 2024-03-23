@@ -8,11 +8,11 @@ public class QuestData : ScriptableObject
     [TextArea(15, 20)]
     public string description;
 
-    public List<RequiredItem> requiredItems;
+    public List<RequiredItem> requiredItems; // 퀘스트 리스트
     public bool isCompleted;
 
     [System.Serializable]
-    public class RequiredItem
+    public class RequiredItem // 퀘스트 내용
     {
         public ItemData item;
         public int itemCount;

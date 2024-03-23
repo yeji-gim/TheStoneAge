@@ -112,7 +112,7 @@ public class StoneClick : MonoBehaviour
         if (name.Contains("Spear"))
             return equipment[2];
         if (name.Contains("Arrow"))
-            return equipment[0];
+            return equipment[3];
         return equipment[0];
     }
     void ActivateCompleteStone(int num)

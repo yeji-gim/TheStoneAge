@@ -10,6 +10,7 @@ public class sisterDialogue : baseDialogue
     {
         if(DialogueManager.Instance.sisterQuest!=null) checkQuest(DialogueManager.Instance.sisterQuest);
     }
+    // 대화하기 버튼을 눌렀을 경우 다이얼로그 시작
     public void AcceptButton()
     {
         dialoguePanel.gameObject.SetActive(false);
