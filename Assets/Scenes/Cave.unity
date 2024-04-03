@@ -6952,7 +6952,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2419113636811206977, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2432038475328392742, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
       propertyPath: m_LocalScale.x
@@ -7109,7 +7109,11 @@ PrefabInstance:
     - target: {fileID: 5134104275298805862, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
       propertyPath: tools.Array.data[0].itemData
       value: 
-      objectReference: {fileID: 11400000, guid: cb619cae92792cc4eb00407ffba79e88, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 5134104275298805862, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
+      propertyPath: tools.Array.data[0].quantity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5275621272138967893, guid: 57a838ff015b1ed4d99fd1865aa8e84b, type: 3}
       propertyPath: dadQuest.Array.size
       value: 2

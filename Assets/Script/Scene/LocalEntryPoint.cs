@@ -12,10 +12,23 @@ public class LocalEntryPoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("충돌");          
+            //StartCoroutine(LoadSceneAsync(locationToSwitch.ToString()));
             SceneManager.LoadScene(locationToSwitch.ToString());
 
         }
 
     }
+    private IEnumerator LoadSceneAsync(string sceneName)
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+
+        // 로딩 진행 상태 확인
+        while (!asyncLoad.isDone)
+        {
+            // 진행 상태를 보여주는 기능 추가 가능
+            yield return null;
+        }
+
+    }
+   
 }
